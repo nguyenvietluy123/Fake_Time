@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="CellHome" customModule="FakeTime" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eqb-0y-db1" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                        <rect key="frame" x="5.5" y="8.5" width="346" height="69.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJF-QD-Ghn" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                <rect key="frame" x="20" y="14" width="41.5" height="41.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOp-eh-cGf" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="6" width="29.5" height="29.5"/>
+                                        <color key="backgroundColor" red="0.95686274509803915" green="0.5490196078431373" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="IOp-eh-cGf" secondAttribute="height" multiplier="1:1" id="Vmq-Mx-E3d"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IOp-eh-cGf" firstAttribute="height" secondItem="NJF-QD-Ghn" secondAttribute="height" multiplier="0.7" id="BZX-MS-uUz"/>
+                                    <constraint firstItem="IOp-eh-cGf" firstAttribute="centerX" secondItem="NJF-QD-Ghn" secondAttribute="centerX" id="HKB-7K-QWK"/>
+                                    <constraint firstItem="IOp-eh-cGf" firstAttribute="centerY" secondItem="NJF-QD-Ghn" secondAttribute="centerY" id="KHd-uW-sr6"/>
+                                    <constraint firstAttribute="width" secondItem="NJF-QD-Ghn" secondAttribute="height" multiplier="1:1" id="qMU-Cb-yst"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.95686274510000002" green="0.54901960780000003" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r19-0f-Xfe" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                <rect key="frame" x="20" y="14" width="41.5" height="41.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgw-M6-fjY" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="6" width="29.5" height="29.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Fgw-M6-fjY" secondAttribute="height" multiplier="1:1" id="GKI-9s-OdF"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="r19-0f-Xfe" secondAttribute="height" multiplier="1:1" id="5Ch-TV-Pw3"/>
+                                    <constraint firstItem="Fgw-M6-fjY" firstAttribute="centerX" secondItem="r19-0f-Xfe" secondAttribute="centerX" id="Epx-Ws-fcB"/>
+                                    <constraint firstItem="Fgw-M6-fjY" firstAttribute="centerY" secondItem="r19-0f-Xfe" secondAttribute="centerY" id="IsU-j0-PqE"/>
+                                    <constraint firstItem="Fgw-M6-fjY" firstAttribute="height" secondItem="r19-0f-Xfe" secondAttribute="height" multiplier="0.7" id="onL-cH-6hq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mk3-BO-zxe" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                <rect key="frame" x="274" y="9" width="52" height="51.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_call" translatesAutoresizingMaskIntoConstraints="NO" id="ULG-VR-25z" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="51.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ULG-VR-25z" firstAttribute="top" secondItem="mk3-BO-zxe" secondAttribute="top" id="2Zy-CF-zBt"/>
+                                    <constraint firstItem="ULG-VR-25z" firstAttribute="leading" secondItem="mk3-BO-zxe" secondAttribute="leading" id="mHP-TH-mHm"/>
+                                    <constraint firstAttribute="bottom" secondItem="ULG-VR-25z" secondAttribute="bottom" id="ulN-Bg-LiW"/>
+                                    <constraint firstAttribute="trailing" secondItem="ULG-VR-25z" secondAttribute="trailing" id="wte-Pj-43c"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieH-hZ-7Qp" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                                <rect key="frame" x="73.5" y="21" width="188.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mk3-BO-zxe" secondAttribute="trailing" constant="20" id="A53-ql-Io4"/>
+                            <constraint firstItem="ieH-hZ-7Qp" firstAttribute="leading" secondItem="NJF-QD-Ghn" secondAttribute="trailing" constant="12" id="AVf-mp-Kk3"/>
+                            <constraint firstItem="mk3-BO-zxe" firstAttribute="leading" secondItem="ieH-hZ-7Qp" secondAttribute="trailing" constant="12" id="Anv-wT-FRQ"/>
+                            <constraint firstItem="ieH-hZ-7Qp" firstAttribute="centerY" secondItem="Eqb-0y-db1" secondAttribute="centerY" id="BgA-KP-PkE"/>
+                            <constraint firstItem="r19-0f-Xfe" firstAttribute="bottom" secondItem="NJF-QD-Ghn" secondAttribute="bottom" id="ElV-EA-HLd"/>
+                            <constraint firstAttribute="width" secondItem="Eqb-0y-db1" secondAttribute="height" multiplier="5" id="Koy-D9-Toq"/>
+                            <constraint firstItem="r19-0f-Xfe" firstAttribute="trailing" secondItem="NJF-QD-Ghn" secondAttribute="trailing" id="LA3-mb-hmm"/>
+                            <constraint firstItem="NJF-QD-Ghn" firstAttribute="centerY" secondItem="Eqb-0y-db1" secondAttribute="centerY" id="QBj-t8-pCa"/>
+                            <constraint firstItem="NJF-QD-Ghn" firstAttribute="leading" secondItem="Eqb-0y-db1" secondAttribute="leading" constant="20" id="Ub1-sd-DNs"/>
+                            <constraint firstItem="mk3-BO-zxe" firstAttribute="centerY" secondItem="Eqb-0y-db1" secondAttribute="centerY" id="ZVh-2r-RXx"/>
+                            <constraint firstItem="NJF-QD-Ghn" firstAttribute="height" secondItem="Eqb-0y-db1" secondAttribute="height" multiplier="1.2:2" id="dB0-qq-VR5"/>
+                            <constraint firstItem="mk3-BO-zxe" firstAttribute="height" secondItem="Eqb-0y-db1" secondAttribute="height" multiplier="1.5:2" id="iQ5-T8-zr1"/>
+                            <constraint firstItem="r19-0f-Xfe" firstAttribute="leading" secondItem="NJF-QD-Ghn" secondAttribute="leading" id="lul-N4-vPm"/>
+                            <constraint firstItem="r19-0f-Xfe" firstAttribute="top" secondItem="NJF-QD-Ghn" secondAttribute="top" id="pd2-wM-oQ2"/>
+                            <constraint firstItem="r19-0f-Xfe" firstAttribute="width" secondItem="r19-0f-Xfe" secondAttribute="height" multiplier="1:1" id="uU0-xm-2JV"/>
+                            <constraint firstItem="mk3-BO-zxe" firstAttribute="width" secondItem="mk3-BO-zxe" secondAttribute="height" multiplier="1:1" id="vji-Hp-uK8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Eqb-0y-db1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OQd-t0-YOU"/>
+                    <constraint firstItem="Eqb-0y-db1" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="160:200" id="T5q-Kw-Z6F"/>
+                    <constraint firstItem="Eqb-0y-db1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aaG-6S-f4A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="ULG-VR-25z" id="2Uy-Hi-4iw"/>
+                <outlet property="title" destination="ieH-hZ-7Qp" id="Gzs-UJ-qkR"/>
+                <outlet property="viewIsSelected" destination="NJF-QD-Ghn" id="Oc3-eN-kbf"/>
+                <outlet property="viewNotSelected" destination="r19-0f-Xfe" id="sbs-ws-Bq9"/>
+            </connections>
+            <point key="canvasLocation" x="159.19999999999999" y="150.67466266866569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_call" width="50" height="50"/>
+    </resources>
+</document>

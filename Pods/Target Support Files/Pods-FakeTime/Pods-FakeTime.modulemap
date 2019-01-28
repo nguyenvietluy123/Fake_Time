@@ -1,0 +1,6 @@
+module Pods_FakeTime {
+  umbrella header "Pods-FakeTime-umbrella.h"
+
+  export *
+  module * { export * }
+}
