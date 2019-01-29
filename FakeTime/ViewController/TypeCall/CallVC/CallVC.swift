@@ -10,27 +10,91 @@ import UIKit
 import AVKit
 
 class CallVC: UIViewController {
-    @IBOutlet weak var viewFontCamera: UIView!
+    @IBOutlet weak var frontCameraView: FrontCameraView!
+    @IBOutlet weak var lbName: KHLabel!
+    @IBOutlet weak var lbPhoneNumber: KHLabel!
+    @IBOutlet weak var imgAvatar: UIImageView!
+    @IBOutlet weak var viewTop: KHView!
+    @IBOutlet weak var viewAfterAccept: KHView!
+    @IBOutlet weak var viewShowVideo: KHView!
+    
+    var caller: CallerObj = CallerObj()
+    var ringBell: AVAudioPlayer?
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         initUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        openRingBell()
+    }
+    
+    @IBAction func actionReject(_ sender: Any) {
+        timer.invalidate()
+        ringBell?.stop()
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func actionAccept(_ sender: Any) {
+        acceptCallVideo()
+    }
+    
+    @IBAction func actionEndCall(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
 extension CallVC {
     func initUI() {
-        var defaultVideoDevice: AVCaptureDevice?
-        if let fontCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) {
-            defaultVideoDevice = fontCameraDevice
-        }
-        do {
-            let videoDeviceInput = try AVCaptureDeviceInput(device: defaultVideoDevice!)
-//            vide
-        } catch {
-            print("Can't access camera")
-        }
+        lbName.text = caller.name
+        lbPhoneNumber.text = caller.phoneNumber
+        imgAvatar.image = caller.avatar
         
+//        viewAfterAccept.isHidden = true
+        viewAfterAccept.frame = CGRect(x: 0, y: self.view.frame.height, width: UIScreen.main.bounds.width, height: 100)
+        
+        GCDCommon.mainQueue {
+            Common.gradient(UIColor.init("61eda2", alpha: 1.0), UIColor.init("22cfa4", alpha: 1.0), view: self.viewTop)
+        }
+    }
+    
+    func openRingBell() {
+        let path = Bundle.main.path(forResource: "call_line.wav", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            ringBell = try AVAudioPlayer(contentsOf: url)
+            ringBell?.play()
+            
+            timer = Timer.every(1) {
+                print(TimeInterval.init(exactly: (self.ringBell?.duration)!)!)
+                self.ringBell?.play()
+            }
+        } catch {
+        }
+    }
+    
+    func acceptCallVideo() {
+        timer.invalidate()
+        ringBell?.stop()
+        
+        GCDCommon.mainQueue {
+            self.viewAfterAccept.layoutIfNeeded()
+            UIView.animate(withDuration: 1.2, delay: 0, options: .curveEaseOut, animations: {
+//                self.viewAfterAccept.isHidden = false
+                self.view.layoutIfNeeded()
+                self.viewAfterAccept.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            }, completion: { (completed) in
+                var player = AVPlayer()
+                player = AVPlayer(url: URL(fileURLWithPath: self.caller.pathVideo))
+                let playerLayer = AVPlayerLayer(player: player)
+                playerLayer.frame = self.viewShowVideo.bounds
+                self.viewShowVideo.layer.addSublayer(playerLayer)
+                player.play()
+            })
+        }
     }
 }

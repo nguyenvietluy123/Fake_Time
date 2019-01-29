@@ -24,5 +24,4 @@ extension SettingVC {
             self.clickMenu()
         }
     }
-    
 }

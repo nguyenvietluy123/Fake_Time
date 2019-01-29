@@ -196,7 +196,6 @@ extension AddCallVC: GalleryControllerDelegate {
                 }
             }
         }
-        
     }
     
     func galleryController(_ controller: GalleryController, requestLightbox images: [Image]) {
@@ -205,12 +204,6 @@ extension AddCallVC: GalleryControllerDelegate {
     
     func galleryControllerDidCancel(_ controller: GalleryController) {
         gallery.dismiss(animated: true, completion: nil)
-        //        if controller == gallery {
-        //
-        //        } else {
-        //            galleryVideo.dismiss(animated: true, completion: nil)
-        //        }
-        //
     }
 }
 

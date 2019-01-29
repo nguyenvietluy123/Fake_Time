@@ -15,15 +15,14 @@ class HomeVC: BaseVC {
     @IBOutlet weak var lbName: KHLabel!
     @IBOutlet weak var tfDelayTime: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var viewShowVideo: UIView!
+    @IBOutlet weak var ctrHeightTableView: NSLayoutConstraint!
     
     var caller: CallerObj = CallerObj()
     var arrItem: [HomeObj] = {
-        let items: [HomeObj] = [HomeObj(#imageLiteral(resourceName: "home_call"), title: "Call", typeCall: .call),
+        let items: [HomeObj] = [HomeObj(#imageLiteral(resourceName: "home_call"), title: "Call", typeCall: .call, isSelected: true),
                                 HomeObj(#imageLiteral(resourceName: "home_message"), title: "Messenger", typeCall: .messenger),
                                 HomeObj(#imageLiteral(resourceName: "home_line"), title: "Line", typeCall: .line),
                                 HomeObj(#imageLiteral(resourceName: "home_wechat"), title: "Wechat", typeCall: .weChat)]
-//            ,HomeObj(#imageLiteral(resourceName: "home_setting"), title: "Setting", typeCall: .setting)]
         return items
     }()
     
@@ -37,13 +36,13 @@ class HomeVC: BaseVC {
     }
     
     @IBAction func callVideo(_ sender: Any) {
-//        let player = AVPlayer(url: URL(fileURLWithPath: caller.pathVideo))
-//        let playerLayer = AVPlayerLayer(player: player)
-//        playerLayer.frame = viewShowVideo.bounds
-//        viewShowVideo.layer.addSublayer(playerLayer)
-//        player.play()
-        let vc = CallVC.init(nibName: "CallVC", bundle: nil)
-        present(vc, animated: true, completion: nil)
+        if let delayTime = Double(tfDelayTime.text!) {
+            GCDCommon.mainQueueWithDelay(delayTime) {
+                let vc = CallVC.init(nibName: "CallVC", bundle: nil)
+                vc.caller = self.caller
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
     }
 }
 
@@ -58,7 +57,9 @@ extension HomeVC {
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
+        
         tableView.register(CellHome.self)
+        
     }
     
     func initData() {
@@ -75,6 +76,12 @@ extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as CellHome
         cell.config(arrItem[indexPath.item])
+        UIView.animate(withDuration: 0, animations: {
+            self.tableView.layoutIfNeeded()
+        }) { (completed) in
+            self.ctrHeightTableView.constant = self.tableView.contentSize.height
+        }
+        
         return cell
     }
     

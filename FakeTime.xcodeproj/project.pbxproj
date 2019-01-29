@@ -14,6 +14,11 @@
 		0C2E39DF21F8D0F600B11685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E39DD21F8D0F600B11685 /* LaunchScreen.storyboard */; };
 		0C2E39EA21F8D0F600B11685 /* FakeTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E39E921F8D0F600B11685 /* FakeTimeTests.swift */; };
 		0C2E39F521F8D0F600B11685 /* FakeTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E39F421F8D0F600B11685 /* FakeTimeUITests.swift */; };
+		0C4420B621FF44D0004D3965 /* FrontCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B521FF430D004D3965 /* FrontCameraView.xib */; };
+		0C4420BB21FF61D7004D3965 /* call_line.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B821FF61D6004D3965 /* call_line.wav */; };
+		0C4420BC21FF61D7004D3965 /* call_messenger.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B921FF61D6004D3965 /* call_messenger.m4a */; };
+		0C4420BD21FF61D7004D3965 /* call_wechat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */; };
+		0CAB8BFC21FEE0D70035DC51 /* FrontCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB8BFB21FEE0D70035DC51 /* FrontCameraView.swift */; };
 		0CAFE31721FA13F10004C376 /* AddCallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE31521FA13F10004C376 /* AddCallVC.swift */; };
 		0CAFE31821FA13F10004C376 /* AddCallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFE31621FA13F10004C376 /* AddCallVC.xib */; };
 		0CAFE31B21FA321A0004C376 /* CallerObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE31A21FA321A0004C376 /* CallerObj.swift */; };
@@ -110,6 +115,11 @@
 		0C2E39F021F8D0F600B11685 /* FakeTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2E39F421F8D0F600B11685 /* FakeTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTimeUITests.swift; sourceTree = "<group>"; };
 		0C2E39F621F8D0F600B11685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C4420B521FF430D004D3965 /* FrontCameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrontCameraView.xib; sourceTree = "<group>"; };
+		0C4420B821FF61D6004D3965 /* call_line.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = call_line.wav; sourceTree = "<group>"; };
+		0C4420B921FF61D6004D3965 /* call_messenger.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = call_messenger.m4a; sourceTree = "<group>"; };
+		0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = call_wechat.mp3; sourceTree = "<group>"; };
+		0CAB8BFB21FEE0D70035DC51 /* FrontCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCameraView.swift; sourceTree = "<group>"; };
 		0CAFE31521FA13F10004C376 /* AddCallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCallVC.swift; sourceTree = "<group>"; };
 		0CAFE31621FA13F10004C376 /* AddCallVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCallVC.xib; sourceTree = "<group>"; };
 		0CAFE31A21FA321A0004C376 /* CallerObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerObj.swift; sourceTree = "<group>"; };
@@ -239,6 +249,7 @@
 				0CCDD8DC21F8D1A300688493 /* CustomUI */,
 				0CCDD95221F8EEA100688493 /* Cell */,
 				0CCDD92521F8D1A700688493 /* ViewController */,
+				0C4420B721FF61C2004D3965 /* Sounds */,
 				0C2E39D121F8D0F500B11685 /* AppDelegate.swift */,
 				0CCDD94E21F8E5F400688493 /* DeNho.swift */,
 				0CCDD93B21F8E0E500688493 /* FakeTime-Bridging-Header.h */,
@@ -268,6 +279,25 @@
 				0C2E39F621F8D0F600B11685 /* Info.plist */,
 			);
 			path = FakeTimeUITests;
+			sourceTree = "<group>";
+		};
+		0C4420B421FF42F8004D3965 /* FrontCameraView */ = {
+			isa = PBXGroup;
+			children = (
+				0CAB8BFB21FEE0D70035DC51 /* FrontCameraView.swift */,
+				0C4420B521FF430D004D3965 /* FrontCameraView.xib */,
+			);
+			path = FrontCameraView;
+			sourceTree = "<group>";
+		};
+		0C4420B721FF61C2004D3965 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0C4420B821FF61D6004D3965 /* call_line.wav */,
+				0C4420B921FF61D6004D3965 /* call_messenger.m4a */,
+				0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		0CAFE31221FA13C70004C376 /* AddCallVC */ = {
@@ -327,6 +357,7 @@
 		0CCDD8DC21F8D1A300688493 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				0C4420B421FF42F8004D3965 /* FrontCameraView */,
 				0CCDD94921F8E46E00688493 /* NavigationView */,
 				0CCDD8DD21F8D1A300688493 /* MagicView */,
 				0CCDD8E021F8D1A300688493 /* ButtonView */,
@@ -671,6 +702,7 @@
 				0C2E39DF21F8D0F600B11685 /* LaunchScreen.storyboard in Resources */,
 				0CC80A4C21FCCCA90079A511 /* SettingVC.xib in Resources */,
 				0CCDD95721F8EECC00688493 /* CellHome.xib in Resources */,
+				0C4420BD21FF61D7004D3965 /* call_wechat.mp3 in Resources */,
 				0C2E39DC21F8D0F600B11685 /* Assets.xcassets in Resources */,
 				0CCDD91521F8D1A300688493 /* SearchView.xib in Resources */,
 				0CCDD93F21F8E24500688493 /* MenuVC.xib in Resources */,
@@ -681,8 +713,11 @@
 				0CCDD96C21F9021C00688493 /* CellListCall.xib in Resources */,
 				0CC80A5221FCD6100079A511 /* CallVC.xib in Resources */,
 				0CCDD90721F8D1A300688493 /* MagicView.xib in Resources */,
+				0C4420B621FF44D0004D3965 /* FrontCameraView.xib in Resources */,
 				0CC80A4121FCCA960079A511 /* MenuCell.xib in Resources */,
+				0C4420BB21FF61D7004D3965 /* call_line.wav in Resources */,
 				0CCDD90821F8D1A300688493 /* ButtonView.xib in Resources */,
+				0C4420BC21FF61D7004D3965 /* call_messenger.m4a in Resources */,
 				0CCDD91321F8D1A300688493 /* ToolBarView.xib in Resources */,
 				0CCDD90F21F8D1A300688493 /* TabbarView.xib in Resources */,
 				0CCDD90C21F8D1A300688493 /* InputView.xib in Resources */,
@@ -765,6 +800,7 @@
 				0CC80A4021FCCA960079A511 /* MenuCell.swift in Sources */,
 				0CCDD95621F8EECC00688493 /* CellHome.swift in Sources */,
 				0CCDD91721F8D1A300688493 /* KHButton.swift in Sources */,
+				0CAB8BFC21FEE0D70035DC51 /* FrontCameraView.swift in Sources */,
 				0CCDD92121F8D1A300688493 /* Define.swift in Sources */,
 				0CCDD91221F8D1A300688493 /* ToolBarView.swift in Sources */,
 				0CCDD91921F8D1A300688493 /* KHImageView.swift in Sources */,

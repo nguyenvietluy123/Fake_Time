@@ -51,14 +51,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAd-3G-OI5" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
                                 <rect key="frame" x="103.5" y="29.5" width="267.5" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <color key="textColor" red="0.062745098040000002" green="0.77647058820000003" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiW-75-ERf" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
                                 <rect key="frame" x="383" y="22" width="35" height="35.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_edit" translatesAutoresizingMaskIntoConstraints="NO" id="B8x-7q-8VU" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_pen_green" translatesAutoresizingMaskIntoConstraints="NO" id="B8x-7q-8VU" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="B8x-7q-8VU" secondAttribute="height" multiplier="1:1" id="F2E-OP-jcy"/>
@@ -104,7 +104,7 @@
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPg-G0-ghk">
                         <rect key="frame" x="0.0" y="0.0" width="453" height="0.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.45098039220000002" green="0.78823529410000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.69999999999999996" id="bP8-Kz-YtG"/>
                         </constraints>
@@ -132,6 +132,6 @@
     </objects>
     <resources>
         <image name="avatar_taylor" width="165" height="206"/>
-        <image name="home_edit" width="50" height="50"/>
+        <image name="ic_pen_green" width="51" height="38"/>
     </resources>
 </document>

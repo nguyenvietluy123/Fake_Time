@@ -15,6 +15,7 @@ class CallerObj: NSObject {
     var phoneNumber: String = ""
     var avatar: UIImage = #imageLiteral(resourceName: "Avatar_default")
     var pathVideo: String = ""
+    var delayTime: Int = 0
     var typeCall: typeCall = .call
     
     override init() {
