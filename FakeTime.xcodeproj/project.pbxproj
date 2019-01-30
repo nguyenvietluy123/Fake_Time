@@ -300,6 +300,13 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		0C9D7F7422015954009EA3BF /* VideoCallView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoCallView;
+			sourceTree = "<group>";
+		};
 		0CAFE31221FA13C70004C376 /* AddCallVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +364,7 @@
 		0CCDD8DC21F8D1A300688493 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				0C9D7F7422015954009EA3BF /* VideoCallView */,
 				0C4420B421FF42F8004D3965 /* FrontCameraView */,
 				0CCDD94921F8E46E00688493 /* NavigationView */,
 				0CCDD8DD21F8D1A300688493 /* MagicView */,

@@ -87,6 +87,19 @@ extension Int {
     var currency: String {
         return "\(self < 0 ? 0 : self)".currency()
     }
+    
+    func secondsToMinutesSeconds() -> (String, String) {
+        let m = (self % 3600) / 60
+        let s = (self % 3600) % 60
+        return (m > 9 ? "\(m)" : "0\(m)", s > 9 ? "\(s)" : "0\(s)")
+    }
+    
+    func secondsToHoursMinutesSeconds() -> (String, String, String) {
+        let h = self / 3600
+        let m = (self % 3600) / 60
+        let s = (self % 3600) % 60
+        return (h > 9 ? "\(h)" : "0\(h)", m > 9 ? "\(m)" : "0\(m)", s > 9 ? "\(s)" : "0\(s)")
+    }
 }
 
 extension String {

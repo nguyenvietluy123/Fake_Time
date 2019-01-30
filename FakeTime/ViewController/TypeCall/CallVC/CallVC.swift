@@ -32,6 +32,9 @@ class CallVC: UIViewController {
         openRingBell()
     }
     
+    override func viewDidLayoutSubviews() {
+    }
+    
     @IBAction func actionReject(_ sender: Any) {
         timer.invalidate()
         ringBell?.stop()
@@ -53,8 +56,9 @@ extension CallVC {
         lbPhoneNumber.text = caller.phoneNumber
         imgAvatar.image = caller.avatar
         
-//        viewAfterAccept.isHidden = true
-        viewAfterAccept.frame = CGRect(x: 0, y: self.view.frame.height, width: UIScreen.main.bounds.width, height: 100)
+//        viewAfterAccept.clearConstraints()
+        viewAfterAccept.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        viewAfterAccept.updateConstraints()
         
         GCDCommon.mainQueue {
             Common.gradient(UIColor.init("61eda2", alpha: 1.0), UIColor.init("22cfa4", alpha: 1.0), view: self.viewTop)
@@ -96,5 +100,14 @@ extension CallVC {
                 player.play()
             })
         }
+    }
+}
+
+extension UIView {
+    func clearConstraints() {
+        for subview in self.subviews {
+            subview.clearConstraints()
+        }
+        self.removeConstraints(self.constraints)
     }
 }

@@ -16,7 +16,10 @@ class HomeVC: BaseVC {
     @IBOutlet weak var tfDelayTime: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var ctrHeightTableView: NSLayoutConstraint!
+    @IBOutlet weak var viewDelay: UIView!
+    @IBOutlet weak var lbTimeCountDown: KHLabel!
     
+    var timer: Timer = Timer()
     var caller: CallerObj = CallerObj()
     var arrItem: [HomeObj] = {
         let items: [HomeObj] = [HomeObj(#imageLiteral(resourceName: "home_call"), title: "Call", typeCall: .call, isSelected: true),
@@ -25,6 +28,13 @@ class HomeVC: BaseVC {
                                 HomeObj(#imageLiteral(resourceName: "home_wechat"), title: "Wechat", typeCall: .weChat)]
         return items
     }()
+    
+    var timeCountDown: Int = 0 {
+        didSet {
+            let (h, m,s) = timeCountDown.secondsToHoursMinutesSeconds()
+            lbTimeCountDown.text = "Gọi luôn " + "\(h):\(m):\(s)"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +46,34 @@ class HomeVC: BaseVC {
     }
     
     @IBAction func callVideo(_ sender: Any) {
-        if let delayTime = Double(tfDelayTime.text!) {
-            GCDCommon.mainQueueWithDelay(delayTime) {
-                let vc = CallVC.init(nibName: "CallVC", bundle: nil)
-                vc.caller = self.caller
-                self.present(vc, animated: true, completion: nil)
-            }
+        if let timeCountDown = Int(tfDelayTime.text!) {
+            viewDelay.isHidden = false
+            self.timeCountDown = timeCountDown
+            timer = Timer.every(1, {
+                if self.timeCountDown == 0 {
+                    self.viewDelay.isHidden = true
+                    self.timer.invalidate()
+                    
+                    self.showCallVC()
+                    return
+                }
+                self.timeCountDown -= 1
+                print(self.timeCountDown)
+            })
+        } else {
+            Common.showAlert("Vui lòng nhập đúng thời gian chờ")
         }
+    }
+    
+    @IBAction func actionCancelDelay(_ sender: Any) {
+        viewDelay.isHidden = true
+        timer.invalidate()
+    }
+    
+    @IBAction func actionTimeCountDown(_ sender: Any) {
+        viewDelay.isHidden = true
+        timer.invalidate()
+        showCallVC()
     }
 }
 
@@ -65,6 +96,12 @@ extension HomeVC {
     func initData() {
         imgAvatar.image = caller.avatar
         lbName.text = caller.name
+    }
+    
+    func showCallVC() {
+        let vc = CallVC.init(nibName: "CallVC", bundle: nil)
+        vc.caller = self.caller
+        self.present(vc, animated: true, completion: nil)
     }
 }
 

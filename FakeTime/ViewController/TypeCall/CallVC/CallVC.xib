@@ -301,7 +301,7 @@
                                         <constraint firstAttribute="bottom" secondItem="C06-bB-fxK" secondAttribute="bottom" id="yx2-Xu-EFo"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFP-QE-VDJ" customClass="FrontCameraView" customModule="FakeTime" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFP-QE-VDJ">
                                     <rect key="frame" x="221.5" y="406.5" width="133.5" height="133.5"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -324,7 +324,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Vhm-MJ-RgP" secondAttribute="trailing" id="C4u-Pl-rOf"/>
-                        <constraint firstAttribute="bottom" secondItem="Vhm-MJ-RgP" secondAttribute="bottom" id="jUb-A6-WPh"/>
+                        <constraint firstAttribute="bottom" secondItem="Vhm-MJ-RgP" secondAttribute="bottom" id="Plr-cZ-iiF"/>
                         <constraint firstItem="Vhm-MJ-RgP" firstAttribute="leading" secondItem="Fga-Dq-E1K" secondAttribute="leading" id="mdC-Nh-NzT"/>
                         <constraint firstItem="Vhm-MJ-RgP" firstAttribute="top" secondItem="Fga-Dq-E1K" secondAttribute="top" id="nhD-au-MwJ"/>
                     </constraints>
