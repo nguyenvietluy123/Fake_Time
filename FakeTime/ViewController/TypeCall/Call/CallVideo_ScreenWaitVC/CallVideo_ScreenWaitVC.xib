@@ -10,14 +10,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallVC" customModule="FakeTime" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallVideo_ScreenWaitVC" customModule="FakeTime" customModuleProvider="target">
             <connections>
                 <outlet property="imgAvatar" destination="40E-j5-LyU" id="FHf-YG-g5q"/>
                 <outlet property="lbName" destination="39Q-Dg-M4e" id="VF5-e5-qzY"/>
                 <outlet property="lbPhoneNumber" destination="7UY-iO-UJb" id="2P6-77-t4q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="viewAfterAccept" destination="Fga-Dq-E1K" id="A2k-A9-yZF"/>
-                <outlet property="viewShowVideo" destination="Vhm-MJ-RgP" id="ecM-Dq-hsB"/>
                 <outlet property="viewTop" destination="lOn-EV-k5T" id="0ck-AL-oR1"/>
             </connections>
         </placeholder>
@@ -191,155 +189,13 @@
                         <constraint firstItem="lOn-EV-k5T" firstAttribute="height" secondItem="2cF-dQ-KSZ" secondAttribute="height" multiplier="300:1280" id="lDz-WS-htp"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fga-Dq-E1K" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vhm-MJ-RgP" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQP-Wm-ZVe" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="74" y="560" width="227" height="37"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C06-bB-fxK" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="37.5" height="37"/>
-                                            <subviews>
-                                                <view alpha="0.080000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aeu-9Z-mZm" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="37.5" height="37"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_mute" translatesAutoresizingMaskIntoConstraints="NO" id="gje-ux-ZAG" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                                    <rect key="frame" x="7.5" y="7.5" width="22.5" height="22"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="gje-ux-ZAG" secondAttribute="height" multiplier="1:1" id="GZb-dd-U8Z"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="gje-ux-ZAG" firstAttribute="centerY" secondItem="Aeu-9Z-mZm" secondAttribute="centerY" id="0UF-DP-ket"/>
-                                                <constraint firstItem="Aeu-9Z-mZm" firstAttribute="top" secondItem="C06-bB-fxK" secondAttribute="top" id="3yg-7N-7n0"/>
-                                                <constraint firstAttribute="bottom" secondItem="Aeu-9Z-mZm" secondAttribute="bottom" id="BYx-3D-gbR"/>
-                                                <constraint firstItem="Aeu-9Z-mZm" firstAttribute="leading" secondItem="C06-bB-fxK" secondAttribute="leading" id="R33-y1-3Gy"/>
-                                                <constraint firstItem="gje-ux-ZAG" firstAttribute="centerX" secondItem="Aeu-9Z-mZm" secondAttribute="centerX" id="S1Y-9q-B24"/>
-                                                <constraint firstItem="gje-ux-ZAG" firstAttribute="height" secondItem="Aeu-9Z-mZm" secondAttribute="height" multiplier="0.6" id="TNS-FQ-0CC"/>
-                                                <constraint firstAttribute="trailing" secondItem="Aeu-9Z-mZm" secondAttribute="trailing" id="Zfo-Jg-LwE"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBS-jm-XPf" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="95" y="0.0" width="37" height="37"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_endcall" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-fb-G4T" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PY2-Fb-vFh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <connections>
-                                                        <action selector="actionAccept:" destination="-1" eventType="touchUpInside" id="HKT-hj-RGa"/>
-                                                        <action selector="actionEndCall:" destination="-1" eventType="touchUpInside" id="Gdz-cr-sSF"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="HKj-fb-G4T" firstAttribute="leading" secondItem="yBS-jm-XPf" secondAttribute="leading" id="Mhf-eY-fvB"/>
-                                                <constraint firstItem="HKj-fb-G4T" firstAttribute="top" secondItem="yBS-jm-XPf" secondAttribute="top" id="Tla-xe-3HR"/>
-                                                <constraint firstItem="PY2-Fb-vFh" firstAttribute="top" secondItem="yBS-jm-XPf" secondAttribute="top" id="UQN-0S-76g"/>
-                                                <constraint firstAttribute="bottom" secondItem="PY2-Fb-vFh" secondAttribute="bottom" id="e0e-8P-juh"/>
-                                                <constraint firstAttribute="trailing" secondItem="HKj-fb-G4T" secondAttribute="trailing" id="fGs-cp-aVV"/>
-                                                <constraint firstItem="PY2-Fb-vFh" firstAttribute="leading" secondItem="yBS-jm-XPf" secondAttribute="leading" id="gyq-Sc-nRz"/>
-                                                <constraint firstAttribute="bottom" secondItem="HKj-fb-G4T" secondAttribute="bottom" id="igx-4a-zdK"/>
-                                                <constraint firstAttribute="trailing" secondItem="PY2-Fb-vFh" secondAttribute="trailing" id="wAj-3z-1mO"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaF-Ur-yGx" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="189.5" y="0.0" width="37.5" height="37"/>
-                                            <subviews>
-                                                <view alpha="0.079999998211860657" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATA-Ty-HRg" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="37.5" height="37"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_camera" translatesAutoresizingMaskIntoConstraints="NO" id="nRG-7n-Fr8" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                                    <rect key="frame" x="7.5" y="7.5" width="22.5" height="22"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="nRG-7n-Fr8" secondAttribute="height" multiplier="1:1" id="9kh-BQ-DKo"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="nRG-7n-Fr8" firstAttribute="centerX" secondItem="ATA-Ty-HRg" secondAttribute="centerX" id="2m0-GL-5YQ"/>
-                                                <constraint firstItem="nRG-7n-Fr8" firstAttribute="centerY" secondItem="ATA-Ty-HRg" secondAttribute="centerY" id="8jO-IF-Usl"/>
-                                                <constraint firstItem="nRG-7n-Fr8" firstAttribute="height" secondItem="ATA-Ty-HRg" secondAttribute="height" multiplier="0.6" id="NoC-V8-GlO"/>
-                                                <constraint firstItem="ATA-Ty-HRg" firstAttribute="top" secondItem="oaF-Ur-yGx" secondAttribute="top" id="PIV-1v-g69"/>
-                                                <constraint firstAttribute="trailing" secondItem="ATA-Ty-HRg" secondAttribute="trailing" id="il6-rf-pJg"/>
-                                                <constraint firstAttribute="bottom" secondItem="ATA-Ty-HRg" secondAttribute="bottom" id="yUc-F7-SxR"/>
-                                                <constraint firstItem="ATA-Ty-HRg" firstAttribute="leading" secondItem="oaF-Ur-yGx" secondAttribute="leading" id="zFe-KS-GxR"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="yBS-jm-XPf" firstAttribute="centerY" secondItem="cQP-Wm-ZVe" secondAttribute="centerY" id="5wI-3a-RSE"/>
-                                        <constraint firstItem="C06-bB-fxK" firstAttribute="leading" secondItem="cQP-Wm-ZVe" secondAttribute="leading" id="7hk-m8-g6R"/>
-                                        <constraint firstItem="oaF-Ur-yGx" firstAttribute="width" secondItem="yBS-jm-XPf" secondAttribute="width" id="7ub-HT-VXX"/>
-                                        <constraint firstItem="yBS-jm-XPf" firstAttribute="width" secondItem="cQP-Wm-ZVe" secondAttribute="height" multiplier="1:1" id="AmE-42-NP9"/>
-                                        <constraint firstItem="C06-bB-fxK" firstAttribute="width" secondItem="yBS-jm-XPf" secondAttribute="width" id="N7e-CP-Slg"/>
-                                        <constraint firstItem="yBS-jm-XPf" firstAttribute="centerX" secondItem="cQP-Wm-ZVe" secondAttribute="centerX" id="TPu-xY-mMe"/>
-                                        <constraint firstItem="oaF-Ur-yGx" firstAttribute="top" secondItem="cQP-Wm-ZVe" secondAttribute="top" id="Tjd-Na-eJj"/>
-                                        <constraint firstAttribute="bottom" secondItem="oaF-Ur-yGx" secondAttribute="bottom" id="dbn-hE-Yim"/>
-                                        <constraint firstItem="yBS-jm-XPf" firstAttribute="height" secondItem="cQP-Wm-ZVe" secondAttribute="height" id="fUc-ap-vt8"/>
-                                        <constraint firstAttribute="trailing" secondItem="oaF-Ur-yGx" secondAttribute="trailing" id="fuS-og-R4s"/>
-                                        <constraint firstItem="C06-bB-fxK" firstAttribute="top" secondItem="cQP-Wm-ZVe" secondAttribute="top" id="k1w-kr-bib"/>
-                                        <constraint firstAttribute="bottom" secondItem="C06-bB-fxK" secondAttribute="bottom" id="yx2-Xu-EFo"/>
-                                    </constraints>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFP-QE-VDJ">
-                                    <rect key="frame" x="221.5" y="406.5" width="133.5" height="133.5"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="HFP-QE-VDJ" secondAttribute="height" multiplier="1:1" id="iuk-Lk-riF"/>
-                                    </constraints>
-                                </view>
-                            </subviews>
-                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                            <constraints>
-                                <constraint firstItem="cQP-Wm-ZVe" firstAttribute="height" secondItem="Vhm-MJ-RgP" secondAttribute="height" multiplier="40:720" id="OdQ-IO-o7v"/>
-                                <constraint firstAttribute="trailing" secondItem="HFP-QE-VDJ" secondAttribute="trailing" constant="20" id="UQt-o0-cOP"/>
-                                <constraint firstItem="cQP-Wm-ZVe" firstAttribute="top" secondItem="HFP-QE-VDJ" secondAttribute="bottom" constant="20" id="WlN-PF-Z9a"/>
-                                <constraint firstItem="HFP-QE-VDJ" firstAttribute="height" secondItem="Vhm-MJ-RgP" secondAttribute="height" multiplier="44:220" id="cfJ-mB-AgT"/>
-                                <constraint firstItem="cQP-Wm-ZVe" firstAttribute="width" secondItem="Vhm-MJ-RgP" secondAttribute="width" multiplier="145:240" id="sGK-el-2TU"/>
-                                <constraint firstAttribute="bottom" secondItem="cQP-Wm-ZVe" secondAttribute="bottom" constant="70" id="vt9-75-psB"/>
-                                <constraint firstItem="cQP-Wm-ZVe" firstAttribute="centerX" secondItem="Vhm-MJ-RgP" secondAttribute="centerX" id="yAI-gP-RG3"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="Vhm-MJ-RgP" secondAttribute="trailing" id="C4u-Pl-rOf"/>
-                        <constraint firstAttribute="bottom" secondItem="Vhm-MJ-RgP" secondAttribute="bottom" id="Plr-cZ-iiF"/>
-                        <constraint firstItem="Vhm-MJ-RgP" firstAttribute="leading" secondItem="Fga-Dq-E1K" secondAttribute="leading" id="mdC-Nh-NzT"/>
-                        <constraint firstItem="Vhm-MJ-RgP" firstAttribute="top" secondItem="Fga-Dq-E1K" secondAttribute="top" id="nhD-au-MwJ"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Fga-Dq-E1K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6bg-84-4ji"/>
-                <constraint firstAttribute="trailing" secondItem="Fga-Dq-E1K" secondAttribute="trailing" id="8h9-xA-EDI"/>
-                <constraint firstItem="Fga-Dq-E1K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nbi-0S-KW1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2cF-dQ-KSZ" secondAttribute="trailing" id="RP1-hi-Zjx"/>
                 <constraint firstItem="2cF-dQ-KSZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hdT-3O-Ylk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2cF-dQ-KSZ" secondAttribute="bottom" id="kUp-do-1NL"/>
                 <constraint firstItem="2cF-dQ-KSZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mGW-yE-iUQ"/>
-                <constraint firstAttribute="bottom" secondItem="Fga-Dq-E1K" secondAttribute="bottom" id="yno-a9-t9U"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="55.200000000000003" y="79.610194902548727"/>
@@ -347,9 +203,6 @@
     </objects>
     <resources>
         <image name="call_accept" width="118" height="120"/>
-        <image name="call_camera" width="50" height="50"/>
-        <image name="call_endcall" width="70" height="71"/>
-        <image name="call_mute" width="118" height="120"/>
         <image name="call_reject" width="118" height="120"/>
     </resources>
 </document>

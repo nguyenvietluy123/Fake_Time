@@ -40,14 +40,28 @@ class MagicView: UIView {
         }
     }
     
-    func gradient(_ firstColor: UIColor = UIColor.init("15EDED", alpha: 1.0), _ secondColor: UIColor = UIColor.init("029CF5", alpha: 1.0)){
+    @IBInspectable open var isGradient: Bool = false {
+        didSet {
+            if isGradient {
+                
+            }
+        }
+    }
+    
+    override func layoutSubviews() {
+        if isGradient {
+            gradient()
+        }
+    }
+    
+    func gradient(_ firstColor: UIColor = UIColor.init("ec28b6", alpha: 1.0), _ secondColor: UIColor = UIColor.init("a446ed", alpha: 1.0)){
         removeGradientLayer()
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
         gradientLayer.colors = [firstColor.cgColor, secondColor.cgColor]
         gradientLayer.locations = [0.0, 0.7]
-        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         layer.insertSublayer(gradientLayer, at: 0)
     }
     

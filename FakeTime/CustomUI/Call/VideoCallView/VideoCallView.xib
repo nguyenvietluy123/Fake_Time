@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoCallView" customModule="FakeTime" customModuleProvider="target">
+            <connections>
+                <outlet property="viewShowVideo" destination="RR7-2i-pdk" id="6zy-Xh-ssD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hs0-GG-ajn" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RR7-2i-pdk" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2H6-pX-ba2" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="58.5" y="541.5" width="258" height="55.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCg-WP-Qdc" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                            <subviews>
+                                                <view alpha="0.079999998211860657" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MjW-0f-6AL" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_mute" translatesAutoresizingMaskIntoConstraints="NO" id="zXn-JY-kFF" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                                    <rect key="frame" x="11" y="11" width="33.5" height="33.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="zXn-JY-kFF" secondAttribute="height" multiplier="1:1" id="Gxm-ww-ofk"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="MjW-0f-6AL" firstAttribute="top" secondItem="JCg-WP-Qdc" secondAttribute="top" id="Kap-bs-JNg"/>
+                                                <constraint firstItem="MjW-0f-6AL" firstAttribute="leading" secondItem="JCg-WP-Qdc" secondAttribute="leading" id="Sh3-7r-dBU"/>
+                                                <constraint firstItem="zXn-JY-kFF" firstAttribute="centerX" secondItem="MjW-0f-6AL" secondAttribute="centerX" id="TEf-kX-dtM"/>
+                                                <constraint firstItem="zXn-JY-kFF" firstAttribute="centerY" secondItem="MjW-0f-6AL" secondAttribute="centerY" id="UAt-gF-ByU"/>
+                                                <constraint firstAttribute="bottom" secondItem="MjW-0f-6AL" secondAttribute="bottom" id="Ysp-vG-ezP"/>
+                                                <constraint firstItem="zXn-JY-kFF" firstAttribute="height" secondItem="MjW-0f-6AL" secondAttribute="height" multiplier="0.6" id="cAq-0U-hny"/>
+                                                <constraint firstAttribute="trailing" secondItem="MjW-0f-6AL" secondAttribute="trailing" id="f8S-xd-fQB"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cY-3w-vBy" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="101" y="0.0" width="56" height="55.5"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_endcall" translatesAutoresizingMaskIntoConstraints="NO" id="7Mj-u8-WGw" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="56" height="55.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqd-4P-WuL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="56" height="55.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="actionEndCall:" destination="-1" eventType="touchUpInside" id="6yD-Ja-t65"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Dqd-4P-WuL" secondAttribute="bottom" id="2Ty-Qv-6KP"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dqd-4P-WuL" secondAttribute="trailing" id="67h-nO-eSb"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Mj-u8-WGw" secondAttribute="trailing" id="Jgh-G6-aRD"/>
+                                                <constraint firstAttribute="bottom" secondItem="7Mj-u8-WGw" secondAttribute="bottom" id="LzM-uM-bpc"/>
+                                                <constraint firstItem="7Mj-u8-WGw" firstAttribute="top" secondItem="3cY-3w-vBy" secondAttribute="top" id="qNg-Be-WcE"/>
+                                                <constraint firstItem="Dqd-4P-WuL" firstAttribute="leading" secondItem="3cY-3w-vBy" secondAttribute="leading" id="sZo-06-cyx"/>
+                                                <constraint firstItem="7Mj-u8-WGw" firstAttribute="leading" secondItem="3cY-3w-vBy" secondAttribute="leading" id="tVm-r5-xQT"/>
+                                                <constraint firstItem="Dqd-4P-WuL" firstAttribute="top" secondItem="3cY-3w-vBy" secondAttribute="top" id="vCY-gy-SeI"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOm-I0-4gw" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="202.5" y="0.0" width="55.5" height="55.5"/>
+                                            <subviews>
+                                                <view alpha="0.079999998211860657" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUA-tj-Zum" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_camera" translatesAutoresizingMaskIntoConstraints="NO" id="xL6-Wo-7Hg" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                                    <rect key="frame" x="11" y="11" width="33.5" height="33.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="xL6-Wo-7Hg" secondAttribute="height" multiplier="1:1" id="SyA-IV-t4Y"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="WUA-tj-Zum" secondAttribute="trailing" id="FDm-7V-72p"/>
+                                                <constraint firstItem="xL6-Wo-7Hg" firstAttribute="centerY" secondItem="WUA-tj-Zum" secondAttribute="centerY" id="Fpb-fR-575"/>
+                                                <constraint firstItem="WUA-tj-Zum" firstAttribute="top" secondItem="HOm-I0-4gw" secondAttribute="top" id="TqQ-5D-szZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="WUA-tj-Zum" secondAttribute="bottom" id="UqW-nE-z55"/>
+                                                <constraint firstItem="WUA-tj-Zum" firstAttribute="leading" secondItem="HOm-I0-4gw" secondAttribute="leading" id="cVD-Zi-B1M"/>
+                                                <constraint firstItem="xL6-Wo-7Hg" firstAttribute="height" secondItem="WUA-tj-Zum" secondAttribute="height" multiplier="0.6" id="mMZ-Jy-Hhn"/>
+                                                <constraint firstItem="xL6-Wo-7Hg" firstAttribute="centerX" secondItem="WUA-tj-Zum" secondAttribute="centerX" id="uZt-wX-G3Y"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="3cY-3w-vBy" firstAttribute="centerY" secondItem="2H6-pX-ba2" secondAttribute="centerY" id="4Mk-9E-187"/>
+                                        <constraint firstAttribute="bottom" secondItem="HOm-I0-4gw" secondAttribute="bottom" id="EnE-f8-Hdv"/>
+                                        <constraint firstItem="JCg-WP-Qdc" firstAttribute="top" secondItem="2H6-pX-ba2" secondAttribute="top" id="Nwn-Up-pps"/>
+                                        <constraint firstItem="3cY-3w-vBy" firstAttribute="centerX" secondItem="2H6-pX-ba2" secondAttribute="centerX" id="QtV-Au-rm3"/>
+                                        <constraint firstItem="JCg-WP-Qdc" firstAttribute="width" secondItem="3cY-3w-vBy" secondAttribute="width" id="Uo6-aV-9V8"/>
+                                        <constraint firstItem="JCg-WP-Qdc" firstAttribute="leading" secondItem="2H6-pX-ba2" secondAttribute="leading" id="Veg-66-zAt"/>
+                                        <constraint firstItem="3cY-3w-vBy" firstAttribute="width" secondItem="2H6-pX-ba2" secondAttribute="height" multiplier="1:1" id="Wj5-Ls-8IB"/>
+                                        <constraint firstAttribute="trailing" secondItem="HOm-I0-4gw" secondAttribute="trailing" id="ZKb-8f-Czf"/>
+                                        <constraint firstAttribute="bottom" secondItem="JCg-WP-Qdc" secondAttribute="bottom" id="ag9-Oj-8jz"/>
+                                        <constraint firstItem="3cY-3w-vBy" firstAttribute="height" secondItem="2H6-pX-ba2" secondAttribute="height" id="fab-ab-yzc"/>
+                                        <constraint firstItem="HOm-I0-4gw" firstAttribute="top" secondItem="2H6-pX-ba2" secondAttribute="top" id="gbD-yQ-CFP"/>
+                                        <constraint firstItem="HOm-I0-4gw" firstAttribute="width" secondItem="3cY-3w-vBy" secondAttribute="width" id="oGt-55-VbS"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.45098039220000002" green="0.78823529410000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="2H6-pX-ba2" secondAttribute="bottom" constant="70" id="JAI-H9-3ff"/>
+                                <constraint firstItem="2H6-pX-ba2" firstAttribute="height" secondItem="RR7-2i-pdk" secondAttribute="height" multiplier="60:720" id="QtX-bc-STJ"/>
+                                <constraint firstItem="2H6-pX-ba2" firstAttribute="width" secondItem="RR7-2i-pdk" secondAttribute="width" multiplier="165:240" id="b9o-NN-zRB"/>
+                                <constraint firstItem="2H6-pX-ba2" firstAttribute="centerX" secondItem="RR7-2i-pdk" secondAttribute="centerX" id="krE-h2-6Mn"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zW-P2-2gE">
+                            <rect key="frame" x="218.5" y="371.5" width="136.5" height="150"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="4zW-P2-2gE" secondAttribute="height" multiplier="1:1.1" id="IiS-GB-8fR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RR7-2i-pdk" secondAttribute="trailing" id="7bB-x4-WtJ"/>
+                        <constraint firstItem="4zW-P2-2gE" firstAttribute="height" secondItem="RR7-2i-pdk" secondAttribute="height" multiplier="150:667" id="9eU-0a-Mxx"/>
+                        <constraint firstAttribute="bottom" secondItem="RR7-2i-pdk" secondAttribute="bottom" id="GsH-Pg-5PS"/>
+                        <constraint firstAttribute="trailing" secondItem="4zW-P2-2gE" secondAttribute="trailing" constant="20" id="H5I-vW-a1K"/>
+                        <constraint firstItem="4zW-P2-2gE" firstAttribute="bottom" secondItem="2H6-pX-ba2" secondAttribute="top" constant="-20" id="fvB-ox-Ipa"/>
+                        <constraint firstItem="RR7-2i-pdk" firstAttribute="leading" secondItem="hs0-GG-ajn" secondAttribute="leading" id="ieV-ND-taF"/>
+                        <constraint firstItem="RR7-2i-pdk" firstAttribute="top" secondItem="hs0-GG-ajn" secondAttribute="top" id="imC-W8-ukl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hs0-GG-ajn" secondAttribute="trailing" id="3ai-DP-U0o"/>
+                <constraint firstItem="hs0-GG-ajn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tAD-T3-Gqb"/>
+                <constraint firstItem="hs0-GG-ajn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uOn-5l-6NR"/>
+                <constraint firstAttribute="bottom" secondItem="hs0-GG-ajn" secondAttribute="bottom" id="v7q-hz-Lon"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="call_camera" width="50" height="50"/>
+        <image name="call_endcall" width="70" height="71"/>
+        <image name="call_mute" width="118" height="120"/>
+    </resources>
+</document>

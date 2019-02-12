@@ -22,7 +22,6 @@ enum typeCall {
     case messenger
     case line
     case weChat
-    case setting
 }
 
 enum SaveKey: String {
@@ -42,6 +41,10 @@ class NotificationCenterKey {
 
 class Key {
     static let keyMap = "AIzaSyDqXq6POMT9b3bjBqWVYnVRhD_EcSE01-4"
+}
+
+class KeyString {
+    static let endCall = "End Call"
 }
 
 class TColor {

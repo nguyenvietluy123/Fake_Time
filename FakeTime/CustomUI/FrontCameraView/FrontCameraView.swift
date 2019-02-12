@@ -12,6 +12,13 @@ import UIKit
 
 class FrontCameraView: UIView {
     
+    @IBInspectable var cornerRadius: CGFloat = 0.0 {
+        didSet {
+            layer.cornerRadius = cornerRadius * heightRatio
+            layer.masksToBounds = cornerRadius > 0
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initializeSubviews()

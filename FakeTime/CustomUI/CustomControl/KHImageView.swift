@@ -24,7 +24,7 @@ class KHImageView: UIImageView {
     
     @IBInspectable var cornerRadius: CGFloat = 0.0 {
         didSet {
-            layer.cornerRadius = cornerRadius
+            layer.cornerRadius = isIPad ? cornerRadius*1.4 : cornerRadius
             layer.masksToBounds = cornerRadius > 0
         }
     }

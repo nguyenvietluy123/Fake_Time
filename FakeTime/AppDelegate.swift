@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navi = UINavigationController(rootViewController: homeVC)
         navi.isNavigationBarHidden = true
         menuContainerViewController  = MFSideMenuContainerViewController.container(withCenter: navi,
-                                                                                   leftMenuViewController: menuVC,  rightMenuViewController: nil)
+                                                                                    leftMenuViewController: menuVC,  rightMenuViewController: nil)
         self.window?.rootViewController = menuContainerViewController
     }
     

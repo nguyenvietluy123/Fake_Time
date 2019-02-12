@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C05242D2211BC5200DB7852 /* Messenger_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05242B2211BC5200DB7852 /* Messenger_ScreenWaitVC.swift */; };
+		0C05242E2211BC5200DB7852 /* Messenger_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C05242C2211BC5200DB7852 /* Messenger_ScreenWaitVC.xib */; };
+		0C0524322211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0524302211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.swift */; };
+		0C0524332211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0524312211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.xib */; };
+		0C0524362211D22100DB7852 /* MsgVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0524352211D22100DB7852 /* MsgVideoCallView.swift */; };
+		0C05243A2211D25100DB7852 /* MsgVideoCallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0524392211D25100DB7852 /* MsgVideoCallView.xib */; };
+		0C05243D2211EA8400DB7852 /* Line_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05243B2211EA8400DB7852 /* Line_ScreenWaitVC.swift */; };
+		0C05243E2211EA8400DB7852 /* Line_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C05243C2211EA8400DB7852 /* Line_ScreenWaitVC.xib */; };
 		0C2E39D221F8D0F500B11685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E39D121F8D0F500B11685 /* AppDelegate.swift */; };
 		0C2E39D421F8D0F500B11685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E39D321F8D0F500B11685 /* ViewController.swift */; };
 		0C2E39DA21F8D0F500B11685 /* FakeTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E39D821F8D0F500B11685 /* FakeTime.xcdatamodeld */; };
@@ -18,6 +26,12 @@
 		0C4420BB21FF61D7004D3965 /* call_line.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B821FF61D6004D3965 /* call_line.wav */; };
 		0C4420BC21FF61D7004D3965 /* call_messenger.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B921FF61D6004D3965 /* call_messenger.m4a */; };
 		0C4420BD21FF61D7004D3965 /* call_wechat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */; };
+		0C9D7F762201599F009EA3BF /* VideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D7F752201599F009EA3BF /* VideoCallView.swift */; };
+		0C9D7F78220159A9009EA3BF /* VideoCallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D7F77220159A9009EA3BF /* VideoCallView.xib */; };
+		0CA9394922020DD200D6EE95 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9394822020DD200D6EE95 /* CallView.swift */; };
+		0CA9394B22020DE700D6EE95 /* CallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA9394A22020DE700D6EE95 /* CallView.xib */; };
+		0CA9394F22021C9E00D6EE95 /* Call_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9394D22021C9E00D6EE95 /* Call_ScreenWaitVC.swift */; };
+		0CA9395022021C9E00D6EE95 /* Call_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA9394E22021C9E00D6EE95 /* Call_ScreenWaitVC.xib */; };
 		0CAB8BFC21FEE0D70035DC51 /* FrontCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB8BFB21FEE0D70035DC51 /* FrontCameraView.swift */; };
 		0CAFE31721FA13F10004C376 /* AddCallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE31521FA13F10004C376 /* AddCallVC.swift */; };
 		0CAFE31821FA13F10004C376 /* AddCallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFE31621FA13F10004C376 /* AddCallVC.xib */; };
@@ -27,12 +41,18 @@
 		0CAFE32421FA334F0004C376 /* DatastoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE32121FA334F0004C376 /* DatastoreCoordinator.swift */; };
 		0CAFE32521FA334F0004C376 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE32221FA334F0004C376 /* PersistenceManager.swift */; };
 		0CAFE32721FA355C0004C376 /* CallerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE32621FA355C0004C376 /* CallerManager.swift */; };
+		0CC745F72212D17E005C4EFA /* Wechat_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC745F52212D17E005C4EFA /* Wechat_ScreenWaitVC.swift */; };
+		0CC745F82212D17E005C4EFA /* Wechat_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC745F62212D17E005C4EFA /* Wechat_ScreenWaitVC.xib */; };
+		0CC745FB2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC745F92212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.swift */; };
+		0CC745FC2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC745FA2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib */; };
+		0CC745FF2212FDC0005C4EFA /* WechatVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC745FE2212FDC0005C4EFA /* WechatVideoCallView.swift */; };
+		0CC746012212FDC4005C4EFA /* WechatVideoCallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC746002212FDC4005C4EFA /* WechatVideoCallView.xib */; };
 		0CC80A4021FCCA960079A511 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80A3E21FCCA960079A511 /* MenuCell.swift */; };
 		0CC80A4121FCCA960079A511 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC80A3F21FCCA960079A511 /* MenuCell.xib */; };
 		0CC80A4B21FCCCA90079A511 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80A4921FCCCA90079A511 /* SettingVC.swift */; };
 		0CC80A4C21FCCCA90079A511 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC80A4A21FCCCA90079A511 /* SettingVC.xib */; };
-		0CC80A5121FCD6100079A511 /* CallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80A4F21FCD6100079A511 /* CallVC.swift */; };
-		0CC80A5221FCD6100079A511 /* CallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC80A5021FCD6100079A511 /* CallVC.xib */; };
+		0CC80A5121FCD6100079A511 /* CallVideo_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80A4F21FCD6100079A511 /* CallVideo_ScreenWaitVC.swift */; };
+		0CC80A5221FCD6100079A511 /* CallVideo_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC80A5021FCD6100079A511 /* CallVideo_ScreenWaitVC.xib */; };
 		0CCDD90621F8D1A300688493 /* MagicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD8DE21F8D1A300688493 /* MagicView.swift */; };
 		0CCDD90721F8D1A300688493 /* MagicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD8DF21F8D1A300688493 /* MagicView.xib */; };
 		0CCDD90821F8D1A300688493 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD8E121F8D1A300688493 /* ButtonView.xib */; };
@@ -81,6 +101,10 @@
 		0CCDD96321F9017600688493 /* ListCallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD96121F9017600688493 /* ListCallVC.xib */; };
 		0CCDD96B21F9021C00688493 /* CellListCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD96921F9021C00688493 /* CellListCall.swift */; };
 		0CCDD96C21F9021C00688493 /* CellListCall.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD96A21F9021C00688493 /* CellListCall.xib */; };
+		0CD6EFFB2211EC550080C843 /* LineVideo_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6EFF92211EC550080C843 /* LineVideo_ScreenWaitVC.swift */; };
+		0CD6EFFC2211EC550080C843 /* LineVideo_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6EFFA2211EC550080C843 /* LineVideo_ScreenWaitVC.xib */; };
+		0CD6EFFF2211ED480080C843 /* LineVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6EFFE2211ED480080C843 /* LineVideoCallView.swift */; };
+		0CD6F0012211ED590080C843 /* LineVideoCallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6F0002211ED590080C843 /* LineVideoCallView.xib */; };
 		53AE0E30909111C7516FF868 /* libPods-FakeTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCE8488BCF6ECC868EF5AB2 /* libPods-FakeTime.a */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +126,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C05242B2211BC5200DB7852 /* Messenger_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger_ScreenWaitVC.swift; sourceTree = "<group>"; };
+		0C05242C2211BC5200DB7852 /* Messenger_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Messenger_ScreenWaitVC.xib; sourceTree = "<group>"; };
+		0C0524302211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerVideo_ScreenWaitVC.swift; sourceTree = "<group>"; };
+		0C0524312211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessengerVideo_ScreenWaitVC.xib; sourceTree = "<group>"; };
+		0C0524352211D22100DB7852 /* MsgVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgVideoCallView.swift; sourceTree = "<group>"; };
+		0C0524392211D25100DB7852 /* MsgVideoCallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MsgVideoCallView.xib; sourceTree = "<group>"; };
+		0C05243B2211EA8400DB7852 /* Line_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line_ScreenWaitVC.swift; sourceTree = "<group>"; };
+		0C05243C2211EA8400DB7852 /* Line_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Line_ScreenWaitVC.xib; sourceTree = "<group>"; };
 		0C2E39CE21F8D0F500B11685 /* FakeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2E39D121F8D0F500B11685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C2E39D321F8D0F500B11685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +151,12 @@
 		0C4420B821FF61D6004D3965 /* call_line.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = call_line.wav; sourceTree = "<group>"; };
 		0C4420B921FF61D6004D3965 /* call_messenger.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = call_messenger.m4a; sourceTree = "<group>"; };
 		0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = call_wechat.mp3; sourceTree = "<group>"; };
+		0C9D7F752201599F009EA3BF /* VideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallView.swift; sourceTree = "<group>"; };
+		0C9D7F77220159A9009EA3BF /* VideoCallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCallView.xib; sourceTree = "<group>"; };
+		0CA9394822020DD200D6EE95 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
+		0CA9394A22020DE700D6EE95 /* CallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallView.xib; sourceTree = "<group>"; };
+		0CA9394D22021C9E00D6EE95 /* Call_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call_ScreenWaitVC.swift; sourceTree = "<group>"; };
+		0CA9394E22021C9E00D6EE95 /* Call_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Call_ScreenWaitVC.xib; sourceTree = "<group>"; };
 		0CAB8BFB21FEE0D70035DC51 /* FrontCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCameraView.swift; sourceTree = "<group>"; };
 		0CAFE31521FA13F10004C376 /* AddCallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCallVC.swift; sourceTree = "<group>"; };
 		0CAFE31621FA13F10004C376 /* AddCallVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCallVC.xib; sourceTree = "<group>"; };
@@ -128,12 +166,18 @@
 		0CAFE32121FA334F0004C376 /* DatastoreCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatastoreCoordinator.swift; sourceTree = "<group>"; };
 		0CAFE32221FA334F0004C376 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		0CAFE32621FA355C0004C376 /* CallerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerManager.swift; sourceTree = "<group>"; };
+		0CC745F52212D17E005C4EFA /* Wechat_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wechat_ScreenWaitVC.swift; sourceTree = "<group>"; };
+		0CC745F62212D17E005C4EFA /* Wechat_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Wechat_ScreenWaitVC.xib; sourceTree = "<group>"; };
+		0CC745F92212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatVideo_ScreenWaitVC.swift; sourceTree = "<group>"; };
+		0CC745FA2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WechatVideo_ScreenWaitVC.xib; sourceTree = "<group>"; };
+		0CC745FE2212FDC0005C4EFA /* WechatVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatVideoCallView.swift; sourceTree = "<group>"; };
+		0CC746002212FDC4005C4EFA /* WechatVideoCallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WechatVideoCallView.xib; sourceTree = "<group>"; };
 		0CC80A3E21FCCA960079A511 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		0CC80A3F21FCCA960079A511 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		0CC80A4921FCCCA90079A511 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		0CC80A4A21FCCCA90079A511 /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
-		0CC80A4F21FCD6100079A511 /* CallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallVC.swift; sourceTree = "<group>"; };
-		0CC80A5021FCD6100079A511 /* CallVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallVC.xib; sourceTree = "<group>"; };
+		0CC80A4F21FCD6100079A511 /* CallVideo_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallVideo_ScreenWaitVC.swift; sourceTree = "<group>"; };
+		0CC80A5021FCD6100079A511 /* CallVideo_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallVideo_ScreenWaitVC.xib; sourceTree = "<group>"; };
 		0CCDD8DE21F8D1A300688493 /* MagicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicView.swift; sourceTree = "<group>"; };
 		0CCDD8DF21F8D1A300688493 /* MagicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagicView.xib; sourceTree = "<group>"; };
 		0CCDD8E121F8D1A300688493 /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
@@ -187,6 +231,10 @@
 		0CCDD96121F9017600688493 /* ListCallVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCallVC.xib; sourceTree = "<group>"; };
 		0CCDD96921F9021C00688493 /* CellListCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellListCall.swift; sourceTree = "<group>"; };
 		0CCDD96A21F9021C00688493 /* CellListCall.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellListCall.xib; sourceTree = "<group>"; };
+		0CD6EFF92211EC550080C843 /* LineVideo_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineVideo_ScreenWaitVC.swift; sourceTree = "<group>"; };
+		0CD6EFFA2211EC550080C843 /* LineVideo_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineVideo_ScreenWaitVC.xib; sourceTree = "<group>"; };
+		0CD6EFFE2211ED480080C843 /* LineVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineVideoCallView.swift; sourceTree = "<group>"; };
+		0CD6F0002211ED590080C843 /* LineVideoCallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineVideoCallView.xib; sourceTree = "<group>"; };
 		1C37A975DE6C75280EBE448C /* Pods-FakeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-FakeTime/Pods-FakeTime.release.xcconfig"; sourceTree = "<group>"; };
 		3DCE8488BCF6ECC868EF5AB2 /* libPods-FakeTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FakeTime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE83040CA8802E7D544715E /* Pods-FakeTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FakeTime/Pods-FakeTime.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +266,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0524342211D1FF00DB7852 /* MsgVideoCallView */ = {
+			isa = PBXGroup;
+			children = (
+				0C0524352211D22100DB7852 /* MsgVideoCallView.swift */,
+				0C0524392211D25100DB7852 /* MsgVideoCallView.xib */,
+			);
+			path = MsgVideoCallView;
+			sourceTree = "<group>";
+		};
 		0C2E39C521F8D0F500B11685 = {
 			isa = PBXGroup;
 			children = (
@@ -303,8 +360,130 @@
 		0C9D7F7422015954009EA3BF /* VideoCallView */ = {
 			isa = PBXGroup;
 			children = (
+				0C9D7F752201599F009EA3BF /* VideoCallView.swift */,
+				0C9D7F77220159A9009EA3BF /* VideoCallView.xib */,
 			);
 			path = VideoCallView;
+			sourceTree = "<group>";
+		};
+		0CA9394622020D8B00D6EE95 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				0CA9394722020D9700D6EE95 /* CallView */,
+				0C9D7F7422015954009EA3BF /* VideoCallView */,
+				0C0524342211D1FF00DB7852 /* MsgVideoCallView */,
+				0CD6EFFD2211ED200080C843 /* LineVideoCallView */,
+				0CC745FD2212FDA9005C4EFA /* WechatVideoCallView */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		0CA9394722020D9700D6EE95 /* CallView */ = {
+			isa = PBXGroup;
+			children = (
+				0CA9394822020DD200D6EE95 /* CallView.swift */,
+				0CA9394A22020DE700D6EE95 /* CallView.xib */,
+			);
+			path = CallView;
+			sourceTree = "<group>";
+		};
+		0CA9394C22021B0000D6EE95 /* Call_ScreenWaitVC */ = {
+			isa = PBXGroup;
+			children = (
+				0CA9394D22021C9E00D6EE95 /* Call_ScreenWaitVC.swift */,
+				0CA9394E22021C9E00D6EE95 /* Call_ScreenWaitVC.xib */,
+			);
+			path = Call_ScreenWaitVC;
+			sourceTree = "<group>";
+		};
+		0CA9395122021E2C00D6EE95 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				0CA9394C22021B0000D6EE95 /* Call_ScreenWaitVC */,
+				0CC80A4E21FCD6000079A511 /* CallVideo_ScreenWaitVC */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		0CA9395222021E3500D6EE95 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				0CA9395522021E6900D6EE95 /* Messenger_ScreenWaitVC */,
+				0CA9395622021E7200D6EE95 /* MessengerVideo_ScreenWaitVC */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		0CA9395322021E3A00D6EE95 /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				0CA9395722021E8A00D6EE95 /* Line_ScreenWaitVC */,
+				0CA9395822021E8A00D6EE95 /* LineVideo_ScreenWaitVC */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
+		0CA9395422021E3B00D6EE95 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				0CA9395922021E8D00D6EE95 /* Wechat_ScreenWaitVC */,
+				0CA9395A22021E8D00D6EE95 /* WechatVideo_ScreenWaitVC */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		0CA9395522021E6900D6EE95 /* Messenger_ScreenWaitVC */ = {
+			isa = PBXGroup;
+			children = (
+				0C05242B2211BC5200DB7852 /* Messenger_ScreenWaitVC.swift */,
+				0C05242C2211BC5200DB7852 /* Messenger_ScreenWaitVC.xib */,
+			);
+			path = Messenger_ScreenWaitVC;
+			sourceTree = "<group>";
+		};
+		0CA9395622021E7200D6EE95 /* MessengerVideo_ScreenWaitVC */ = {
+			isa = PBXGroup;
+			children = (
+				0C0524302211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.swift */,
+				0C0524312211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.xib */,
+			);
+			path = MessengerVideo_ScreenWaitVC;
+			sourceTree = "<group>";
+		};
+		0CA9395722021E8A00D6EE95 /* Line_ScreenWaitVC */ = {
+			isa = PBXGroup;
+			children = (
+				0C05243B2211EA8400DB7852 /* Line_ScreenWaitVC.swift */,
+				0C05243C2211EA8400DB7852 /* Line_ScreenWaitVC.xib */,
+			);
+			path = Line_ScreenWaitVC;
+			sourceTree = "<group>";
+		};
+		0CA9395822021E8A00D6EE95 /* LineVideo_ScreenWaitVC */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6EFF92211EC550080C843 /* LineVideo_ScreenWaitVC.swift */,
+				0CD6EFFA2211EC550080C843 /* LineVideo_ScreenWaitVC.xib */,
+			);
+			path = LineVideo_ScreenWaitVC;
+			sourceTree = "<group>";
+		};
+		0CA9395922021E8D00D6EE95 /* Wechat_ScreenWaitVC */ = {
+			isa = PBXGroup;
+			children = (
+				0CC745F52212D17E005C4EFA /* Wechat_ScreenWaitVC.swift */,
+				0CC745F62212D17E005C4EFA /* Wechat_ScreenWaitVC.xib */,
+			);
+			path = Wechat_ScreenWaitVC;
+			sourceTree = "<group>";
+		};
+		0CA9395A22021E8D00D6EE95 /* WechatVideo_ScreenWaitVC */ = {
+			isa = PBXGroup;
+			children = (
+				0CC745F92212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.swift */,
+				0CC745FA2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib */,
+			);
+			path = WechatVideo_ScreenWaitVC;
 			sourceTree = "<group>";
 		};
 		0CAFE31221FA13C70004C376 /* AddCallVC */ = {
@@ -324,6 +503,15 @@
 				0CAFE32221FA334F0004C376 /* PersistenceManager.swift */,
 			);
 			path = NewManager;
+			sourceTree = "<group>";
+		};
+		0CC745FD2212FDA9005C4EFA /* WechatVideoCallView */ = {
+			isa = PBXGroup;
+			children = (
+				0CC745FE2212FDC0005C4EFA /* WechatVideoCallView.swift */,
+				0CC746002212FDC4005C4EFA /* WechatVideoCallView.xib */,
+			);
+			path = WechatVideoCallView;
 			sourceTree = "<group>";
 		};
 		0CC80A3D21FCCA960079A511 /* MenuCell */ = {
@@ -347,24 +535,27 @@
 		0CC80A4D21FCD5D60079A511 /* TypeCall */ = {
 			isa = PBXGroup;
 			children = (
-				0CC80A4E21FCD6000079A511 /* CallVC */,
+				0CA9395122021E2C00D6EE95 /* Call */,
+				0CA9395222021E3500D6EE95 /* Messenger */,
+				0CA9395322021E3A00D6EE95 /* Line */,
+				0CA9395422021E3B00D6EE95 /* Wechat */,
 			);
 			path = TypeCall;
 			sourceTree = "<group>";
 		};
-		0CC80A4E21FCD6000079A511 /* CallVC */ = {
+		0CC80A4E21FCD6000079A511 /* CallVideo_ScreenWaitVC */ = {
 			isa = PBXGroup;
 			children = (
-				0CC80A4F21FCD6100079A511 /* CallVC.swift */,
-				0CC80A5021FCD6100079A511 /* CallVC.xib */,
+				0CC80A4F21FCD6100079A511 /* CallVideo_ScreenWaitVC.swift */,
+				0CC80A5021FCD6100079A511 /* CallVideo_ScreenWaitVC.xib */,
 			);
-			path = CallVC;
+			path = CallVideo_ScreenWaitVC;
 			sourceTree = "<group>";
 		};
 		0CCDD8DC21F8D1A300688493 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
-				0C9D7F7422015954009EA3BF /* VideoCallView */,
+				0CA9394622020D8B00D6EE95 /* Call */,
 				0C4420B421FF42F8004D3965 /* FrontCameraView */,
 				0CCDD94921F8E46E00688493 /* NavigationView */,
 				0CCDD8DD21F8D1A300688493 /* MagicView */,
@@ -391,8 +582,8 @@
 		0CCDD8E021F8D1A300688493 /* ButtonView */ = {
 			isa = PBXGroup;
 			children = (
-				0CCDD8E121F8D1A300688493 /* ButtonView.xib */,
 				0CCDD8E221F8D1A300688493 /* ButtonView.swift */,
+				0CCDD8E121F8D1A300688493 /* ButtonView.xib */,
 			);
 			path = ButtonView;
 			sourceTree = "<group>";
@@ -486,9 +677,9 @@
 		0CCDD92621F8D1BB00688493 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				0CCDD95B21F9013F00688493 /* ListCallVC */,
 				0CCDD92721F8D1CB00688493 /* HomeVC.swift */,
 				0CCDD92821F8D1CB00688493 /* HomeVC.xib */,
-				0CCDD95B21F9013F00688493 /* ListCallVC */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -581,6 +772,15 @@
 				0CCDD96A21F9021C00688493 /* CellListCall.xib */,
 			);
 			path = CellListCall;
+			sourceTree = "<group>";
+		};
+		0CD6EFFD2211ED200080C843 /* LineVideoCallView */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6EFFE2211ED480080C843 /* LineVideoCallView.swift */,
+				0CD6F0002211ED590080C843 /* LineVideoCallView.xib */,
+			);
+			path = LineVideoCallView;
 			sourceTree = "<group>";
 		};
 		92CDC5697E0C767953365A00 /* Pods */ = {
@@ -707,27 +907,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CCDD91121F8D1A300688493 /* TextFieldView.xib in Resources */,
+				0C05242E2211BC5200DB7852 /* Messenger_ScreenWaitVC.xib in Resources */,
 				0C2E39DF21F8D0F600B11685 /* LaunchScreen.storyboard in Resources */,
+				0CC745F82212D17E005C4EFA /* Wechat_ScreenWaitVC.xib in Resources */,
 				0CC80A4C21FCCCA90079A511 /* SettingVC.xib in Resources */,
 				0CCDD95721F8EECC00688493 /* CellHome.xib in Resources */,
+				0CC746012212FDC4005C4EFA /* WechatVideoCallView.xib in Resources */,
+				0CA9395022021C9E00D6EE95 /* Call_ScreenWaitVC.xib in Resources */,
 				0C4420BD21FF61D7004D3965 /* call_wechat.mp3 in Resources */,
 				0C2E39DC21F8D0F600B11685 /* Assets.xcassets in Resources */,
 				0CCDD91521F8D1A300688493 /* SearchView.xib in Resources */,
 				0CCDD93F21F8E24500688493 /* MenuVC.xib in Resources */,
+				0C05243A2211D25100DB7852 /* MsgVideoCallView.xib in Resources */,
 				0CCDD92A21F8D1CB00688493 /* HomeVC.xib in Resources */,
+				0C0524332211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.xib in Resources */,
 				0CCDD92E21F8D39000688493 /* Main.storyboard in Resources */,
 				0CCDD94C21F8E46E00688493 /* NavigationView.xib in Resources */,
 				0CAFE31821FA13F10004C376 /* AddCallVC.xib in Resources */,
+				0C9D7F78220159A9009EA3BF /* VideoCallView.xib in Resources */,
 				0CCDD96C21F9021C00688493 /* CellListCall.xib in Resources */,
-				0CC80A5221FCD6100079A511 /* CallVC.xib in Resources */,
+				0CC80A5221FCD6100079A511 /* CallVideo_ScreenWaitVC.xib in Resources */,
 				0CCDD90721F8D1A300688493 /* MagicView.xib in Resources */,
 				0C4420B621FF44D0004D3965 /* FrontCameraView.xib in Resources */,
+				0CC745FC2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib in Resources */,
 				0CC80A4121FCCA960079A511 /* MenuCell.xib in Resources */,
+				0C05243E2211EA8400DB7852 /* Line_ScreenWaitVC.xib in Resources */,
+				0CD6EFFC2211EC550080C843 /* LineVideo_ScreenWaitVC.xib in Resources */,
 				0C4420BB21FF61D7004D3965 /* call_line.wav in Resources */,
 				0CCDD90821F8D1A300688493 /* ButtonView.xib in Resources */,
+				0CA9394B22020DE700D6EE95 /* CallView.xib in Resources */,
 				0C4420BC21FF61D7004D3965 /* call_messenger.m4a in Resources */,
 				0CCDD91321F8D1A300688493 /* ToolBarView.xib in Resources */,
 				0CCDD90F21F8D1A300688493 /* TabbarView.xib in Resources */,
+				0CD6F0012211ED590080C843 /* LineVideoCallView.xib in Resources */,
 				0CCDD90C21F8D1A300688493 /* InputView.xib in Resources */,
 				0CCDD96321F9017600688493 /* ListCallVC.xib in Resources */,
 			);
@@ -793,9 +1005,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9D7F762201599F009EA3BF /* VideoCallView.swift in Sources */,
+				0CC745F72212D17E005C4EFA /* Wechat_ScreenWaitVC.swift in Sources */,
 				0CCDD96B21F9021C00688493 /* CellListCall.swift in Sources */,
 				0CCDD91621F8D1A300688493 /* KHTextField.swift in Sources */,
-				0CC80A5121FCD6100079A511 /* CallVC.swift in Sources */,
+				0CC80A5121FCD6100079A511 /* CallVideo_ScreenWaitVC.swift in Sources */,
 				0C2E39DA21F8D0F500B11685 /* FakeTime.xcdatamodeld in Sources */,
 				0CCDD94021F8E24500688493 /* MenuVC.swift in Sources */,
 				0CCDD91E21F8D1A300688493 /* CameraHelper.swift in Sources */,
@@ -804,12 +1018,17 @@
 				0CCDD95A21F8EF0800688493 /* HomeObj.swift in Sources */,
 				0CAFE32721FA355C0004C376 /* CallerManager.swift in Sources */,
 				0CCDD92221F8D1A300688493 /* GCDHelpers.swift in Sources */,
+				0CC745FB2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.swift in Sources */,
 				0CCDD91C21F8D1A300688493 /* TimerHelper.swift in Sources */,
 				0CC80A4021FCCA960079A511 /* MenuCell.swift in Sources */,
 				0CCDD95621F8EECC00688493 /* CellHome.swift in Sources */,
 				0CCDD91721F8D1A300688493 /* KHButton.swift in Sources */,
 				0CAB8BFC21FEE0D70035DC51 /* FrontCameraView.swift in Sources */,
 				0CCDD92121F8D1A300688493 /* Define.swift in Sources */,
+				0CA9394922020DD200D6EE95 /* CallView.swift in Sources */,
+				0CD6EFFB2211EC550080C843 /* LineVideo_ScreenWaitVC.swift in Sources */,
+				0CD6EFFF2211ED480080C843 /* LineVideoCallView.swift in Sources */,
+				0C05243D2211EA8400DB7852 /* Line_ScreenWaitVC.swift in Sources */,
 				0CCDD91221F8D1A300688493 /* ToolBarView.swift in Sources */,
 				0CCDD91921F8D1A300688493 /* KHImageView.swift in Sources */,
 				0CCDD90E21F8D1A300688493 /* TabbarView.swift in Sources */,
@@ -819,7 +1038,10 @@
 				0CCDD91D21F8D1A300688493 /* AlertHelper.swift in Sources */,
 				0CCDD92421F8D1A300688493 /* Device.swift in Sources */,
 				0C2E39D421F8D0F500B11685 /* ViewController.swift in Sources */,
+				0C0524362211D22100DB7852 /* MsgVideoCallView.swift in Sources */,
+				0CC745FF2212FDC0005C4EFA /* WechatVideoCallView.swift in Sources */,
 				0CCDD96221F9017600688493 /* ListCallVC.swift in Sources */,
+				0C0524322211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.swift in Sources */,
 				0CCDD93921F8E03100688493 /* UIViewController+MFSideMenuAdditions.m in Sources */,
 				0CCDD90921F8D1A300688493 /* ButtonView.swift in Sources */,
 				0CAFE32521FA334F0004C376 /* PersistenceManager.swift in Sources */,
@@ -840,6 +1062,8 @@
 				0CCDD91A21F8D1A300688493 /* KHTextView.swift in Sources */,
 				0CCDD91421F8D1A300688493 /* SearchView.swift in Sources */,
 				0CAFE31B21FA321A0004C376 /* CallerObj.swift in Sources */,
+				0C05242D2211BC5200DB7852 /* Messenger_ScreenWaitVC.swift in Sources */,
+				0CA9394F22021C9E00D6EE95 /* Call_ScreenWaitVC.swift in Sources */,
 				0CCDD94F21F8E5F400688493 /* DeNho.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,14 +9,11 @@
 import UIKit
 import AVKit
 
-class CallVC: UIViewController {
-    @IBOutlet weak var frontCameraView: FrontCameraView!
+class CallVideo_ScreenWaitVC: UIViewController {
     @IBOutlet weak var lbName: KHLabel!
     @IBOutlet weak var lbPhoneNumber: KHLabel!
     @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var viewTop: KHView!
-    @IBOutlet weak var viewAfterAccept: KHView!
-    @IBOutlet weak var viewShowVideo: KHView!
     
     var caller: CallerObj = CallerObj()
     var ringBell: AVAudioPlayer?
@@ -33,6 +30,9 @@ class CallVC: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        GCDCommon.mainQueue {
+            Common.gradient(UIColor.init("61eda2", alpha: 1.0), UIColor.init("22cfa4", alpha: 1.0), view: self.viewTop)
+        }
     }
     
     @IBAction func actionReject(_ sender: Any) {
@@ -44,25 +44,13 @@ class CallVC: UIViewController {
     @IBAction func actionAccept(_ sender: Any) {
         acceptCallVideo()
     }
-    
-    @IBAction func actionEndCall(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
 }
 
-extension CallVC {
+extension CallVideo_ScreenWaitVC {
     func initUI() {
         lbName.text = caller.name
         lbPhoneNumber.text = caller.phoneNumber
         imgAvatar.image = caller.avatar
-        
-//        viewAfterAccept.clearConstraints()
-        viewAfterAccept.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        viewAfterAccept.updateConstraints()
-        
-        GCDCommon.mainQueue {
-            Common.gradient(UIColor.init("61eda2", alpha: 1.0), UIColor.init("22cfa4", alpha: 1.0), view: self.viewTop)
-        }
     }
     
     func openRingBell() {
@@ -85,29 +73,22 @@ extension CallVC {
         timer.invalidate()
         ringBell?.stop()
         
-        GCDCommon.mainQueue {
-            self.viewAfterAccept.layoutIfNeeded()
-            UIView.animate(withDuration: 1.2, delay: 0, options: .curveEaseOut, animations: {
-//                self.viewAfterAccept.isHidden = false
-                self.view.layoutIfNeeded()
-                self.viewAfterAccept.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-            }, completion: { (completed) in
-                var player = AVPlayer()
-                player = AVPlayer(url: URL(fileURLWithPath: self.caller.pathVideo))
-                let playerLayer = AVPlayerLayer(player: player)
-                playerLayer.frame = self.viewShowVideo.bounds
-                self.viewShowVideo.layer.addSublayer(playerLayer)
-                player.play()
-            })
+        let videoCallView = VideoCallView(frame: CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        self.view.addSubview(videoCallView)
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            videoCallView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        }) { (completed) in
+            videoCallView.showVideo(caller: self.caller)
         }
-    }
-}
-
-extension UIView {
-    func clearConstraints() {
-        for subview in self.subviews {
-            subview.clearConstraints()
+        
+        videoCallView.handleEndCall = {
+            self.dismiss(animated: true, completion: nil)
+            UIView.animate(withDuration: 0.3, animations: {
+                videoCallView.frame = CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            }) { (completed) in
+                videoCallView.removeFromSuperview()
+            }
         }
-        self.removeConstraints(self.constraints)
     }
 }
