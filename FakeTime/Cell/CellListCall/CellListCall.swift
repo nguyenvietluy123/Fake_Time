@@ -11,6 +11,7 @@ import UIKit
 class CellListCall: UITableViewCell {
     @IBOutlet weak var imgAvatar: KHImageView!
     @IBOutlet weak var lbName: KHLabel!
+    @IBOutlet weak var viewEdit: KHView!
     
     var handleEdit: (() -> ())?
     
@@ -34,5 +35,6 @@ extension CellListCall {
     func config(caller: CallerObj) {
         self.imgAvatar.image = caller.avatar
         self.lbName.text = caller.name
+        viewEdit.isHidden = caller.name == KeyString.marianRivera || caller.name == KeyString.girlFriend
     }
 }

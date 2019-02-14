@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class MenuObj: NSObject {
     var img: UIImage
@@ -26,7 +27,9 @@ class MenuVC: UIViewController {
     
     var arrItem: [MenuObj] = {
         let items: [MenuObj] = [MenuObj(#imageLiteral(resourceName: "home"), title: "Home"),
-                                MenuObj(#imageLiteral(resourceName: "menu_setting"), title: "Setting")]
+                                MenuObj(#imageLiteral(resourceName: "menu_privacy"), title: "Privacy Policy"),
+                                MenuObj(#imageLiteral(resourceName: "menu_share"), title: "Share"),
+                                MenuObj(#imageLiteral(resourceName: "menu_support"), title: "Support")]
         return items
     }()
     let indicator = UIActivityIndicatorView(style: .white)
@@ -94,14 +97,40 @@ extension MenuVC: UITableViewDelegate {
             TAppDelegate.menuContainerViewController?.centerViewController = navi
             break
         case 1:
-            let navi = UINavigationController(rootViewController: SettingVC.init(nibName: "SettingVC", bundle: nil))
+            let navi = UINavigationController(rootViewController: Privacy_PolicyVC.init(nibName: "Privacy_PolicyVC", bundle: nil))
             navi.isNavigationBarHidden = true
             TAppDelegate.menuContainerViewController?.centerViewController = navi
+            break
+        case 2:
+            actionShare()
+            break
+        case 3:
+            actionSupport()
             break
         default:
             Common.showAlert("Đang phát triển")
             break
         }
+    }
+    
+    func actionSupport() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["tueanhoang.devios2011@gmail.com"])
+            mail.setSubject("Regarding Fake Time")
+            
+            present(mail, animated: true)
+        } else {
+            Common.showAlert("Mail services are not available")
+        }
+    }
+    
+    func actionShare() {
+        let text = [ "I found best application to Create Fake Time Results... You must try too... Download Fake Time App Now... \nlink........" ]
+        let activityViewController = UIActivityViewController(activityItems: text , applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
     }
 }
 
@@ -121,5 +150,12 @@ extension MenuVC {
                 self.indicator.stopAnimating()
             }
         }
+    }
+}
+
+
+extension MenuVC: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
     }
 }

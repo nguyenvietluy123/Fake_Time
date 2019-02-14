@@ -84,17 +84,17 @@
                             <rect key="frame" x="0.0" y="521" width="375" height="146"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkU-FH-JxD" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="20" y="0.0" width="67" height="146"/>
+                                    <rect key="frame" x="20" y="45.5" width="55.5" height="55.5"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_reject" translatesAutoresizingMaskIntoConstraints="NO" id="Qnh-Ep-Dhg" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="39.5" width="67" height="67"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="Qnh-Ep-Dhg" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Qnh-Ep-Dhg" secondAttribute="height" multiplier="1:1" id="jLz-wm-Uk3"/>
                                             </constraints>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abz-T3-ANc" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="39.5" width="67" height="67"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abz-T3-ANc" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <connections>
                                                 <action selector="actionReject:" destination="-1" eventType="touchUpInside" id="4AP-wt-FRz"/>
                                             </connections>
@@ -102,6 +102,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstAttribute="width" secondItem="BkU-FH-JxD" secondAttribute="height" multiplier="1:1" id="1VJ-Lp-8Xw"/>
                                         <constraint firstItem="Qnh-Ep-Dhg" firstAttribute="width" secondItem="BkU-FH-JxD" secondAttribute="width" id="4Al-jo-oOu"/>
                                         <constraint firstItem="Qnh-Ep-Dhg" firstAttribute="centerY" secondItem="BkU-FH-JxD" secondAttribute="centerY" id="7OE-wT-ecg"/>
                                         <constraint firstItem="abz-T3-ANc" firstAttribute="centerY" secondItem="Qnh-Ep-Dhg" secondAttribute="centerY" id="I3U-eN-j79"/>
@@ -112,17 +113,17 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aD-qO-7N3" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="288" y="0.0" width="67" height="146"/>
+                                    <rect key="frame" x="299.5" y="45.5" width="55.5" height="55.5"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_accept" translatesAutoresizingMaskIntoConstraints="NO" id="7wD-0X-PiH" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="39.5" width="67" height="67"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_accept_video" translatesAutoresizingMaskIntoConstraints="NO" id="7wD-0X-PiH" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="7wD-0X-PiH" secondAttribute="height" multiplier="1:1" id="8YZ-V4-bwZ"/>
                                             </constraints>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-zp-Kh6" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="39.5" width="67" height="67"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-zp-Kh6" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <connections>
                                                 <action selector="actionAccept:" destination="-1" eventType="touchUpInside" id="GUW-hQ-cgh"/>
                                             </connections>
@@ -131,6 +132,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="OhN-zp-Kh6" firstAttribute="centerX" secondItem="7wD-0X-PiH" secondAttribute="centerX" id="ClY-ge-xux"/>
+                                        <constraint firstAttribute="width" secondItem="3aD-qO-7N3" secondAttribute="height" multiplier="1:1" id="KOC-L8-DMW"/>
                                         <constraint firstItem="OhN-zp-Kh6" firstAttribute="height" secondItem="7wD-0X-PiH" secondAttribute="height" id="ONF-sj-yS3"/>
                                         <constraint firstItem="7wD-0X-PiH" firstAttribute="width" secondItem="3aD-qO-7N3" secondAttribute="width" id="Oap-eC-7R2"/>
                                         <constraint firstItem="OhN-zp-Kh6" firstAttribute="width" secondItem="7wD-0X-PiH" secondAttribute="width" id="P7C-g1-kQg"/>
@@ -156,18 +158,15 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="3aD-qO-7N3" firstAttribute="width" secondItem="BkU-FH-JxD" secondAttribute="width" id="Ige-BS-Oty"/>
-                                <constraint firstAttribute="bottom" secondItem="3aD-qO-7N3" secondAttribute="bottom" id="Iqz-h3-c6b"/>
+                                <constraint firstItem="3aD-qO-7N3" firstAttribute="centerY" secondItem="abz-T3-ANc" secondAttribute="centerY" id="HQh-bU-jUC"/>
                                 <constraint firstAttribute="trailing" secondItem="tfk-s7-F2R" secondAttribute="trailing" id="OER-IQ-EAr"/>
+                                <constraint firstItem="3aD-qO-7N3" firstAttribute="height" secondItem="abz-T3-ANc" secondAttribute="height" id="QGI-IK-Bhf"/>
                                 <constraint firstItem="tfk-s7-F2R" firstAttribute="top" secondItem="dzC-OO-c4Z" secondAttribute="top" id="ZT0-Mw-IlT"/>
+                                <constraint firstItem="BkU-FH-JxD" firstAttribute="centerY" secondItem="dzC-OO-c4Z" secondAttribute="centerY" id="eoJ-YH-L0T"/>
                                 <constraint firstAttribute="bottom" secondItem="IYc-Ru-po5" secondAttribute="bottom" id="fNl-b2-ypg"/>
                                 <constraint firstAttribute="bottom" secondItem="tfk-s7-F2R" secondAttribute="bottom" id="jwx-vK-L5k"/>
                                 <constraint firstItem="IYc-Ru-po5" firstAttribute="leading" secondItem="dzC-OO-c4Z" secondAttribute="leading" id="kWm-OF-bpd"/>
-                                <constraint firstItem="BkU-FH-JxD" firstAttribute="top" secondItem="dzC-OO-c4Z" secondAttribute="top" id="lFy-QB-FwZ"/>
-                                <constraint firstAttribute="bottom" secondItem="BkU-FH-JxD" secondAttribute="bottom" id="ntw-J0-a3H"/>
-                                <constraint firstItem="3aD-qO-7N3" firstAttribute="top" secondItem="dzC-OO-c4Z" secondAttribute="top" id="opR-Zk-XLb"/>
                                 <constraint firstItem="BkU-FH-JxD" firstAttribute="leading" secondItem="IYc-Ru-po5" secondAttribute="trailing" id="tA9-5M-5dD"/>
-                                <constraint firstItem="BkU-FH-JxD" firstAttribute="width" secondItem="dzC-OO-c4Z" secondAttribute="width" multiplier="130:730" id="thP-TP-1uG"/>
                                 <constraint firstItem="tfk-s7-F2R" firstAttribute="leading" secondItem="3aD-qO-7N3" secondAttribute="trailing" id="ttb-sQ-2Sr"/>
                                 <constraint firstItem="IYc-Ru-po5" firstAttribute="top" secondItem="dzC-OO-c4Z" secondAttribute="top" id="zy7-Dg-0k6"/>
                             </constraints>
@@ -187,6 +186,7 @@
                         <constraint firstItem="dzC-OO-c4Z" firstAttribute="leading" secondItem="2cF-dQ-KSZ" secondAttribute="leading" id="YvK-eB-ert"/>
                         <constraint firstItem="dzC-OO-c4Z" firstAttribute="top" secondItem="TWZ-Ig-zpq" secondAttribute="bottom" id="hPX-oF-hve"/>
                         <constraint firstItem="lOn-EV-k5T" firstAttribute="height" secondItem="2cF-dQ-KSZ" secondAttribute="height" multiplier="300:1280" id="lDz-WS-htp"/>
+                        <constraint firstItem="BkU-FH-JxD" firstAttribute="height" secondItem="2cF-dQ-KSZ" secondAttribute="height" multiplier="60:720" id="wWs-j4-KON"/>
                     </constraints>
                 </view>
             </subviews>
@@ -202,7 +202,7 @@
         </view>
     </objects>
     <resources>
-        <image name="call_accept" width="118" height="120"/>
-        <image name="call_reject" width="118" height="120"/>
+        <image name="line_accept_video" width="118" height="120"/>
+        <image name="line_end_call" width="118" height="120"/>
     </resources>
 </document>

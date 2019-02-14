@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="HMKFieldCollector" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="FakeTime" customModuleProvider="target">
             <connections>
                 <outlet property="tfSearch" destination="aEm-Kc-uSC" id="rDy-15-SxN"/>
             </connections>
@@ -22,25 +22,25 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoC-KH-0pa">
                     <rect key="frame" x="16" y="13" width="382" height="44"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-n1-jSi" customClass="KHView" customModule="HMKFieldCollector" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-n1-jSi" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PYJ-jp-j2P" customClass="KHImageView" customModule="HMKFieldCollector" customModuleProvider="target">
-                                    <rect key="frame" x="14.33333333333333" y="13.666666666666666" width="16.666666666666671" height="16.666666666666671"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PYJ-jp-j2P" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="6.3333333333333321" y="5.6666666666666679" width="33" height="33"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="PYJ-jp-j2P" secondAttribute="height" multiplier="1:1" id="d9y-fI-ium"/>
                                     </constraints>
                                 </imageView>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tìm theo tên công việc" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEm-Kc-uSC" customClass="KHTextField" customModule="HMKFieldCollector" customModuleProvider="target">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search by name..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEm-Kc-uSC" customClass="KHTextField" customModule="FakeTime" customModuleProvider="target">
                                     <rect key="frame" x="45.333333333333343" y="0.0" width="326.66666666666663" height="44"/>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                     <connections>
                                         <outlet property="delegate" destination="-1" id="EtG-dT-hyQ"/>
                                     </connections>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlk-1I-9oY" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlk-1I-9oY" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="hlk-1I-9oY" secondAttribute="height" multiplier="31:30" id="HGY-HN-jPv"/>
@@ -50,7 +50,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="hlk-1I-9oY" firstAttribute="top" secondItem="bdg-n1-jSi" secondAttribute="top" id="5vN-7T-05X"/>
                                 <constraint firstAttribute="bottom" secondItem="aEm-Kc-uSC" secondAttribute="bottom" id="7Z7-jB-IdT"/>
@@ -58,7 +58,7 @@
                                 <constraint firstItem="aEm-Kc-uSC" firstAttribute="leading" secondItem="hlk-1I-9oY" secondAttribute="trailing" id="Jhj-Qq-Dxb"/>
                                 <constraint firstItem="PYJ-jp-j2P" firstAttribute="centerX" secondItem="hlk-1I-9oY" secondAttribute="centerX" id="LU4-xi-JLq"/>
                                 <constraint firstItem="aEm-Kc-uSC" firstAttribute="top" secondItem="bdg-n1-jSi" secondAttribute="top" id="WKX-bn-Hdq"/>
-                                <constraint firstItem="PYJ-jp-j2P" firstAttribute="height" secondItem="bdg-n1-jSi" secondAttribute="height" multiplier="15:40" id="gYp-bZ-g87"/>
+                                <constraint firstItem="PYJ-jp-j2P" firstAttribute="height" secondItem="bdg-n1-jSi" secondAttribute="height" multiplier="30:40" id="gYp-bZ-g87"/>
                                 <constraint firstAttribute="bottom" secondItem="hlk-1I-9oY" secondAttribute="bottom" id="lE2-wj-1Vx"/>
                                 <constraint firstItem="hlk-1I-9oY" firstAttribute="leading" secondItem="bdg-n1-jSi" secondAttribute="leading" id="uQM-di-IAV"/>
                                 <constraint firstItem="PYJ-jp-j2P" firstAttribute="centerY" secondItem="hlk-1I-9oY" secondAttribute="centerY" id="wUB-Aw-HpG"/>
@@ -94,6 +94,6 @@
         </view>
     </objects>
     <resources>
-        <image name="search_icon" width="20" height="20"/>
+        <image name="search_icon" width="50" height="50"/>
     </resources>
 </document>

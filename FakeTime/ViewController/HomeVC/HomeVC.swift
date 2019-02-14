@@ -13,7 +13,7 @@ class HomeVC: BaseVC {
     @IBOutlet weak var navi: NavigationView!
     @IBOutlet weak var imgAvatar: KHImageView!
     @IBOutlet weak var lbName: KHLabel!
-    @IBOutlet weak var tfDelayTime: UITextField!
+    @IBOutlet weak var tfDelayTime: KHTextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var ctrHeightTableView: NSLayoutConstraint!
     @IBOutlet weak var viewDelay: UIView!
@@ -32,59 +32,25 @@ class HomeVC: BaseVC {
     var timeCountDown: Int = 0 {
         didSet {
             let (h, m,s) = timeCountDown.secondsToHoursMinutesSeconds()
-            lbTimeCountDown.text = "Call " + "\(h):\(m):\(s)"
+            lbTimeCountDown.text = "Call " + "(\(h):\(m):\(s))"
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        caller = CallerObj(name: KeyString.girlFriend, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "girlfriend"), pathVideo: KeyString.girlFriendVideo)
         initUI()
         initData()
     }
     
     @IBAction func callPhone(_ sender: Any) {
         isCallVideo = false
-        let callView = CallView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-        callView.alpha = 0
-        self.view.addSubview(callView)
-        
-        UIView.animate(withDuration: 0.3, animations: {
-            callView.alpha = 1
-        }) { (completed) in
-        }
-        
-        callView.handleEndCall = {
-            UIView.animate(withDuration: 0.3, animations: {
-                callView.alpha = 0
-            }) { (completed) in
-                callView.removeFromSuperview()
-            }
-        }
+        delayTime()
     }
     
     @IBAction func callVideo(_ sender: Any) {
         isCallVideo = true
-        if let timeCountDown = Int(tfDelayTime.text!) {
-            if timeCountDown > 0 {
-                viewDelay.isHidden = false
-                self.timeCountDown = timeCountDown
-                timer = Timer.every(1, {
-                    if self.timeCountDown == 0 {
-                        self.viewDelay.isHidden = true
-                        self.timer.invalidate()
-                        
-                        self.showCallVideoVC()
-                        return
-                    }
-                    self.timeCountDown -= 1
-                    print(self.timeCountDown)
-                })
-            } else {
-                self.showCallVideoVC()
-            }
-        } else {
-            Common.showAlert("Please enter the correct timeout")
-        }
+        delayTime()
     }
     
     @IBAction func actionCancelDelay(_ sender: Any) {
@@ -95,7 +61,15 @@ class HomeVC: BaseVC {
     @IBAction func actionTimeCountDown(_ sender: Any) {
         viewDelay.isHidden = true
         timer.invalidate()
-        showCallVideoVC()
+        if isCallVideo {
+            showCallVideoVC()
+        } else {
+            showCallVC()
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
 
@@ -107,6 +81,11 @@ extension HomeVC {
         navi.handleActionRight = {
             let vc = ListCallVC.init(nibName: "ListCallVC", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
+            vc.handleSelect = { (callerObj) in
+                callerObj.typeCall = self.caller.typeCall
+                self.caller = callerObj
+                self.initData()
+            }
         }
         tableView.register(CellHome.self)
     }
@@ -114,6 +93,63 @@ extension HomeVC {
     func initData() {
         imgAvatar.image = caller.avatar
         lbName.text = caller.name
+    }
+    
+    func delayTime() {
+        if let timeCountDown = Int(tfDelayTime.text!) {
+            if timeCountDown > 0 {
+                viewDelay.isHidden = false
+                self.timeCountDown = timeCountDown
+                timer = Timer.every(1, {
+                    if self.timeCountDown == 0 {
+                        self.viewDelay.isHidden = true
+                        self.timer.invalidate()
+                        
+                        if self.isCallVideo {
+                            self.showCallVideoVC()
+                        } else {
+                            self.showCallVC()
+                        }
+                        return
+                    }
+                    self.timeCountDown -= 1
+                    print(self.timeCountDown)
+                })
+            } else {
+                if isCallVideo {
+                    showCallVideoVC()
+                } else {
+                    showCallVC()
+                }
+            }
+        } else {
+            Common.showAlert("Please enter the correct timeout")
+        }
+    }
+    
+    func showCallVC() {
+        switch caller.typeCall {
+        case .call:
+            let vc = Call_ScreenWaitVC.init(nibName: "Call_ScreenWaitVC", bundle: nil)
+            vc.caller = self.caller
+            self.present(vc, animated: true, completion: nil)
+            break
+        case .messenger:
+            let vc = Messenger_ScreenWaitVC.init(nibName: "Messenger_ScreenWaitVC", bundle: nil)
+            vc.caller = self.caller
+            self.present(vc, animated: true, completion: nil)
+            break
+        case .line:
+            let vc = Line_ScreenWaitVC.init(nibName: "Line_ScreenWaitVC", bundle: nil)
+            vc.caller = self.caller
+            self.present(vc, animated: true, completion: nil)
+            break
+        case .weChat:
+            let vc = Wechat_ScreenWaitVC.init(nibName: "Wechat_ScreenWaitVC", bundle: nil)
+            vc.caller = self.caller
+            self.present(vc, animated: true, completion: nil)
+            break
+        }
     }
     
     func showCallVideoVC() {

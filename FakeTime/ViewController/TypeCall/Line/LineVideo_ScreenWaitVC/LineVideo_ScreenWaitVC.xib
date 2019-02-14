@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LineVideo_ScreenWaitVC" customModule="FakeTime" customModuleProvider="target">
             <connections>
+                <outlet property="imgAvatar" destination="7iY-EM-gMh" id="xfk-eH-ddK"/>
+                <outlet property="lbAnimating" destination="8Qf-mv-5fP" id="7Xb-dA-dff"/>
+                <outlet property="lbName" destination="HTb-QY-boZ" id="Gfv-v1-3vo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,24 +23,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6Y-iN-nHr">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                    <color key="backgroundColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="20" id="kfV-MG-oMX"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPV-EZ-lX2">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scary Clown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTb-QY-boZ" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="19" y="240.5" width="337.5" height="36"/>
+                            <rect key="frame" x="19" y="247.5" width="337.5" height="36"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7iY-EM-gMh" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="145" y="135" width="85" height="85.5"/>
+                            <rect key="frame" x="143.5" y="139.5" width="88" height="88"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="7iY-EM-gMh" secondAttribute="height" multiplier="1:1" id="ZPl-Qz-fyu"/>
@@ -47,17 +43,20 @@
                             </userDefinedRuntimeAttributes>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEL-Zv-ETt" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="558.5" width="375" height="88.5"/>
+                            <rect key="frame" x="0.0" y="576" width="375" height="91"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dR-36-Hq0" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="40" y="0.0" width="68.5" height="68.5"/>
+                                    <rect key="frame" x="40" y="0.0" width="55.5" height="55.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="S5C-a0-zh2" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="68.5" height="68.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybi-fS-lDp" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="68.5" height="68.5"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybi-fS-lDp" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                            <connections>
+                                                <action selector="actionReject:" destination="-1" eventType="touchUpInside" id="biw-PT-Z72"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,14 +73,17 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AE9-hB-3Uu" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="266.5" y="0.0" width="68.5" height="68.5"/>
+                                    <rect key="frame" x="279.5" y="0.0" width="55.5" height="55.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_accept_video" translatesAutoresizingMaskIntoConstraints="NO" id="FAF-0T-HZu" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="68.5" height="68.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-DR-WOa" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="68.5" height="68.5"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-DR-WOa" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                            <connections>
+                                                <action selector="actionAccept:" destination="-1" eventType="touchUpInside" id="FPh-oY-lhM"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,51 +100,40 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZU-8k-vc5" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="40" height="88.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="91"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="40" id="2K9-Ui-xUP"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Bz-ot-Fdb" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="335" y="0.0" width="40" height="88.5"/>
+                                    <rect key="frame" x="335" y="0.0" width="40" height="91"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="40" id="pAZ-rG-6Wi"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRA-gs-yke" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="40" y="68.5" width="295" height="20"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="20" id="AQ6-8e-PnV"/>
-                                    </constraints>
-                                </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="TRA-gs-yke" firstAttribute="leading" secondItem="8ZU-8k-vc5" secondAttribute="trailing" id="302-4Y-FIr"/>
-                                <constraint firstAttribute="bottom" secondItem="TRA-gs-yke" secondAttribute="bottom" id="46A-bf-0gq"/>
                                 <constraint firstItem="3dR-36-Hq0" firstAttribute="leading" secondItem="8ZU-8k-vc5" secondAttribute="trailing" id="8jQ-s5-gFc"/>
-                                <constraint firstItem="5Bz-ot-Fdb" firstAttribute="leading" secondItem="TRA-gs-yke" secondAttribute="trailing" id="9bw-4D-4Mj"/>
-                                <constraint firstItem="TRA-gs-yke" firstAttribute="top" secondItem="3dR-36-Hq0" secondAttribute="bottom" id="CrI-Bp-oGF"/>
                                 <constraint firstItem="3dR-36-Hq0" firstAttribute="top" secondItem="fEL-Zv-ETt" secondAttribute="top" id="HlR-b9-zNu"/>
                                 <constraint firstAttribute="bottom" secondItem="5Bz-ot-Fdb" secondAttribute="bottom" id="PPl-bK-bi7"/>
                                 <constraint firstItem="5Bz-ot-Fdb" firstAttribute="leading" secondItem="AE9-hB-3Uu" secondAttribute="trailing" id="WpP-26-px7"/>
                                 <constraint firstItem="8ZU-8k-vc5" firstAttribute="leading" secondItem="fEL-Zv-ETt" secondAttribute="leading" id="ahQ-b9-ngN"/>
                                 <constraint firstItem="8ZU-8k-vc5" firstAttribute="top" secondItem="fEL-Zv-ETt" secondAttribute="top" id="cqJ-IL-0Oa"/>
-                                <constraint firstItem="TRA-gs-yke" firstAttribute="top" secondItem="AE9-hB-3Uu" secondAttribute="bottom" id="jys-Mq-TRp"/>
                                 <constraint firstItem="AE9-hB-3Uu" firstAttribute="top" secondItem="fEL-Zv-ETt" secondAttribute="top" id="n1E-rt-58A"/>
                                 <constraint firstItem="5Bz-ot-Fdb" firstAttribute="top" secondItem="fEL-Zv-ETt" secondAttribute="top" id="rqT-rb-en9"/>
                                 <constraint firstAttribute="trailing" secondItem="5Bz-ot-Fdb" secondAttribute="trailing" id="xgw-47-EAH"/>
+                                <constraint firstItem="AE9-hB-3Uu" firstAttribute="height" secondItem="ybi-fS-lDp" secondAttribute="height" id="ze8-vT-rUn"/>
                                 <constraint firstAttribute="bottom" secondItem="8ZU-8k-vc5" secondAttribute="bottom" id="zrQ-ro-C5n"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video calling..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qf-mv-5fP" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="137.5" y="281.5" width="100.5" height="18"/>
+                            <rect key="frame" x="137.5" y="288.5" width="100.5" height="18"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <color key="textColor" white="0.77232530379999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -157,22 +148,19 @@
                         <constraint firstItem="8Qf-mv-5fP" firstAttribute="centerX" secondItem="HTb-QY-boZ" secondAttribute="centerX" id="WV8-ym-NoH"/>
                         <constraint firstItem="7iY-EM-gMh" firstAttribute="centerX" secondItem="ZPV-EZ-lX2" secondAttribute="centerX" id="YKj-fW-gyb"/>
                         <constraint firstAttribute="trailing" secondItem="fEL-Zv-ETt" secondAttribute="trailing" id="ZRS-BS-PPw"/>
+                        <constraint firstItem="3dR-36-Hq0" firstAttribute="height" secondItem="ZPV-EZ-lX2" secondAttribute="height" multiplier="60:720" id="h3y-GV-MQC"/>
                         <constraint firstItem="fEL-Zv-ETt" firstAttribute="leading" secondItem="ZPV-EZ-lX2" secondAttribute="leading" id="hZS-X4-diy"/>
                         <constraint firstAttribute="bottom" secondItem="fEL-Zv-ETt" secondAttribute="bottom" id="rRc-s7-4Cg"/>
                         <constraint firstItem="7iY-EM-gMh" firstAttribute="centerY" secondItem="ZPV-EZ-lX2" secondAttribute="centerY" multiplier="0.55" id="whe-th-Ouv"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="I6Y-iN-nHr" secondAttribute="trailing" id="2XE-37-zZU"/>
-                <constraint firstItem="ZPV-EZ-lX2" firstAttribute="top" secondItem="I6Y-iN-nHr" secondAttribute="bottom" id="EFJ-ew-dMG"/>
+                <constraint firstItem="ZPV-EZ-lX2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HMN-XY-ikQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZPV-EZ-lX2" secondAttribute="trailing" id="IcL-08-jWi"/>
-                <constraint firstItem="I6Y-iN-nHr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rap-Ud-TOh"/>
                 <constraint firstItem="ZPV-EZ-lX2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V0h-gk-OyS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ZPV-EZ-lX2" secondAttribute="bottom" id="YMK-XC-o8M"/>
-                <constraint firstItem="I6Y-iN-nHr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eIR-tJ-rle"/>
-                <constraint firstItem="ZPV-EZ-lX2" firstAttribute="top" secondItem="I6Y-iN-nHr" secondAttribute="bottom" id="liB-y2-7fB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

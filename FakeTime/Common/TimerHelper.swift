@@ -9,7 +9,7 @@
 import Foundation
 
 extension Timer {
-    
+     
     // MARK: Schedule timers
     
     /// Create and schedule a timer that will call `block` once after the specified time.

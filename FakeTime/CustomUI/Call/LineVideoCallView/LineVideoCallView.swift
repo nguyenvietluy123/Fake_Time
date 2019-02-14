@@ -26,15 +26,21 @@ class LineVideoCallView: UIView {
     }
     
     func initializeSubviews() {
-        let xibFileName = "VideoCallView" // xib extention not included
+        let xibFileName = "LineVideoCallView" // xib extention not included
         let view = Bundle.main.loadNibNamed(xibFileName, owner: self, options: nil)?[0] as! UIView
         view.frame = self.bounds
         self.addSubview(view)
     }
     
     func showVideo(caller: CallerObj) {
+        var str = ""
+        if caller.name == KeyString.girlFriend || caller.name == KeyString.marianRivera {
+            str = Bundle.main.path(forResource: caller.pathVideo, ofType: nil) ?? ""
+        } else {
+            str = caller.pathVideo
+        }
         
-        player = AVPlayer(url: URL(fileURLWithPath: caller.pathVideo))
+        player = AVPlayer(url: URL(fileURLWithPath: str))
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = self.viewShowVideo.bounds
         self.viewShowVideo.layer.addSublayer(playerLayer)
@@ -45,7 +51,6 @@ class LineVideoCallView: UIView {
             let second = CMTimeGetSeconds(progressTime)
             if let duration = self.player.currentItem?.duration {
                 let durationSeconds = CMTimeGetSeconds(duration)
-                print(durationSeconds)
                 
                 if second == durationSeconds {
                     GCDCommon.mainQueueWithDelay(1, {

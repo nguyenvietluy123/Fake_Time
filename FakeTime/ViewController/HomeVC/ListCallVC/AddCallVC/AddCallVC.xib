@@ -33,7 +33,7 @@
                         <constraint firstAttribute="height" constant="64" id="Gj7-g7-8fO"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Home"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Caller"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hasRight" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hasBack" value="YES"/>
@@ -49,7 +49,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umX-VD-NHt" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
                                     <rect key="frame" x="12" y="12" width="96.5" height="96.5"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar_default" translatesAutoresizingMaskIntoConstraints="NO" id="gHd-Rx-8sE" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_taylor" translatesAutoresizingMaskIntoConstraints="NO" id="gHd-Rx-8sE" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="96.5" height="96.5"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmT-E1-1aD" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
@@ -312,8 +312,8 @@
         </view>
     </objects>
     <resources>
-        <image name="Avatar_default" width="126" height="124"/>
         <image name="ListCall_add" width="24" height="24"/>
+        <image name="avatar_taylor" width="165" height="206"/>
         <image name="ic_camera_call" width="50" height="50"/>
     </resources>
 </document>

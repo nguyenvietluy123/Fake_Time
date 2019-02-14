@@ -45,6 +45,18 @@ class Key {
 
 class KeyString {
     static let endCall = "End Call"
+    static let girlFriend = "Girl Friend"
+    static let marianRivera = "Marian Rivera"
+    static let girlFriendSound = "vid_5_jess.mp3"
+    static let marianRiveraSound = "girls2.mp3"
+    static let girlFriendVideo = "vid_5_jess.mp4"
+    static let marianRiveraVideo = "girls2.mp4"
+    
+    
+    static let soundDefault = "call_iphone.mp3"
+    static let soundMessenger = "call_messenger.m4a"
+    static let soundLine = "call_line.wav"
+    static let soundWechat = "call_wechat.mp3"
 }
 
 class TColor {

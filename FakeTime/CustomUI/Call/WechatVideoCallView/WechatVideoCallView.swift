@@ -11,9 +11,17 @@ import AVKit
 
 class WechatVideoCallView: UIView {
     @IBOutlet weak var viewShowVideo: KHView!
+    @IBOutlet weak var lbTime: KHLabel!
     
     var player = AVPlayer()
     var handleEndCall:(() -> ())?
+    var timer = Timer()
+    var time: Int = 0 {
+        didSet {
+            let (m, s) = time.secondsToMinutesSeconds()
+            lbTime.text = "\(m):\(s)"
+        }
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -33,8 +41,18 @@ class WechatVideoCallView: UIView {
     }
     
     func showVideo(caller: CallerObj) {
+        timer = Timer.every(1) {
+            self.time += 1
+        }
         
-        player = AVPlayer(url: URL(fileURLWithPath: caller.pathVideo))
+        var str = ""
+        if caller.name == KeyString.girlFriend || caller.name == KeyString.marianRivera {
+            str = Bundle.main.path(forResource: caller.pathVideo, ofType: nil) ?? ""
+        } else {
+            str = caller.pathVideo
+        }
+        
+        player = AVPlayer(url: URL(fileURLWithPath: str))
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = self.viewShowVideo.bounds
         self.viewShowVideo.layer.addSublayer(playerLayer)
@@ -45,9 +63,10 @@ class WechatVideoCallView: UIView {
             let second = CMTimeGetSeconds(progressTime)
             if let duration = self.player.currentItem?.duration {
                 let durationSeconds = CMTimeGetSeconds(duration)
-                print(durationSeconds)
                 
                 if second == durationSeconds {
+                    self.timer.invalidate()
+                    self.lbTime.text = KeyString.endCall
                     GCDCommon.mainQueueWithDelay(1, {
                         self.handleEndCall?()
                     })
@@ -57,7 +76,9 @@ class WechatVideoCallView: UIView {
     }
     
     @IBAction func actionEndCall(_ sender: Any) {
+        lbTime.text = KeyString.endCall
         self.player.pause()
+        timer.invalidate()
         GCDCommon.mainQueueWithDelay(1, {
             self.handleEndCall?()
         })

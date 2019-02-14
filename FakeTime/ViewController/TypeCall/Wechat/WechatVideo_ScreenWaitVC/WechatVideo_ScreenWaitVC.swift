@@ -11,8 +11,9 @@ import AVKit
 
 class WechatVideo_ScreenWaitVC: UIViewController {
     @IBOutlet weak var lbName: KHLabel!
-    @IBOutlet weak var lbPhoneNumber: KHLabel!
-    @IBOutlet weak var imgAvatar: UIImageView!
+    @IBOutlet weak var lbAnimating: KHLabel!
+    @IBOutlet weak var imgAvatar: KHImageView!
+    @IBOutlet weak var imgAvatar2: KHImageView!
     
     var caller: CallerObj = CallerObj()
     var ringBell: AVAudioPlayer?
@@ -29,9 +30,12 @@ class WechatVideo_ScreenWaitVC: UIViewController {
     }
     
     @IBAction func actionReject(_ sender: Any) {
+        lbAnimating.text = KeyString.endCall
         timer.invalidate()
         ringBell?.stop()
-        dismiss(animated: true, completion: nil)
+        GCDCommon.mainQueueWithDelay(1) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func actionAccept(_ sender: Any) {
@@ -42,12 +46,12 @@ class WechatVideo_ScreenWaitVC: UIViewController {
 extension WechatVideo_ScreenWaitVC {
     func initUI() {
         lbName.text = caller.name
-        lbPhoneNumber.text = caller.phoneNumber
         imgAvatar.image = caller.avatar
+        imgAvatar2.image = caller.avatar
     }
     
     func openRingBell() {
-        let path = Bundle.main.path(forResource: "call_wechat.mp3", ofType:nil)!
+        let path = Bundle.main.path(forResource: KeyString.soundWechat, ofType:nil)!
         let url = URL(fileURLWithPath: path)
         
         do {
@@ -55,7 +59,6 @@ extension WechatVideo_ScreenWaitVC {
             ringBell?.play()
             
             timer = Timer.every(1) {
-                print(TimeInterval.init(exactly: (self.ringBell?.duration)!)!)
                 self.ringBell?.play()
             }
         } catch {
@@ -66,21 +69,21 @@ extension WechatVideo_ScreenWaitVC {
         timer.invalidate()
         ringBell?.stop()
         
-        let videoView = WechatVideoCallView(frame: CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-        self.view.addSubview(videoView)
+        let videoCallView = WechatVideoCallView(frame: CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        self.view.addSubview(videoCallView)
         
         UIView.animate(withDuration: 0.3, animations: {
-            videoView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            videoCallView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         }) { (completed) in
-            videoView.showVideo(caller: self.caller)
+            videoCallView.showVideo(caller: self.caller)
         }
         
-        videoView.handleEndCall = {
+        videoCallView.handleEndCall = {
             self.dismiss(animated: true, completion: nil)
             UIView.animate(withDuration: 0.3, animations: {
-                videoView.frame = CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                videoCallView.frame = CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             }) { (completed) in
-                videoView.removeFromSuperview()
+                videoCallView.removeFromSuperview()
             }
         }
     }

@@ -126,6 +126,7 @@
             <connections>
                 <outlet property="imgAvatar" destination="LaZ-Ks-zJ3" id="huR-XU-DxD"/>
                 <outlet property="lbName" destination="uAd-3G-OI5" id="K7H-li-ZoD"/>
+                <outlet property="viewEdit" destination="eiW-75-ERf" id="y6X-1K-nMq"/>
             </connections>
             <point key="canvasLocation" x="239.19999999999999" y="211.39430284857573"/>
         </tableViewCell>

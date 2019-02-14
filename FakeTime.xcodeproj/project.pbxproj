@@ -26,10 +26,11 @@
 		0C4420BB21FF61D7004D3965 /* call_line.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B821FF61D6004D3965 /* call_line.wav */; };
 		0C4420BC21FF61D7004D3965 /* call_messenger.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B921FF61D6004D3965 /* call_messenger.m4a */; };
 		0C4420BD21FF61D7004D3965 /* call_wechat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */; };
+		0C662EB922148F24007A6DD0 /* call_iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C662EB822148F24007A6DD0 /* call_iphone.mp3 */; };
+		0C662EBD22149D2E007A6DD0 /* Privacy_PolicyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C662EBB22149D2E007A6DD0 /* Privacy_PolicyVC.xib */; };
+		0C662EBE22149D2E007A6DD0 /* Privacy_PolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C662EBC22149D2E007A6DD0 /* Privacy_PolicyVC.swift */; };
 		0C9D7F762201599F009EA3BF /* VideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D7F752201599F009EA3BF /* VideoCallView.swift */; };
 		0C9D7F78220159A9009EA3BF /* VideoCallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D7F77220159A9009EA3BF /* VideoCallView.xib */; };
-		0CA9394922020DD200D6EE95 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9394822020DD200D6EE95 /* CallView.swift */; };
-		0CA9394B22020DE700D6EE95 /* CallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA9394A22020DE700D6EE95 /* CallView.xib */; };
 		0CA9394F22021C9E00D6EE95 /* Call_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9394D22021C9E00D6EE95 /* Call_ScreenWaitVC.swift */; };
 		0CA9395022021C9E00D6EE95 /* Call_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA9394E22021C9E00D6EE95 /* Call_ScreenWaitVC.xib */; };
 		0CAB8BFC21FEE0D70035DC51 /* FrontCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB8BFB21FEE0D70035DC51 /* FrontCameraView.swift */; };
@@ -41,12 +42,17 @@
 		0CAFE32421FA334F0004C376 /* DatastoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE32121FA334F0004C376 /* DatastoreCoordinator.swift */; };
 		0CAFE32521FA334F0004C376 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE32221FA334F0004C376 /* PersistenceManager.swift */; };
 		0CAFE32721FA355C0004C376 /* CallerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE32621FA355C0004C376 /* CallerManager.swift */; };
+		0CBF3FC52214706100366312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBF3FC42214706100366312 /* Main.storyboard */; };
 		0CC745F72212D17E005C4EFA /* Wechat_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC745F52212D17E005C4EFA /* Wechat_ScreenWaitVC.swift */; };
 		0CC745F82212D17E005C4EFA /* Wechat_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC745F62212D17E005C4EFA /* Wechat_ScreenWaitVC.xib */; };
 		0CC745FB2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC745F92212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.swift */; };
 		0CC745FC2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC745FA2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib */; };
 		0CC745FF2212FDC0005C4EFA /* WechatVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC745FE2212FDC0005C4EFA /* WechatVideoCallView.swift */; };
 		0CC746012212FDC4005C4EFA /* WechatVideoCallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC746002212FDC4005C4EFA /* WechatVideoCallView.xib */; };
+		0CC746062213078F005C4EFA /* girls2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CC746042213078F005C4EFA /* girls2.mp3 */; };
+		0CC746072213078F005C4EFA /* vid_5_jess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CC746052213078F005C4EFA /* vid_5_jess.mp3 */; };
+		0CC74608221346BA005C4EFA /* girls2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7460322130781005C4EFA /* girls2.mp4 */; };
+		0CC74609221346BC005C4EFA /* vid_5_jess.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7460222130781005C4EFA /* vid_5_jess.mp4 */; };
 		0CC80A4021FCCA960079A511 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80A3E21FCCA960079A511 /* MenuCell.swift */; };
 		0CC80A4121FCCA960079A511 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC80A3F21FCCA960079A511 /* MenuCell.xib */; };
 		0CC80A4B21FCCCA90079A511 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80A4921FCCCA90079A511 /* SettingVC.swift */; };
@@ -84,7 +90,6 @@
 		0CCDD92421F8D1A300688493 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD90521F8D1A300688493 /* Device.swift */; };
 		0CCDD92921F8D1CB00688493 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD92721F8D1CB00688493 /* HomeVC.swift */; };
 		0CCDD92A21F8D1CB00688493 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD92821F8D1CB00688493 /* HomeVC.xib */; };
-		0CCDD92E21F8D39000688493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD92D21F8D38F00688493 /* Main.storyboard */; };
 		0CCDD93821F8E03100688493 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD93121F8E03100688493 /* MFSideMenuContainerViewController.m */; };
 		0CCDD93921F8E03100688493 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD93221F8E03100688493 /* UIViewController+MFSideMenuAdditions.m */; };
 		0CCDD93A21F8E03100688493 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD93721F8E03100688493 /* MFSideMenuShadow.m */; };
@@ -151,10 +156,11 @@
 		0C4420B821FF61D6004D3965 /* call_line.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = call_line.wav; sourceTree = "<group>"; };
 		0C4420B921FF61D6004D3965 /* call_messenger.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = call_messenger.m4a; sourceTree = "<group>"; };
 		0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = call_wechat.mp3; sourceTree = "<group>"; };
+		0C662EB822148F24007A6DD0 /* call_iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = call_iphone.mp3; sourceTree = "<group>"; };
+		0C662EBB22149D2E007A6DD0 /* Privacy_PolicyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Privacy_PolicyVC.xib; sourceTree = "<group>"; };
+		0C662EBC22149D2E007A6DD0 /* Privacy_PolicyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Privacy_PolicyVC.swift; sourceTree = "<group>"; };
 		0C9D7F752201599F009EA3BF /* VideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallView.swift; sourceTree = "<group>"; };
 		0C9D7F77220159A9009EA3BF /* VideoCallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCallView.xib; sourceTree = "<group>"; };
-		0CA9394822020DD200D6EE95 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
-		0CA9394A22020DE700D6EE95 /* CallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallView.xib; sourceTree = "<group>"; };
 		0CA9394D22021C9E00D6EE95 /* Call_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call_ScreenWaitVC.swift; sourceTree = "<group>"; };
 		0CA9394E22021C9E00D6EE95 /* Call_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Call_ScreenWaitVC.xib; sourceTree = "<group>"; };
 		0CAB8BFB21FEE0D70035DC51 /* FrontCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCameraView.swift; sourceTree = "<group>"; };
@@ -166,12 +172,17 @@
 		0CAFE32121FA334F0004C376 /* DatastoreCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatastoreCoordinator.swift; sourceTree = "<group>"; };
 		0CAFE32221FA334F0004C376 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		0CAFE32621FA355C0004C376 /* CallerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerManager.swift; sourceTree = "<group>"; };
+		0CBF3FC42214706100366312 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0CC745F52212D17E005C4EFA /* Wechat_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wechat_ScreenWaitVC.swift; sourceTree = "<group>"; };
 		0CC745F62212D17E005C4EFA /* Wechat_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Wechat_ScreenWaitVC.xib; sourceTree = "<group>"; };
 		0CC745F92212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatVideo_ScreenWaitVC.swift; sourceTree = "<group>"; };
 		0CC745FA2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WechatVideo_ScreenWaitVC.xib; sourceTree = "<group>"; };
 		0CC745FE2212FDC0005C4EFA /* WechatVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatVideoCallView.swift; sourceTree = "<group>"; };
 		0CC746002212FDC4005C4EFA /* WechatVideoCallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WechatVideoCallView.xib; sourceTree = "<group>"; };
+		0CC7460222130781005C4EFA /* vid_5_jess.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid_5_jess.mp4; sourceTree = "<group>"; };
+		0CC7460322130781005C4EFA /* girls2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = girls2.mp4; sourceTree = "<group>"; };
+		0CC746042213078F005C4EFA /* girls2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = girls2.mp3; sourceTree = "<group>"; };
+		0CC746052213078F005C4EFA /* vid_5_jess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vid_5_jess.mp3; sourceTree = "<group>"; };
 		0CC80A3E21FCCA960079A511 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		0CC80A3F21FCCA960079A511 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		0CC80A4921FCCCA90079A511 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
@@ -209,7 +220,6 @@
 		0CCDD90521F8D1A300688493 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		0CCDD92721F8D1CB00688493 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0CCDD92821F8D1CB00688493 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
-		0CCDD92D21F8D38F00688493 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		0CCDD93121F8E03100688493 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
 		0CCDD93221F8E03100688493 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
 		0CCDD93321F8E03100688493 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
@@ -306,13 +316,13 @@
 				0CCDD8DC21F8D1A300688493 /* CustomUI */,
 				0CCDD95221F8EEA100688493 /* Cell */,
 				0CCDD92521F8D1A700688493 /* ViewController */,
-				0C4420B721FF61C2004D3965 /* Sounds */,
+				0C4420B721FF61C2004D3965 /* Sounds&Video */,
 				0C2E39D121F8D0F500B11685 /* AppDelegate.swift */,
 				0CCDD94E21F8E5F400688493 /* DeNho.swift */,
+				0CBF3FC42214706100366312 /* Main.storyboard */,
 				0CCDD93B21F8E0E500688493 /* FakeTime-Bridging-Header.h */,
 				0C2E39D321F8D0F500B11685 /* ViewController.swift */,
 				0C2E39DB21F8D0F600B11685 /* Assets.xcassets */,
-				0CCDD92D21F8D38F00688493 /* Main.storyboard */,
 				0C2E39DD21F8D0F600B11685 /* LaunchScreen.storyboard */,
 				0C2E39E021F8D0F600B11685 /* Info.plist */,
 				0C2E39D821F8D0F500B11685 /* FakeTime.xcdatamodeld */,
@@ -347,14 +357,28 @@
 			path = FrontCameraView;
 			sourceTree = "<group>";
 		};
-		0C4420B721FF61C2004D3965 /* Sounds */ = {
+		0C4420B721FF61C2004D3965 /* Sounds&Video */ = {
 			isa = PBXGroup;
 			children = (
+				0CC746042213078F005C4EFA /* girls2.mp3 */,
+				0CC746052213078F005C4EFA /* vid_5_jess.mp3 */,
+				0CC7460322130781005C4EFA /* girls2.mp4 */,
+				0CC7460222130781005C4EFA /* vid_5_jess.mp4 */,
+				0C662EB822148F24007A6DD0 /* call_iphone.mp3 */,
 				0C4420B821FF61D6004D3965 /* call_line.wav */,
 				0C4420B921FF61D6004D3965 /* call_messenger.m4a */,
 				0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */,
 			);
-			path = Sounds;
+			path = "Sounds&Video";
+			sourceTree = "<group>";
+		};
+		0C662EBA22149D2E007A6DD0 /* Privacy_PolicyVC */ = {
+			isa = PBXGroup;
+			children = (
+				0C662EBC22149D2E007A6DD0 /* Privacy_PolicyVC.swift */,
+				0C662EBB22149D2E007A6DD0 /* Privacy_PolicyVC.xib */,
+			);
+			path = Privacy_PolicyVC;
 			sourceTree = "<group>";
 		};
 		0C9D7F7422015954009EA3BF /* VideoCallView */ = {
@@ -369,22 +393,12 @@
 		0CA9394622020D8B00D6EE95 /* Call */ = {
 			isa = PBXGroup;
 			children = (
-				0CA9394722020D9700D6EE95 /* CallView */,
 				0C9D7F7422015954009EA3BF /* VideoCallView */,
 				0C0524342211D1FF00DB7852 /* MsgVideoCallView */,
 				0CD6EFFD2211ED200080C843 /* LineVideoCallView */,
 				0CC745FD2212FDA9005C4EFA /* WechatVideoCallView */,
 			);
 			path = Call;
-			sourceTree = "<group>";
-		};
-		0CA9394722020D9700D6EE95 /* CallView */ = {
-			isa = PBXGroup;
-			children = (
-				0CA9394822020DD200D6EE95 /* CallView.swift */,
-				0CA9394A22020DE700D6EE95 /* CallView.xib */,
-			);
-			path = CallView;
 			sourceTree = "<group>";
 		};
 		0CA9394C22021B0000D6EE95 /* Call_ScreenWaitVC */ = {
@@ -526,6 +540,7 @@
 		0CC80A4221FCCBB30079A511 /* SettingVC */ = {
 			isa = PBXGroup;
 			children = (
+				0C662EBA22149D2E007A6DD0 /* Privacy_PolicyVC */,
 				0CC80A4921FCCCA90079A511 /* SettingVC.swift */,
 				0CC80A4A21FCCCA90079A511 /* SettingVC.xib */,
 			);
@@ -907,7 +922,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CCDD91121F8D1A300688493 /* TextFieldView.xib in Resources */,
+				0CC746072213078F005C4EFA /* vid_5_jess.mp3 in Resources */,
+				0C662EBD22149D2E007A6DD0 /* Privacy_PolicyVC.xib in Resources */,
+				0CC74609221346BC005C4EFA /* vid_5_jess.mp4 in Resources */,
 				0C05242E2211BC5200DB7852 /* Messenger_ScreenWaitVC.xib in Resources */,
+				0CC746062213078F005C4EFA /* girls2.mp3 in Resources */,
 				0C2E39DF21F8D0F600B11685 /* LaunchScreen.storyboard in Resources */,
 				0CC745F82212D17E005C4EFA /* Wechat_ScreenWaitVC.xib in Resources */,
 				0CC80A4C21FCCCA90079A511 /* SettingVC.xib in Resources */,
@@ -921,8 +940,8 @@
 				0C05243A2211D25100DB7852 /* MsgVideoCallView.xib in Resources */,
 				0CCDD92A21F8D1CB00688493 /* HomeVC.xib in Resources */,
 				0C0524332211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.xib in Resources */,
-				0CCDD92E21F8D39000688493 /* Main.storyboard in Resources */,
 				0CCDD94C21F8E46E00688493 /* NavigationView.xib in Resources */,
+				0C662EB922148F24007A6DD0 /* call_iphone.mp3 in Resources */,
 				0CAFE31821FA13F10004C376 /* AddCallVC.xib in Resources */,
 				0C9D7F78220159A9009EA3BF /* VideoCallView.xib in Resources */,
 				0CCDD96C21F9021C00688493 /* CellListCall.xib in Resources */,
@@ -932,11 +951,12 @@
 				0CC745FC2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib in Resources */,
 				0CC80A4121FCCA960079A511 /* MenuCell.xib in Resources */,
 				0C05243E2211EA8400DB7852 /* Line_ScreenWaitVC.xib in Resources */,
+				0CC74608221346BA005C4EFA /* girls2.mp4 in Resources */,
 				0CD6EFFC2211EC550080C843 /* LineVideo_ScreenWaitVC.xib in Resources */,
 				0C4420BB21FF61D7004D3965 /* call_line.wav in Resources */,
 				0CCDD90821F8D1A300688493 /* ButtonView.xib in Resources */,
-				0CA9394B22020DE700D6EE95 /* CallView.xib in Resources */,
 				0C4420BC21FF61D7004D3965 /* call_messenger.m4a in Resources */,
+				0CBF3FC52214706100366312 /* Main.storyboard in Resources */,
 				0CCDD91321F8D1A300688493 /* ToolBarView.xib in Resources */,
 				0CCDD90F21F8D1A300688493 /* TabbarView.xib in Resources */,
 				0CD6F0012211ED590080C843 /* LineVideoCallView.xib in Resources */,
@@ -1025,7 +1045,6 @@
 				0CCDD91721F8D1A300688493 /* KHButton.swift in Sources */,
 				0CAB8BFC21FEE0D70035DC51 /* FrontCameraView.swift in Sources */,
 				0CCDD92121F8D1A300688493 /* Define.swift in Sources */,
-				0CA9394922020DD200D6EE95 /* CallView.swift in Sources */,
 				0CD6EFFB2211EC550080C843 /* LineVideo_ScreenWaitVC.swift in Sources */,
 				0CD6EFFF2211ED480080C843 /* LineVideoCallView.swift in Sources */,
 				0C05243D2211EA8400DB7852 /* Line_ScreenWaitVC.swift in Sources */,
@@ -1037,6 +1056,7 @@
 				0CAFE32421FA334F0004C376 /* DatastoreCoordinator.swift in Sources */,
 				0CCDD91D21F8D1A300688493 /* AlertHelper.swift in Sources */,
 				0CCDD92421F8D1A300688493 /* Device.swift in Sources */,
+				0C662EBE22149D2E007A6DD0 /* Privacy_PolicyVC.swift in Sources */,
 				0C2E39D421F8D0F500B11685 /* ViewController.swift in Sources */,
 				0C0524362211D22100DB7852 /* MsgVideoCallView.swift in Sources */,
 				0CC745FF2212FDC0005C4EFA /* WechatVideoCallView.swift in Sources */,
@@ -1237,6 +1257,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y379B58WJ3;
 				INFOPLIST_FILE = FakeTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1256,6 +1277,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y379B58WJ3;
 				INFOPLIST_FILE = FakeTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

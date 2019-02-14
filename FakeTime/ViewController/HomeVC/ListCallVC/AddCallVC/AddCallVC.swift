@@ -41,7 +41,7 @@ class AddCallVC: BaseVC {
         let galleryVideo = GalleryController()
         galleryVideo.delegate = self
         gallery = galleryVideo
-        Config.tabsToShow = [.imageTab]
+        Config.tabsToShow = [.cameraTab, .imageTab]
         present(gallery, animated: true, completion: nil)
     }
     
@@ -173,6 +173,7 @@ extension AddCallVC {
 }
 
 extension AddCallVC: GalleryControllerDelegate {
+    
     func galleryController(_ controller: GalleryController, didSelectImages images: [Image]) {
         if images.count > 0 {
             images[0].resolve { (image) in

@@ -73,10 +73,10 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHC-OC-NsD" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="89" y="22" width="46" height="21"/>
+                                    <rect key="frame" x="89" y="22" width="192.5" height="21"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                    <color key="textColor" red="0.062745098039215685" green="0.77647058823529413" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.45098039215686275" green="0.78823529411764703" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjW-5H-Vkr" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
@@ -92,7 +92,7 @@
                                                         <constraint firstAttribute="width" secondItem="tBB-G5-xfw" secondAttribute="height" multiplier="1:1" id="ANw-wS-xi9"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCh-Fe-Dg0" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCh-Fe-Dg0" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
                                                     <rect key="frame" x="30.5" y="0.0" width="32.5" height="32.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <connections>
@@ -120,7 +120,7 @@
                                                         <constraint firstAttribute="width" secondItem="5d3-2k-kkq" secondAttribute="height" multiplier="1:1" id="HW0-hx-I1I"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyL-t3-iam" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyL-t3-iam" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
                                                     <rect key="frame" x="30.5" y="0.0" width="32.5" height="32.5"/>
                                                     <connections>
                                                         <action selector="callVideo:" destination="-1" eventType="touchUpInside" id="Fmp-sL-7Vv"/>
@@ -163,6 +163,7 @@
                                 <constraint firstItem="BHC-OC-NsD" firstAttribute="leading" secondItem="sKU-7V-7YU" secondAttribute="trailing" constant="12" id="Ngg-VE-xd9"/>
                                 <constraint firstItem="fjW-5H-Vkr" firstAttribute="width" secondItem="ehn-sb-lT4" secondAttribute="width" multiplier="1:4" id="SOU-lx-AZs"/>
                                 <constraint firstItem="sKU-7V-7YU" firstAttribute="top" secondItem="ehn-sb-lT4" secondAttribute="top" id="YlY-1c-tJz"/>
+                                <constraint firstItem="fjW-5H-Vkr" firstAttribute="leading" secondItem="BHC-OC-NsD" secondAttribute="trailing" id="ajM-iG-lko"/>
                                 <constraint firstAttribute="trailing" secondItem="fjW-5H-Vkr" secondAttribute="trailing" id="cIy-Ji-jZs"/>
                                 <constraint firstItem="BHC-OC-NsD" firstAttribute="centerY" secondItem="Qbb-gO-WcO" secondAttribute="centerY" id="ld1-vT-y0m"/>
                                 <constraint firstItem="F1B-vQ-FqR" firstAttribute="leading" secondItem="ehn-sb-lT4" secondAttribute="leading" id="uKq-Vp-yvV"/>
@@ -297,7 +298,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtr-B4-rOy">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="39.5"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UN-VS-VjT" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UN-VS-VjT" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="150" height="39.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                             <state key="normal" title="Cancel">
@@ -334,7 +335,7 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MP-Ff-TCj" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MP-Ff-TCj" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="149" height="39.5"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                             <state key="normal">

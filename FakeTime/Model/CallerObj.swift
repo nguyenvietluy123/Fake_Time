@@ -23,6 +23,13 @@ class CallerObj: NSObject {
         id = UUID().uuidString
     }
     
+    init(name: String, phoneNumber: String, avatar: UIImage, pathVideo: String) {
+        self.name = name
+        self.phoneNumber = phoneNumber
+        self.avatar = avatar
+        self.pathVideo = pathVideo
+    }
+    
     init(_ obj: Caller) {
         self.id = obj.id ?? ""
         self.name = obj.name ?? ""

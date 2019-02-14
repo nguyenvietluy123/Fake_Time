@@ -38,7 +38,9 @@ class CallVideo_ScreenWaitVC: UIViewController {
     @IBAction func actionReject(_ sender: Any) {
         timer.invalidate()
         ringBell?.stop()
-        dismiss(animated: true, completion: nil)
+        GCDCommon.mainQueueWithDelay(1) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func actionAccept(_ sender: Any) {
@@ -54,7 +56,7 @@ extension CallVideo_ScreenWaitVC {
     }
     
     func openRingBell() {
-        let path = Bundle.main.path(forResource: "call_line.wav", ofType:nil)!
+        let path = Bundle.main.path(forResource: KeyString.soundDefault, ofType:nil)!
         let url = URL(fileURLWithPath: path)
         
         do {
@@ -62,7 +64,6 @@ extension CallVideo_ScreenWaitVC {
             ringBell?.play()
             
             timer = Timer.every(1) {
-                print(TimeInterval.init(exactly: (self.ringBell?.duration)!)!)
                 self.ringBell?.play()
             }
         } catch {

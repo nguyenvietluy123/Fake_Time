@@ -101,7 +101,45 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSx-Za-AVH">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="186.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-ZP-8uc" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="20" y="46.5" width="93" height="93.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="L2a-ZP-8uc" secondAttribute="height" multiplier="1:1" id="kTz-Jh-RiD"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXX-b0-1c3" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="186.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Twn-od-cYK"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fake Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zng-kn-Yc4" customClass="KHLabel">
+                            <rect key="frame" x="113" y="82.5" width="250" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="fgW-eI-bke"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" red="0.28235294119999998" green="0.85882352939999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zng-kn-Yc4" secondAttribute="trailing" constant="12" id="Iqz-vh-Z2r"/>
+                        <constraint firstItem="L2a-ZP-8uc" firstAttribute="leading" secondItem="KXX-b0-1c3" secondAttribute="trailing" id="J8l-YS-UDz"/>
+                        <constraint firstItem="zng-kn-Yc4" firstAttribute="centerY" secondItem="L2a-ZP-8uc" secondAttribute="centerY" id="acC-qX-S2g"/>
+                        <constraint firstItem="KXX-b0-1c3" firstAttribute="leading" secondItem="zSx-Za-AVH" secondAttribute="leading" id="exm-bf-a0R"/>
+                        <constraint firstAttribute="bottom" secondItem="KXX-b0-1c3" secondAttribute="bottom" id="hR4-ZR-P64"/>
+                        <constraint firstItem="KXX-b0-1c3" firstAttribute="top" secondItem="zSx-Za-AVH" secondAttribute="top" id="nPT-fl-xPO"/>
+                        <constraint firstItem="zng-kn-Yc4" firstAttribute="leading" secondItem="L2a-ZP-8uc" secondAttribute="trailing" id="nx1-6f-6lJ"/>
+                        <constraint firstItem="L2a-ZP-8uc" firstAttribute="centerY" secondItem="zSx-Za-AVH" secondAttribute="centerY" id="tOW-lh-lh6"/>
+                        <constraint firstItem="L2a-ZP-8uc" firstAttribute="height" secondItem="zSx-Za-AVH" secondAttribute="height" multiplier="1:2" id="z5Z-a4-FKg"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.16862745098039217" green="0.18823529411764706" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -121,9 +159,10 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="129.53523238380811"/>
         </view>
     </objects>
     <resources>
-        <image name="logo" width="480" height="480"/>
+        <image name="logo" width="256" height="256"/>
     </resources>
 </document>

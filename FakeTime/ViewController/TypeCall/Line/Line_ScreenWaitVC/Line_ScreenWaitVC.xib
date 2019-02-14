@@ -12,7 +12,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Line_ScreenWaitVC" customModule="FakeTime" customModuleProvider="target">
             <connections>
+                <outlet property="imgAvatar" destination="UhJ-I1-hhO" id="Hic-DK-Bmk"/>
+                <outlet property="lbName" destination="2rh-w2-rDo" id="wLw-nN-4uW"/>
+                <outlet property="lbTime" destination="qaN-3N-ioh" id="zUj-M2-l4l"/>
+                <outlet property="lineAnimating" destination="dEu-mL-yj3" id="JbJ-u8-Lws"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view1Button" destination="PD2-jD-6Db" id="Ymq-E9-jvS"/>
+                <outlet property="view2Button" destination="8lE-bh-60B" id="cmv-pX-V5b"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,28 +26,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpr-Ir-qbN">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                    <color key="backgroundColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="20" id="ARG-Me-iho"/>
-                    </constraints>
-                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scary Clown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rh-w2-rDo" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
-                    <rect key="frame" x="106.5" y="262.5" width="162" height="36"/>
+                    <rect key="frame" x="37.5" y="242.5" width="300" height="36"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacting..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaN-3N-ioh" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                    <rect key="frame" x="136.5" y="286.5" width="102.5" height="21.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UhJ-I1-hhO" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="20" width="375" height="222.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_animated" translatesAutoresizingMaskIntoConstraints="NO" id="dEu-mL-yj3" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                    <rect key="frame" x="158.5" y="313.5" width="58" height="12"/>
+                    <rect key="frame" x="168" y="293.5" width="39" height="8"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="dEu-mL-yj3" secondAttribute="height" multiplier="29:6" id="HTQ-b9-4Dh"/>
@@ -51,17 +56,20 @@
                     </userDefinedRuntimeAttributes>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lE-bh-60B" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="576" width="375" height="91"/>
+                    <rect key="frame" x="0.0" y="487" width="375" height="180"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BE1-y2-deT" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="40" y="0.0" width="71" height="71"/>
+                            <rect key="frame" x="40" y="80" width="55.5" height="56"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="4gx-Qc-J5P" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="56"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vR3-ab-JXQ" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vR3-ab-JXQ" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="56"/>
+                                    <connections>
+                                        <action selector="rejectCall:" destination="-1" eventType="touchUpInside" id="eTN-d2-25j"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,14 +86,17 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeQ-x1-CXl" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="264" y="0.0" width="71" height="71"/>
+                            <rect key="frame" x="279.5" y="80" width="55.5" height="56"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_accept_call" translatesAutoresizingMaskIntoConstraints="NO" id="SlT-2C-5QT" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="56"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wV3-e7-NdT" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wV3-e7-NdT" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="56"/>
+                                    <connections>
+                                        <action selector="acceptCall:" destination="-1" eventType="touchUpInside" id="oOy-NM-auJ"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,21 +113,21 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jz7-BH-Ff2" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="40" height="91"/>
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="180"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="nvJ-tG-Yxp"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tg-jS-kkl" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="335" y="0.0" width="40" height="91"/>
+                            <rect key="frame" x="335" y="0.0" width="40" height="180"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="1zB-yb-I2M"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tM2-Dq-7WT" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="40" y="71" width="295" height="20"/>
+                            <rect key="frame" x="40" y="160" width="295" height="20"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="dCl-8e-gun"/>
@@ -125,41 +136,144 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="BE1-y2-deT" firstAttribute="centerY" secondItem="8lE-bh-60B" secondAttribute="centerY" multiplier="1.2" id="0Gd-iU-vFu"/>
                         <constraint firstAttribute="bottom" secondItem="2tg-jS-kkl" secondAttribute="bottom" id="687-ns-zNo"/>
                         <constraint firstItem="Jz7-BH-Ff2" firstAttribute="top" secondItem="8lE-bh-60B" secondAttribute="top" id="7fe-Xe-l5I"/>
                         <constraint firstItem="Jz7-BH-Ff2" firstAttribute="leading" secondItem="8lE-bh-60B" secondAttribute="leading" id="9Vh-YX-yGG"/>
                         <constraint firstItem="tM2-Dq-7WT" firstAttribute="leading" secondItem="Jz7-BH-Ff2" secondAttribute="trailing" id="9kR-lM-oZd"/>
                         <constraint firstItem="BE1-y2-deT" firstAttribute="leading" secondItem="Jz7-BH-Ff2" secondAttribute="trailing" id="C7h-YL-W57"/>
+                        <constraint firstItem="XeQ-x1-CXl" firstAttribute="centerY" secondItem="8lE-bh-60B" secondAttribute="centerY" multiplier="1.2" id="EVH-yP-Kg3"/>
                         <constraint firstAttribute="trailing" secondItem="2tg-jS-kkl" secondAttribute="trailing" id="GxX-kj-SS1"/>
                         <constraint firstItem="2tg-jS-kkl" firstAttribute="leading" secondItem="XeQ-x1-CXl" secondAttribute="trailing" id="N5R-Uf-U5S"/>
-                        <constraint firstItem="XeQ-x1-CXl" firstAttribute="top" secondItem="8lE-bh-60B" secondAttribute="top" id="T50-Np-L5V"/>
                         <constraint firstItem="2tg-jS-kkl" firstAttribute="top" secondItem="8lE-bh-60B" secondAttribute="top" id="TaS-la-cMt"/>
-                        <constraint firstItem="tM2-Dq-7WT" firstAttribute="top" secondItem="BE1-y2-deT" secondAttribute="bottom" id="VeJ-BG-xhO"/>
                         <constraint firstItem="XeQ-x1-CXl" firstAttribute="height" secondItem="BE1-y2-deT" secondAttribute="height" id="X45-Vd-c73"/>
                         <constraint firstAttribute="bottom" secondItem="Jz7-BH-Ff2" secondAttribute="bottom" id="b0w-w1-AGV"/>
                         <constraint firstAttribute="bottom" secondItem="tM2-Dq-7WT" secondAttribute="bottom" id="b4N-nS-Gsz"/>
-                        <constraint firstItem="tM2-Dq-7WT" firstAttribute="top" secondItem="XeQ-x1-CXl" secondAttribute="bottom" id="dJH-Ac-oMS"/>
                         <constraint firstItem="2tg-jS-kkl" firstAttribute="leading" secondItem="tM2-Dq-7WT" secondAttribute="trailing" id="lls-MQ-G6N"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PD2-jD-6Db" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="487" width="375" height="180"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bsr-iT-cih" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="159.5" y="80" width="56" height="56"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="vvf-Ua-CZq" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdy-1V-n8x" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                    <connections>
+                                        <action selector="rejectCall:" destination="-1" eventType="touchUpInside" id="Wpu-u3-cWZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="vvf-Ua-CZq" secondAttribute="bottom" id="2mM-9D-lgb"/>
+                                <constraint firstItem="vvf-Ua-CZq" firstAttribute="top" secondItem="Bsr-iT-cih" secondAttribute="top" id="9tH-xY-GRh"/>
+                                <constraint firstItem="Vdy-1V-n8x" firstAttribute="leading" secondItem="Bsr-iT-cih" secondAttribute="leading" id="Cwv-CD-8rR"/>
+                                <constraint firstItem="vvf-Ua-CZq" firstAttribute="leading" secondItem="Bsr-iT-cih" secondAttribute="leading" id="Svk-KK-Kdf"/>
+                                <constraint firstAttribute="width" secondItem="Bsr-iT-cih" secondAttribute="height" multiplier="1:1" id="Y7y-FU-4ng"/>
+                                <constraint firstAttribute="trailing" secondItem="Vdy-1V-n8x" secondAttribute="trailing" id="YaK-44-ytY"/>
+                                <constraint firstItem="Vdy-1V-n8x" firstAttribute="top" secondItem="Bsr-iT-cih" secondAttribute="top" id="h2m-EW-EEr"/>
+                                <constraint firstAttribute="bottom" secondItem="Vdy-1V-n8x" secondAttribute="bottom" id="pYD-bC-380"/>
+                                <constraint firstAttribute="trailing" secondItem="vvf-Ua-CZq" secondAttribute="trailing" id="uDl-Ik-VI8"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41I-tl-mGx" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="180"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="nX2-LO-fJC"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjK-GN-Yno" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="335" y="0.0" width="40" height="180"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="jbG-Xc-qlR"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rm5-HS-hta" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="40" y="160" width="295" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="u2j-HU-edc"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_video" translatesAutoresizingMaskIntoConstraints="NO" id="waw-Bx-A7y" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="159.5" y="0.0" width="56" height="55.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="waw-Bx-A7y" secondAttribute="height" multiplier="1:1" id="8hZ-x0-g4P"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_mic_mute" translatesAutoresizingMaskIntoConstraints="NO" id="grV-ep-n9N" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="40" y="0.0" width="55.5" height="55.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="grV-ep-n9N" secondAttribute="height" multiplier="1:1" id="3sD-OQ-c3e"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_speaker" translatesAutoresizingMaskIntoConstraints="NO" id="srM-18-77w" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="279.5" y="0.0" width="55.5" height="55.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="srM-18-77w" secondAttribute="height" multiplier="1:1" id="JjC-am-ua6"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rm5-HS-hta" secondAttribute="bottom" id="1Zf-LK-dKc"/>
+                        <constraint firstItem="waw-Bx-A7y" firstAttribute="height" secondItem="Vdy-1V-n8x" secondAttribute="height" id="2AJ-td-LKg"/>
+                        <constraint firstItem="srM-18-77w" firstAttribute="height" secondItem="waw-Bx-A7y" secondAttribute="height" id="43X-17-9UM"/>
+                        <constraint firstItem="CjK-GN-Yno" firstAttribute="top" secondItem="PD2-jD-6Db" secondAttribute="top" id="4rT-Lj-NdE"/>
+                        <constraint firstItem="CjK-GN-Yno" firstAttribute="leading" secondItem="srM-18-77w" secondAttribute="trailing" id="B8H-CA-PFb"/>
+                        <constraint firstItem="41I-tl-mGx" firstAttribute="leading" secondItem="PD2-jD-6Db" secondAttribute="leading" id="Bs4-Dn-dXg"/>
+                        <constraint firstAttribute="bottom" secondItem="41I-tl-mGx" secondAttribute="bottom" id="O5Z-o5-COS"/>
+                        <constraint firstItem="waw-Bx-A7y" firstAttribute="top" secondItem="PD2-jD-6Db" secondAttribute="top" id="RO9-g2-qww"/>
+                        <constraint firstItem="Bsr-iT-cih" firstAttribute="centerY" secondItem="PD2-jD-6Db" secondAttribute="centerY" multiplier="1.2" id="S7q-Ui-GRp"/>
+                        <constraint firstItem="CjK-GN-Yno" firstAttribute="leading" secondItem="rm5-HS-hta" secondAttribute="trailing" id="SNU-14-046"/>
+                        <constraint firstItem="grV-ep-n9N" firstAttribute="top" secondItem="PD2-jD-6Db" secondAttribute="top" id="Y3g-uL-2Ss"/>
+                        <constraint firstItem="srM-18-77w" firstAttribute="width" secondItem="srM-18-77w" secondAttribute="height" multiplier="1:1" id="e13-qe-u6y"/>
+                        <constraint firstItem="41I-tl-mGx" firstAttribute="top" secondItem="PD2-jD-6Db" secondAttribute="top" id="eck-Tf-Nji"/>
+                        <constraint firstItem="grV-ep-n9N" firstAttribute="leading" secondItem="41I-tl-mGx" secondAttribute="trailing" id="eeb-QV-x0g"/>
+                        <constraint firstAttribute="trailing" secondItem="CjK-GN-Yno" secondAttribute="trailing" id="f9O-Qd-F2d"/>
+                        <constraint firstItem="waw-Bx-A7y" firstAttribute="centerX" secondItem="Vdy-1V-n8x" secondAttribute="centerX" id="fpQ-Di-J50"/>
+                        <constraint firstItem="Bsr-iT-cih" firstAttribute="centerX" secondItem="PD2-jD-6Db" secondAttribute="centerX" id="hbd-MU-zf3"/>
+                        <constraint firstItem="grV-ep-n9N" firstAttribute="height" secondItem="waw-Bx-A7y" secondAttribute="height" id="icd-0V-XOt"/>
+                        <constraint firstItem="rm5-HS-hta" firstAttribute="leading" secondItem="41I-tl-mGx" secondAttribute="trailing" id="lrV-71-ie1"/>
+                        <constraint firstAttribute="bottom" secondItem="CjK-GN-Yno" secondAttribute="bottom" id="zIt-wy-ZFV"/>
+                        <constraint firstItem="srM-18-77w" firstAttribute="top" secondItem="PD2-jD-6Db" secondAttribute="top" id="zg4-aA-QYa"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="qaN-3N-ioh" firstAttribute="centerX" secondItem="2rh-w2-rDo" secondAttribute="centerX" id="3Fr-gH-Bzr"/>
+                <constraint firstItem="qaN-3N-ioh" firstAttribute="centerY" secondItem="dEu-mL-yj3" secondAttribute="centerY" id="7yk-Rd-hNR"/>
                 <constraint firstItem="2rh-w2-rDo" firstAttribute="centerX" secondItem="UhJ-I1-hhO" secondAttribute="centerX" id="8aF-J5-ADB"/>
                 <constraint firstItem="dEu-mL-yj3" firstAttribute="centerX" secondItem="2rh-w2-rDo" secondAttribute="centerX" id="8bP-de-eok"/>
                 <constraint firstItem="UhJ-I1-hhO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:3" id="Fq0-J9-6Uo"/>
                 <constraint firstItem="8lE-bh-60B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GZX-RD-fn2"/>
-                <constraint firstItem="dEu-mL-yj3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="12:667" id="GgA-4c-8sq"/>
-                <constraint firstItem="cpr-Ir-qbN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KHD-tO-Pgr"/>
+                <constraint firstItem="dEu-mL-yj3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="8:667" id="GgA-4c-8sq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8lE-bh-60B" secondAttribute="bottom" id="Neu-xQ-vcS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UhJ-I1-hhO" secondAttribute="trailing" id="OlR-pj-5u9"/>
+                <constraint firstItem="UhJ-I1-hhO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R6K-8C-Ss1"/>
                 <constraint firstItem="UhJ-I1-hhO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RAz-tJ-ey5"/>
                 <constraint firstAttribute="trailing" secondItem="8lE-bh-60B" secondAttribute="trailing" id="WYh-Mr-7ef"/>
+                <constraint firstItem="PD2-jD-6Db" firstAttribute="trailing" secondItem="8lE-bh-60B" secondAttribute="trailing" id="Y2E-rY-e90"/>
+                <constraint firstItem="XeQ-x1-CXl" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="60:720" id="aHF-c6-oAZ"/>
+                <constraint firstItem="Bsr-iT-cih" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="60:720" id="arL-jR-CHj"/>
                 <constraint firstItem="2rh-w2-rDo" firstAttribute="top" secondItem="UhJ-I1-hhO" secondAttribute="bottom" constant="20" id="dOZ-pm-RwS"/>
-                <constraint firstItem="8lE-bh-60B" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="91:667" id="eTr-3O-UfC"/>
-                <constraint firstItem="UhJ-I1-hhO" firstAttribute="top" secondItem="cpr-Ir-qbN" secondAttribute="bottom" id="enP-v6-5c7"/>
-                <constraint firstItem="cpr-Ir-qbN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fCg-iC-0ad"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cpr-Ir-qbN" secondAttribute="trailing" id="wJL-eO-pZB"/>
+                <constraint firstItem="8lE-bh-60B" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="180:667" id="eTr-3O-UfC"/>
+                <constraint firstItem="PD2-jD-6Db" firstAttribute="leading" secondItem="8lE-bh-60B" secondAttribute="leading" id="l7b-Gg-7vP"/>
+                <constraint firstItem="PD2-jD-6Db" firstAttribute="top" secondItem="8lE-bh-60B" secondAttribute="top" id="mrZ-CS-k1H"/>
+                <constraint firstItem="2rh-w2-rDo" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8:1" id="ncV-mb-MhM"/>
+                <constraint firstItem="PD2-jD-6Db" firstAttribute="bottom" secondItem="8lE-bh-60B" secondAttribute="bottom" id="vBn-YC-cBI"/>
                 <constraint firstItem="dEu-mL-yj3" firstAttribute="top" secondItem="2rh-w2-rDo" secondAttribute="bottom" constant="15" id="zDL-Ik-H5h"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -170,5 +284,8 @@
         <image name="line_accept_call" width="118" height="120"/>
         <image name="line_animated" width="58" height="12"/>
         <image name="line_end_call" width="118" height="120"/>
+        <image name="line_mic_mute" width="118" height="120"/>
+        <image name="line_speaker" width="118" height="120"/>
+        <image name="line_video" width="118" height="120"/>
     </resources>
 </document>

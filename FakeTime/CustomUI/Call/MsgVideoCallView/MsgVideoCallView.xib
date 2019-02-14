@@ -10,128 +10,143 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MsgVideoCallView" customModule="FakeTime" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MsgVideoCallView" customModule="FakeTime" customModuleProvider="target">
+            <connections>
+                <outlet property="viewShowVideo" destination="2Ho-GS-KDS" id="A3M-yO-jIL"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHl-Dc-9FT">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                    <color key="backgroundColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="20" id="PHX-DU-jQ5"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VN-hG-fOb" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ho-GS-KDS" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaA-2F-6tQ" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="58.5" y="563" width="258" height="54"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHi-E9-EJs" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msg_videoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="0ms-PW-Y3g" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                                    <rect key="frame" x="13.5" y="13.5" width="27" height="27"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="0ms-PW-Y3g" secondAttribute="height" multiplier="1:1" id="y7c-Wd-WYb"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.050980392156862744" green="0.023529411764705882" blue="0.011764705882352941" alpha="0.79944349315068497" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="WHi-E9-EJs" secondAttribute="height" multiplier="1:1" id="CGU-6c-5yo"/>
-                                                <constraint firstItem="0ms-PW-Y3g" firstAttribute="centerX" secondItem="WHi-E9-EJs" secondAttribute="centerX" id="EJm-5o-QzY"/>
-                                                <constraint firstItem="0ms-PW-Y3g" firstAttribute="centerY" secondItem="WHi-E9-EJs" secondAttribute="centerY" id="Pc3-3v-FRs"/>
-                                                <constraint firstItem="0ms-PW-Y3g" firstAttribute="height" secondItem="WHi-E9-EJs" secondAttribute="height" multiplier="1:2" id="WBE-Eh-Hg6"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eb1-5b-Gh0" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="102" y="0.0" width="54" height="54"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_mute" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-Rk-wjx" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                                    <rect key="frame" x="13.5" y="13.5" width="27" height="27"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Uxh-Rk-wjx" secondAttribute="height" multiplier="1:1" id="w6k-1J-oFq"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.050980392156862744" green="0.023529411764705882" blue="0.011764705882352941" alpha="0.80431292808219179" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstItem="Uxh-Rk-wjx" firstAttribute="centerX" secondItem="Eb1-5b-Gh0" secondAttribute="centerX" id="Tlq-dQ-b5O"/>
-                                                <constraint firstItem="Uxh-Rk-wjx" firstAttribute="height" secondItem="Eb1-5b-Gh0" secondAttribute="height" multiplier="1:2" id="eK7-Ul-Ea5"/>
-                                                <constraint firstItem="Uxh-Rk-wjx" firstAttribute="centerY" secondItem="Eb1-5b-Gh0" secondAttribute="centerY" id="i4l-bj-kCL"/>
-                                                <constraint firstAttribute="width" secondItem="Eb1-5b-Gh0" secondAttribute="height" multiplier="1:1" id="v7T-7J-6U5"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Si6-1k-K37" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="204" y="0.0" width="54" height="54"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="call_endcall" translatesAutoresizingMaskIntoConstraints="NO" id="Adf-JK-YqY" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXe-dX-NvB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="Si6-1k-K37" secondAttribute="height" multiplier="1:1" id="C9a-1e-E22"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1j-Vi-ppX" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="637" width="375" height="30"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="Eb1-5b-Gh0" firstAttribute="centerX" secondItem="LaA-2F-6tQ" secondAttribute="centerX" id="2Ls-vN-Cvk"/>
-                                        <constraint firstAttribute="bottom" secondItem="Eb1-5b-Gh0" secondAttribute="bottom" id="86A-07-mT1"/>
-                                        <constraint firstAttribute="bottom" secondItem="Si6-1k-K37" secondAttribute="bottom" id="8dw-hf-azs"/>
-                                        <constraint firstItem="WHi-E9-EJs" firstAttribute="top" secondItem="LaA-2F-6tQ" secondAttribute="top" id="NJ9-tk-nIJ"/>
-                                        <constraint firstAttribute="trailing" secondItem="Si6-1k-K37" secondAttribute="trailing" id="RG4-gI-Ot2"/>
-                                        <constraint firstItem="WHi-E9-EJs" firstAttribute="leading" secondItem="LaA-2F-6tQ" secondAttribute="leading" id="X7L-KL-krl"/>
-                                        <constraint firstAttribute="bottom" secondItem="WHi-E9-EJs" secondAttribute="bottom" id="eHV-8Y-OIx"/>
-                                        <constraint firstItem="Eb1-5b-Gh0" firstAttribute="top" secondItem="LaA-2F-6tQ" secondAttribute="top" id="jbO-bv-uiM"/>
-                                        <constraint firstItem="Si6-1k-K37" firstAttribute="top" secondItem="LaA-2F-6tQ" secondAttribute="top" id="o2x-AZ-WJt"/>
+                                        <constraint firstAttribute="height" constant="30" id="AHS-UF-sfV"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12Y-Ko-EMx" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="45" width="375" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="ng8-kl-cXP"/>
                                     </constraints>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" red="0.13911962580000001" green="0.1049434487" blue="0.1071777344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstItem="LaA-2F-6tQ" firstAttribute="centerX" secondItem="2Ho-GS-KDS" secondAttribute="centerX" id="29P-GS-ZBY"/>
-                                <constraint firstAttribute="bottom" secondItem="LaA-2F-6tQ" secondAttribute="bottom" constant="30" id="6yx-WG-03e"/>
-                                <constraint firstItem="LaA-2F-6tQ" firstAttribute="height" secondItem="2Ho-GS-KDS" secondAttribute="height" multiplier="60:720" id="QaK-dt-xRB"/>
-                                <constraint firstItem="LaA-2F-6tQ" firstAttribute="width" secondItem="2Ho-GS-KDS" secondAttribute="width" multiplier="165:240" id="nA8-SX-t7W"/>
+                                <constraint firstAttribute="trailing" secondItem="c1j-Vi-ppX" secondAttribute="trailing" id="0K5-0A-f3C"/>
+                                <constraint firstAttribute="trailing" secondItem="12Y-Ko-EMx" secondAttribute="trailing" id="6g7-xV-0NN"/>
+                                <constraint firstAttribute="bottom" secondItem="c1j-Vi-ppX" secondAttribute="bottom" id="dvj-rH-mhZ"/>
+                                <constraint firstItem="12Y-Ko-EMx" firstAttribute="leading" secondItem="2Ho-GS-KDS" secondAttribute="leading" id="qEV-bw-x0o"/>
+                                <constraint firstItem="c1j-Vi-ppX" firstAttribute="leading" secondItem="2Ho-GS-KDS" secondAttribute="leading" id="vwn-SW-Q5d"/>
                             </constraints>
                         </view>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msg_camera_switch" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-y3-no6" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="331" y="15" width="29" height="29"/>
+                            <rect key="frame" x="330" y="15" width="30" height="30"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
-                            </userDefinedRuntimeAttributes>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msg_icon" translatesAutoresizingMaskIntoConstraints="NO" id="fN6-1E-AKY" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="15" y="15" width="29" height="29"/>
+                            <rect key="frame" x="15" y="15" width="30" height="30"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
-                            </userDefinedRuntimeAttributes>
                         </imageView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vg5-4E-7hs">
-                            <rect key="frame" x="264" y="94" width="81.5" height="136"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaA-2F-6tQ" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="58.5" y="581.5" width="258" height="55.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHi-E9-EJs" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msg_videoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="0ms-PW-Y3g" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="14" y="14" width="28" height="27.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="0ms-PW-Y3g" secondAttribute="height" multiplier="1:1" id="y7c-Wd-WYb"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.050980392156862744" green="0.023529411764705882" blue="0.011764705882352941" alpha="0.79944349315068497" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="WHi-E9-EJs" secondAttribute="height" multiplier="1:1" id="CGU-6c-5yo"/>
+                                        <constraint firstItem="0ms-PW-Y3g" firstAttribute="centerX" secondItem="WHi-E9-EJs" secondAttribute="centerX" id="EJm-5o-QzY"/>
+                                        <constraint firstItem="0ms-PW-Y3g" firstAttribute="centerY" secondItem="WHi-E9-EJs" secondAttribute="centerY" id="Pc3-3v-FRs"/>
+                                        <constraint firstItem="0ms-PW-Y3g" firstAttribute="height" secondItem="WHi-E9-EJs" secondAttribute="height" multiplier="1:2" id="WBE-Eh-Hg6"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eb1-5b-Gh0" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="101" y="0.0" width="56" height="55.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_mute" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-Rk-wjx" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="14" y="14" width="28" height="27.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Uxh-Rk-wjx" secondAttribute="height" multiplier="1:1" id="w6k-1J-oFq"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.050980392156862744" green="0.023529411764705882" blue="0.011764705882352941" alpha="0.80431292808219179" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Uxh-Rk-wjx" firstAttribute="centerX" secondItem="Eb1-5b-Gh0" secondAttribute="centerX" id="Tlq-dQ-b5O"/>
+                                        <constraint firstItem="Uxh-Rk-wjx" firstAttribute="height" secondItem="Eb1-5b-Gh0" secondAttribute="height" multiplier="1:2" id="eK7-Ul-Ea5"/>
+                                        <constraint firstItem="Uxh-Rk-wjx" firstAttribute="centerY" secondItem="Eb1-5b-Gh0" secondAttribute="centerY" id="i4l-bj-kCL"/>
+                                        <constraint firstAttribute="width" secondItem="Eb1-5b-Gh0" secondAttribute="height" multiplier="1:1" id="v7T-7J-6U5"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Si6-1k-K37" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="202.5" y="0.0" width="55.5" height="55.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="Adf-JK-YqY" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXe-dX-NvB">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="actionEndCall:" destination="-1" eventType="touchUpInside" id="lVD-uO-MDB"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Si6-1k-K37" secondAttribute="height" multiplier="1:1" id="C9a-1e-E22"/>
+                                        <constraint firstItem="Adf-JK-YqY" firstAttribute="leading" secondItem="Si6-1k-K37" secondAttribute="leading" id="EjL-nk-fKu"/>
+                                        <constraint firstItem="zXe-dX-NvB" firstAttribute="top" secondItem="Si6-1k-K37" secondAttribute="top" id="Hah-id-mXi"/>
+                                        <constraint firstAttribute="trailing" secondItem="Adf-JK-YqY" secondAttribute="trailing" id="LBf-6b-Ll5"/>
+                                        <constraint firstItem="Adf-JK-YqY" firstAttribute="top" secondItem="Si6-1k-K37" secondAttribute="top" id="b0q-hS-QxH"/>
+                                        <constraint firstItem="zXe-dX-NvB" firstAttribute="leading" secondItem="Si6-1k-K37" secondAttribute="leading" id="baV-Ad-23x"/>
+                                        <constraint firstAttribute="bottom" secondItem="zXe-dX-NvB" secondAttribute="bottom" id="byD-uG-Nwv"/>
+                                        <constraint firstAttribute="trailing" secondItem="zXe-dX-NvB" secondAttribute="trailing" id="rcX-Uo-75U"/>
+                                        <constraint firstAttribute="bottom" secondItem="Adf-JK-YqY" secondAttribute="bottom" id="zdr-zb-3KP"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Eb1-5b-Gh0" firstAttribute="centerX" secondItem="LaA-2F-6tQ" secondAttribute="centerX" id="2Ls-vN-Cvk"/>
+                                <constraint firstAttribute="bottom" secondItem="Eb1-5b-Gh0" secondAttribute="bottom" id="86A-07-mT1"/>
+                                <constraint firstAttribute="bottom" secondItem="Si6-1k-K37" secondAttribute="bottom" id="8dw-hf-azs"/>
+                                <constraint firstItem="WHi-E9-EJs" firstAttribute="top" secondItem="LaA-2F-6tQ" secondAttribute="top" id="NJ9-tk-nIJ"/>
+                                <constraint firstAttribute="trailing" secondItem="Si6-1k-K37" secondAttribute="trailing" id="RG4-gI-Ot2"/>
+                                <constraint firstItem="WHi-E9-EJs" firstAttribute="leading" secondItem="LaA-2F-6tQ" secondAttribute="leading" id="X7L-KL-krl"/>
+                                <constraint firstAttribute="bottom" secondItem="WHi-E9-EJs" secondAttribute="bottom" id="eHV-8Y-OIx"/>
+                                <constraint firstItem="Eb1-5b-Gh0" firstAttribute="top" secondItem="LaA-2F-6tQ" secondAttribute="top" id="jbO-bv-uiM"/>
+                                <constraint firstItem="Si6-1k-K37" firstAttribute="top" secondItem="LaA-2F-6tQ" secondAttribute="top" id="o2x-AZ-WJt"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vg5-4E-7hs" customClass="FrontCameraView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="276" y="70" width="69" height="115"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="vg5-4E-7hs" secondAttribute="height" multiplier="0.6:1" id="YFF-MP-Hhr"/>
@@ -140,22 +155,27 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="vg5-4E-7hs" firstAttribute="height" secondItem="2Ho-GS-KDS" secondAttribute="height" multiplier="140:667" id="6hQ-jL-Ngy"/>
-                        <constraint firstItem="vg5-4E-7hs" firstAttribute="top" secondItem="t7r-y3-no6" secondAttribute="bottom" constant="50" id="ACu-4L-AXz"/>
+                        <constraint firstItem="vg5-4E-7hs" firstAttribute="height" secondItem="2Ho-GS-KDS" secondAttribute="height" multiplier="115:667" id="6hQ-jL-Ngy"/>
                         <constraint firstAttribute="trailing" secondItem="2Ho-GS-KDS" secondAttribute="trailing" id="CUE-Y0-TtE"/>
                         <constraint firstItem="2Ho-GS-KDS" firstAttribute="leading" secondItem="9VN-hG-fOb" secondAttribute="leading" id="DmR-Mv-iJ8"/>
                         <constraint firstItem="vg5-4E-7hs" firstAttribute="trailing" secondItem="t7r-y3-no6" secondAttribute="centerX" id="F9L-7S-jPA"/>
                         <constraint firstItem="fN6-1E-AKY" firstAttribute="top" secondItem="t7r-y3-no6" secondAttribute="top" id="FXX-H5-ZjB"/>
                         <constraint firstItem="2Ho-GS-KDS" firstAttribute="top" secondItem="9VN-hG-fOb" secondAttribute="top" id="I2O-6N-jZS"/>
                         <constraint firstItem="t7r-y3-no6" firstAttribute="height" secondItem="2Ho-GS-KDS" secondAttribute="height" multiplier="30:667" id="LB4-h2-cP1"/>
+                        <constraint firstItem="LaA-2F-6tQ" firstAttribute="height" secondItem="2Ho-GS-KDS" secondAttribute="height" multiplier="60:720" id="XRk-EU-FwC"/>
                         <constraint firstItem="t7r-y3-no6" firstAttribute="top" secondItem="9VN-hG-fOb" secondAttribute="top" constant="15" id="Ynb-YK-Rsm"/>
                         <constraint firstItem="fN6-1E-AKY" firstAttribute="top" secondItem="9VN-hG-fOb" secondAttribute="top" constant="15" id="bBW-NP-3MB"/>
                         <constraint firstItem="fN6-1E-AKY" firstAttribute="leading" secondItem="9VN-hG-fOb" secondAttribute="leading" constant="15" id="dSI-tK-TtA"/>
+                        <constraint firstItem="vg5-4E-7hs" firstAttribute="top" secondItem="12Y-Ko-EMx" secondAttribute="bottom" id="hlc-Oj-rIh"/>
                         <constraint firstItem="t7r-y3-no6" firstAttribute="width" secondItem="t7r-y3-no6" secondAttribute="height" multiplier="1:1" id="lVb-CC-CuG"/>
+                        <constraint firstItem="c1j-Vi-ppX" firstAttribute="top" secondItem="LaA-2F-6tQ" secondAttribute="bottom" id="pjY-Sh-tpb"/>
                         <constraint firstAttribute="trailing" secondItem="t7r-y3-no6" secondAttribute="trailing" constant="15" id="qkY-Hd-6Bn"/>
+                        <constraint firstItem="LaA-2F-6tQ" firstAttribute="centerX" secondItem="2Ho-GS-KDS" secondAttribute="centerX" id="u3a-M2-ifY"/>
                         <constraint firstItem="fN6-1E-AKY" firstAttribute="height" secondItem="t7r-y3-no6" secondAttribute="height" id="vlU-5M-L5T"/>
                         <constraint firstAttribute="bottom" secondItem="2Ho-GS-KDS" secondAttribute="bottom" id="wE1-Hs-Ir7"/>
                         <constraint firstItem="fN6-1E-AKY" firstAttribute="width" secondItem="fN6-1E-AKY" secondAttribute="height" multiplier="1:1" id="wge-uS-VFN"/>
+                        <constraint firstItem="LaA-2F-6tQ" firstAttribute="width" secondItem="2Ho-GS-KDS" secondAttribute="width" multiplier="165:240" id="x57-Ky-raj"/>
+                        <constraint firstItem="12Y-Ko-EMx" firstAttribute="top" secondItem="t7r-y3-no6" secondAttribute="bottom" id="y0l-sP-S1K"/>
                     </constraints>
                 </view>
             </subviews>
@@ -163,19 +183,16 @@
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9VN-hG-fOb" secondAttribute="bottom" id="2Cl-zr-v1R"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9VN-hG-fOb" secondAttribute="trailing" id="8kQ-ZE-o1k"/>
-                <constraint firstItem="OHl-Dc-9FT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C2t-En-6DE"/>
-                <constraint firstItem="OHl-Dc-9FT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Db3-pP-KE4"/>
-                <constraint firstItem="9VN-hG-fOb" firstAttribute="top" secondItem="OHl-Dc-9FT" secondAttribute="bottom" id="Sdt-Hg-v3M"/>
                 <constraint firstItem="9VN-hG-fOb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="crd-nh-e9D"/>
-                <constraint firstAttribute="trailing" secondItem="OHl-Dc-9FT" secondAttribute="trailing" id="mKc-at-jsZ"/>
+                <constraint firstItem="9VN-hG-fOb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ldM-sG-udI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="55.200000000000003" y="60.719640179910051"/>
         </view>
     </objects>
     <resources>
-        <image name="call_endcall" width="70" height="71"/>
         <image name="call_mute" width="118" height="120"/>
+        <image name="line_end_call" width="118" height="120"/>
         <image name="msg_camera_switch" width="72" height="72"/>
         <image name="msg_icon" width="70" height="70"/>
         <image name="msg_videoWhite" width="48" height="48"/>

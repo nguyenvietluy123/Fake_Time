@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingVC" customModule="FakeTime" customModuleProvider="target">
             <connections>
+                <outlet property="navi" destination="VTF-iZ-CgR" id="eeZ-xo-lfS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,12 +23,12 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTF-iZ-CgR" customClass="NavigationView" customModule="FakeTime" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                    <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.062745098040000002" green="0.77647058820000003" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="64" id="Dcb-m9-SNU"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Home"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Setting"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>

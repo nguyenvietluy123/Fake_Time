@@ -12,7 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Call_ScreenWaitVC" customModule="FakeTime" customModuleProvider="target">
             <connections>
+                <outlet property="lbName" destination="RfA-Qa-LHe" id="tca-zA-Q2e"/>
+                <outlet property="lbTime" destination="nbQ-PK-90M" id="Hzd-AQ-W9x"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view1Button" destination="TTF-fo-4Mk" id="fAk-Z1-8Oa"/>
+                <outlet property="view2Button" destination="wRb-0V-HWy" id="L99-FK-RrQ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -23,54 +27,18 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXc-Ax-WWg" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-fo-4Mk" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="58.5" y="521" width="258" height="76"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuq-S7-svw" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="91" y="0.0" width="76" height="76"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_endcall" translatesAutoresizingMaskIntoConstraints="NO" id="ork-x4-Egf" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfv-dp-ak0">
-                                            <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="qfv-dp-ak0" secondAttribute="trailing" id="3o3-83-Nbj"/>
-                                        <constraint firstAttribute="trailing" secondItem="ork-x4-Egf" secondAttribute="trailing" id="6UM-nu-aoU"/>
-                                        <constraint firstAttribute="bottom" secondItem="ork-x4-Egf" secondAttribute="bottom" id="Bwv-MR-Ldh"/>
-                                        <constraint firstItem="ork-x4-Egf" firstAttribute="leading" secondItem="zuq-S7-svw" secondAttribute="leading" id="HOT-pu-Xtv"/>
-                                        <constraint firstItem="ork-x4-Egf" firstAttribute="top" secondItem="zuq-S7-svw" secondAttribute="top" id="Jol-cr-0XS"/>
-                                        <constraint firstItem="qfv-dp-ak0" firstAttribute="top" secondItem="zuq-S7-svw" secondAttribute="top" id="QZz-AC-Y0z"/>
-                                        <constraint firstItem="qfv-dp-ak0" firstAttribute="leading" secondItem="zuq-S7-svw" secondAttribute="leading" id="XWp-E3-rzd"/>
-                                        <constraint firstAttribute="bottom" secondItem="qfv-dp-ak0" secondAttribute="bottom" id="wn3-BO-W8Q"/>
-                                    </constraints>
-                                </view>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstItem="zuq-S7-svw" firstAttribute="centerX" secondItem="TTF-fo-4Mk" secondAttribute="centerX" id="NZW-hc-e9B"/>
-                                <constraint firstItem="zuq-S7-svw" firstAttribute="width" secondItem="TTF-fo-4Mk" secondAttribute="height" multiplier="1:1" id="WFh-Zc-Si3"/>
-                                <constraint firstItem="zuq-S7-svw" firstAttribute="height" secondItem="TTF-fo-4Mk" secondAttribute="height" id="kby-FT-Vrv"/>
-                                <constraint firstItem="zuq-S7-svw" firstAttribute="centerY" secondItem="TTF-fo-4Mk" secondAttribute="centerY" id="riZ-pW-wgJ"/>
-                            </constraints>
-                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRz-iS-CTQ">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="271"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfA-Qa-LHe" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="123" y="114.5" width="129" height="42"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfA-Qa-LHe" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="37.5" y="114.5" width="300" height="42"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="35"/>
                                     <color key="textColor" red="0.45098039220000002" green="0.78823529410000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-PK-90M" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
-                                    <rect key="frame" x="143.5" y="176.5" width="88" height="42"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="35"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calling..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-PK-90M" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="137.5" y="176.5" width="100.5" height="30"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
                                     <color key="textColor" red="0.45098039220000002" green="0.78823529410000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -78,6 +46,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="nbQ-PK-90M" firstAttribute="centerX" secondItem="RfA-Qa-LHe" secondAttribute="centerX" id="Apf-Dk-7vF"/>
+                                <constraint firstItem="RfA-Qa-LHe" firstAttribute="width" secondItem="oRz-iS-CTQ" secondAttribute="width" multiplier="0.8:1" id="BUZ-Y4-XUy"/>
                                 <constraint firstItem="RfA-Qa-LHe" firstAttribute="centerX" secondItem="oRz-iS-CTQ" secondAttribute="centerX" id="BYC-sG-4pg"/>
                                 <constraint firstItem="RfA-Qa-LHe" firstAttribute="centerY" secondItem="oRz-iS-CTQ" secondAttribute="centerY" id="XGG-xd-6pR"/>
                                 <constraint firstItem="nbQ-PK-90M" firstAttribute="top" secondItem="RfA-Qa-LHe" secondAttribute="bottom" constant="20" id="txo-7F-tSX"/>
@@ -138,6 +107,117 @@
                                 <constraint firstItem="RAm-Et-1FU" firstAttribute="centerX" secondItem="gZW-uL-1VP" secondAttribute="centerX" id="wSV-St-q4w"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-fo-4Mk" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="58.5" y="541.5" width="258" height="55.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuq-S7-svw" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="101" y="0.0" width="56" height="55.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="ork-x4-Egf" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="56" height="55.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfv-dp-ak0" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="56" height="55.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="rejectCall:" destination="-1" eventType="touchUpInside" id="29J-zb-x0n"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="qfv-dp-ak0" secondAttribute="trailing" id="3o3-83-Nbj"/>
+                                        <constraint firstAttribute="trailing" secondItem="ork-x4-Egf" secondAttribute="trailing" id="6UM-nu-aoU"/>
+                                        <constraint firstAttribute="bottom" secondItem="ork-x4-Egf" secondAttribute="bottom" id="Bwv-MR-Ldh"/>
+                                        <constraint firstItem="ork-x4-Egf" firstAttribute="leading" secondItem="zuq-S7-svw" secondAttribute="leading" id="HOT-pu-Xtv"/>
+                                        <constraint firstItem="ork-x4-Egf" firstAttribute="top" secondItem="zuq-S7-svw" secondAttribute="top" id="Jol-cr-0XS"/>
+                                        <constraint firstItem="qfv-dp-ak0" firstAttribute="top" secondItem="zuq-S7-svw" secondAttribute="top" id="QZz-AC-Y0z"/>
+                                        <constraint firstItem="qfv-dp-ak0" firstAttribute="leading" secondItem="zuq-S7-svw" secondAttribute="leading" id="XWp-E3-rzd"/>
+                                        <constraint firstAttribute="bottom" secondItem="qfv-dp-ak0" secondAttribute="bottom" id="wn3-BO-W8Q"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="zuq-S7-svw" firstAttribute="centerX" secondItem="TTF-fo-4Mk" secondAttribute="centerX" id="NZW-hc-e9B"/>
+                                <constraint firstItem="zuq-S7-svw" firstAttribute="width" secondItem="TTF-fo-4Mk" secondAttribute="height" multiplier="1:1" id="WFh-Zc-Si3"/>
+                                <constraint firstItem="zuq-S7-svw" firstAttribute="height" secondItem="TTF-fo-4Mk" secondAttribute="height" id="kby-FT-Vrv"/>
+                                <constraint firstItem="zuq-S7-svw" firstAttribute="centerY" secondItem="TTF-fo-4Mk" secondAttribute="centerY" id="riZ-pW-wgJ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-0V-HWy" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                            <rect key="frame" x="58.5" y="541.5" width="258" height="55.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G35-Mx-cYb" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="N1w-hs-PAM" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-zQ-yo9" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="rejectCall:" destination="-1" eventType="touchUpInside" id="PFj-We-WBQ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="N1w-hs-PAM" secondAttribute="bottom" id="47s-mJ-dMR"/>
+                                        <constraint firstItem="N1w-hs-PAM" firstAttribute="leading" secondItem="G35-Mx-cYb" secondAttribute="leading" id="7Du-tI-hI0"/>
+                                        <constraint firstAttribute="trailing" secondItem="xTT-zQ-yo9" secondAttribute="trailing" id="BXg-NJ-mJ5"/>
+                                        <constraint firstAttribute="bottom" secondItem="xTT-zQ-yo9" secondAttribute="bottom" id="Dch-mw-vXg"/>
+                                        <constraint firstItem="xTT-zQ-yo9" firstAttribute="top" secondItem="G35-Mx-cYb" secondAttribute="top" id="TOB-8S-tBN"/>
+                                        <constraint firstItem="N1w-hs-PAM" firstAttribute="top" secondItem="G35-Mx-cYb" secondAttribute="top" id="goA-eS-eHE"/>
+                                        <constraint firstItem="xTT-zQ-yo9" firstAttribute="leading" secondItem="G35-Mx-cYb" secondAttribute="leading" id="wee-yS-6bX"/>
+                                        <constraint firstAttribute="trailing" secondItem="N1w-hs-PAM" secondAttribute="trailing" id="y7S-45-KIa"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3z-gK-YV4" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                    <rect key="frame" x="202.5" y="0.0" width="55.5" height="55.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_accept_call" translatesAutoresizingMaskIntoConstraints="NO" id="gIY-4B-R09" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9a-Xj-Lt2" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="call_accept"/>
+                                            <connections>
+                                                <action selector="acceptCall:" destination="-1" eventType="touchUpInside" id="qvK-T6-3ZA"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="o9a-Xj-Lt2" firstAttribute="top" secondItem="i3z-gK-YV4" secondAttribute="top" id="0tM-eh-1rp"/>
+                                        <constraint firstAttribute="bottom" secondItem="gIY-4B-R09" secondAttribute="bottom" id="2by-KM-TeC"/>
+                                        <constraint firstAttribute="trailing" secondItem="gIY-4B-R09" secondAttribute="trailing" id="85v-DI-DwD"/>
+                                        <constraint firstAttribute="width" secondItem="i3z-gK-YV4" secondAttribute="height" multiplier="1:1" id="MBX-hW-rpu"/>
+                                        <constraint firstAttribute="trailing" secondItem="o9a-Xj-Lt2" secondAttribute="trailing" id="S6K-c3-MtZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="o9a-Xj-Lt2" secondAttribute="bottom" id="Wtd-BG-n2c"/>
+                                        <constraint firstItem="gIY-4B-R09" firstAttribute="leading" secondItem="i3z-gK-YV4" secondAttribute="leading" id="bA4-mO-sBQ"/>
+                                        <constraint firstItem="o9a-Xj-Lt2" firstAttribute="leading" secondItem="i3z-gK-YV4" secondAttribute="leading" id="crz-Ye-gAs"/>
+                                        <constraint firstItem="gIY-4B-R09" firstAttribute="top" secondItem="i3z-gK-YV4" secondAttribute="top" id="os9-QX-lv5"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="G35-Mx-cYb" firstAttribute="width" secondItem="wRb-0V-HWy" secondAttribute="height" multiplier="1:1" id="1jD-My-mdb"/>
+                                <constraint firstItem="i3z-gK-YV4" firstAttribute="top" secondItem="wRb-0V-HWy" secondAttribute="top" id="8Tx-g3-Zie"/>
+                                <constraint firstAttribute="trailing" secondItem="i3z-gK-YV4" secondAttribute="trailing" id="TP4-6t-rhM"/>
+                                <constraint firstAttribute="bottom" secondItem="G35-Mx-cYb" secondAttribute="bottom" id="fdW-VC-ER3"/>
+                                <constraint firstItem="G35-Mx-cYb" firstAttribute="top" secondItem="wRb-0V-HWy" secondAttribute="top" id="j89-L2-pN4"/>
+                                <constraint firstItem="G35-Mx-cYb" firstAttribute="leading" secondItem="wRb-0V-HWy" secondAttribute="leading" id="oQw-g4-cuC"/>
+                                <constraint firstItem="G35-Mx-cYb" firstAttribute="height" secondItem="wRb-0V-HWy" secondAttribute="height" id="v0S-DE-8Uk"/>
+                                <constraint firstAttribute="bottom" secondItem="i3z-gK-YV4" secondAttribute="bottom" id="vsm-fb-0Wd"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -145,13 +225,17 @@
                         <constraint firstItem="oRz-iS-CTQ" firstAttribute="leading" secondItem="lXc-Ax-WWg" secondAttribute="leading" id="6YL-hy-22V"/>
                         <constraint firstAttribute="bottom" secondItem="TTF-fo-4Mk" secondAttribute="bottom" constant="70" id="9pc-BZ-bLU"/>
                         <constraint firstItem="oRz-iS-CTQ" firstAttribute="top" secondItem="lXc-Ax-WWg" secondAttribute="top" id="AWw-gl-ki4"/>
+                        <constraint firstItem="TTF-fo-4Mk" firstAttribute="top" secondItem="wRb-0V-HWy" secondAttribute="top" id="DaB-om-1cW"/>
                         <constraint firstItem="ZIG-4o-0SH" firstAttribute="width" secondItem="lXc-Ax-WWg" secondAttribute="width" multiplier="580:720" id="DrQ-Mj-CQc"/>
                         <constraint firstItem="oRz-iS-CTQ" firstAttribute="height" secondItem="lXc-Ax-WWg" secondAttribute="height" multiplier="520:1280" id="Lft-ye-hoZ"/>
+                        <constraint firstItem="TTF-fo-4Mk" firstAttribute="trailing" secondItem="wRb-0V-HWy" secondAttribute="trailing" id="S0z-JQ-r06"/>
                         <constraint firstItem="TTF-fo-4Mk" firstAttribute="centerX" secondItem="lXc-Ax-WWg" secondAttribute="centerX" id="WgQ-m3-IQE"/>
                         <constraint firstItem="ZIG-4o-0SH" firstAttribute="top" secondItem="oRz-iS-CTQ" secondAttribute="bottom" id="ckE-Xh-X8D"/>
                         <constraint firstAttribute="trailing" secondItem="oRz-iS-CTQ" secondAttribute="trailing" id="j1E-ce-5sw"/>
+                        <constraint firstItem="TTF-fo-4Mk" firstAttribute="bottom" secondItem="wRb-0V-HWy" secondAttribute="bottom" id="ntA-gU-mmW"/>
                         <constraint firstItem="ZIG-4o-0SH" firstAttribute="height" secondItem="lXc-Ax-WWg" secondAttribute="height" multiplier="180:1280" id="oB3-Tw-xv5"/>
-                        <constraint firstItem="TTF-fo-4Mk" firstAttribute="height" secondItem="lXc-Ax-WWg" secondAttribute="height" multiplier="146:1280" id="vab-Pc-b2v"/>
+                        <constraint firstItem="TTF-fo-4Mk" firstAttribute="leading" secondItem="wRb-0V-HWy" secondAttribute="leading" id="qjR-k6-BTN"/>
+                        <constraint firstItem="TTF-fo-4Mk" firstAttribute="height" secondItem="lXc-Ax-WWg" secondAttribute="height" multiplier="60:720" id="vab-Pc-b2v"/>
                         <constraint firstItem="ZIG-4o-0SH" firstAttribute="centerX" secondItem="lXc-Ax-WWg" secondAttribute="centerX" id="xZr-be-jGv"/>
                     </constraints>
                 </view>
@@ -167,9 +251,11 @@
         </view>
     </objects>
     <resources>
-        <image name="call_endcall" width="70" height="71"/>
+        <image name="call_accept" width="118" height="120"/>
         <image name="call_keypad" width="131" height="131"/>
         <image name="call_mute2" width="131" height="131"/>
         <image name="call_speaker" width="131" height="131"/>
+        <image name="line_accept_call" width="118" height="120"/>
+        <image name="line_end_call" width="118" height="120"/>
     </resources>
 </document>

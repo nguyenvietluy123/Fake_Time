@@ -11,82 +11,136 @@ import AVKit
 
 class Messenger_ScreenWaitVC: UIViewController {
     @IBOutlet weak var lbName: KHLabel!
-    @IBOutlet weak var lbStatus: KHLabel!
-    @IBOutlet weak var imgAvatar: UIImageView!
+    @IBOutlet weak var lbTime: KHLabel!
+    @IBOutlet weak var imgAvatar: KHImageView!
+    @IBOutlet weak var imgAvatar2: KHImageView!
+    @IBOutlet weak var view2Button: KHView!
+    @IBOutlet weak var view1Button: KHView!
+    @IBOutlet weak var viewTop: KHView!
     
     var caller: CallerObj = CallerObj()
     var ringBell: AVAudioPlayer?
+    var player = AVPlayer()
+    var playback = Timer()
     var timer = Timer()
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    var time: Int = 0 {
+        didSet {
+            let (m, s) = time.secondsToMinutesSeconds()
+            lbTime.text = "\(m):\(s)"
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initUI()
+        imgAvatar.image = caller.avatar
+        imgAvatar2.image = caller.avatar
+        lbName.text = caller.name
+        self.view2Button.alpha = 1
+        self.view1Button.alpha = 0
+        viewTop.isHidden = true
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        openRingBell()
+    }
+    
+    @IBAction func rejectCall(_ sender: Any) {
+        lbTime.text = KeyString.endCall
+        player.pause()
+        timer.invalidate()
+        playback.invalidate()
+        ringBell?.stop()
         GCDCommon.mainQueueWithDelay(1) {
-            self.lbStatus.text = "Đang đổ chuông..."
-            self.openRingBell()
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
-    @IBAction func actionReject(_ sender: Any) {
+    @IBAction func acceptCall(_ sender: Any) {
+        lbTime.text = "00:00"
         timer.invalidate()
         ringBell?.stop()
-        dismiss(animated: true, completion: nil)
+        UIView.animate(withDuration: 0.3) {
+            self.view2Button.alpha = 0
+            self.view1Button.alpha = 1
+            self.viewTop.isHidden = false
+        }
+        turnOnAcceptCall()
     }
     
-    @IBAction func actionAccept(_ sender: Any) {
-        acceptCallVideo()
+    func turnOnAcceptCall() {
+        timer = Timer.every(1) {
+            self.time += 1
+        }
+        
+        var str: String = ""
+        switch caller.name {
+        case KeyString.girlFriend:
+            str = KeyString.girlFriendSound
+            break
+        case KeyString.marianRivera:
+            str = KeyString.marianRiveraSound
+            break
+        default:
+            str = caller.pathVideo
+            break
+        }
+        guard str != "" else { return }
+        switch caller.name {
+        case KeyString.girlFriend, KeyString.marianRivera:
+            //run file from bundle
+            if let path = Bundle.main.path(forResource: str, ofType: nil) {
+                let url = URL(fileURLWithPath: path)
+                do {
+                    ringBell = try AVAudioPlayer(contentsOf: url)
+                    ringBell?.play()
+                    playback = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(checkCurrentTime), userInfo: nil, repeats: true)
+                    
+                } catch {
+                }
+            }
+            break
+        default:
+            //run sound without display video
+            player = AVPlayer(url: URL(fileURLWithPath: str))
+            player.play()
+            
+            let intervalTime = CMTime(value: 1, timescale: 2)
+            player.addPeriodicTimeObserver(forInterval: intervalTime, queue: DispatchQueue.main) { (progressTime) in
+                let second = CMTimeGetSeconds(progressTime)
+                if let duration = self.player.currentItem?.duration {
+                    let durationSeconds = CMTimeGetSeconds(duration)
+                    
+                    if second == durationSeconds {
+                        GCDCommon.mainQueueWithDelay(1, {
+                            self.rejectCall(self)
+                        })
+                    }
+                }
+            }
+            break
+        }
     }
-}
-
-extension Messenger_ScreenWaitVC {
-    func initUI() {
-        lbName.text = caller.name
-        imgAvatar.image = caller.avatar
+    
+    @objc func checkCurrentTime() {
+        if ringBell?.currentTime == 0 {
+            rejectCall(self)
+        }
     }
     
     func openRingBell() {
-        let path = Bundle.main.path(forResource: "call_messenger.m4a", ofType:nil)!
+        lbTime.text = "Calling..."
+        let path = Bundle.main.path(forResource: KeyString.soundMessenger, ofType:nil)!
         let url = URL(fileURLWithPath: path)
         
         do {
             ringBell = try AVAudioPlayer(contentsOf: url)
             ringBell?.play()
             
-            timer = Timer.every(1) {
+            self.timer = Timer.every(1) {
                 self.ringBell?.play()
             }
         } catch {
         }
-    }
-    
-    func acceptCallVideo() {
-        timer.invalidate()
-        ringBell?.stop()
-        
-//        let videoCallView = VideoCallView(frame: CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-//        self.view.addSubview(videoCallView)
-//
-//        UIView.animate(withDuration: 0.3, animations: {
-//            videoCallView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-//        }) { (completed) in
-//            videoCallView.showVideo(caller: self.caller)
-//        }
-//
-//        videoCallView.handleEndCall = {
-//            self.dismiss(animated: true, completion: nil)
-//            UIView.animate(withDuration: 0.3, animations: {
-//                videoCallView.frame = CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-//            }) { (completed) in
-//                videoCallView.removeFromSuperview()
-//            }
-//        }
     }
 }
