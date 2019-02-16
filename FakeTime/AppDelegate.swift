@@ -8,6 +8,11 @@
 
 import UIKit
 import CoreData
+import GoogleMobileAds
+
+let kAdmobAppID         = "ca-app-pub-1947012962477196~8459063867"
+let kAdmobBanner        = "ca-app-pub-1947012962477196/2412530261"
+let kAdmobInterstitial  = "ca-app-pub-1947012962477196/2272929463"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var menuContainerViewController:MFSideMenuContainerViewController? = nil
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         initMenu()
+        GADMobileAds.configure(withApplicationID: kAdmobAppID)
+        SaveHelper.save(0, key: SaveKey.countCall)
         return true
     }
     

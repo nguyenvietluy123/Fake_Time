@@ -8,6 +8,7 @@
 
 import UIKit
 import AVKit
+import GoogleMobileAds
 
 class HomeVC: BaseVC {
     @IBOutlet weak var navi: NavigationView!
@@ -19,6 +20,7 @@ class HomeVC: BaseVC {
     @IBOutlet weak var viewDelay: UIView!
     @IBOutlet weak var lbTimeCountDown: KHLabel!
     
+    var interstitial: GADInterstitial!
     var timer: Timer = Timer()
     var caller: CallerObj = CallerObj()
     var isCallVideo: Bool = false
@@ -35,6 +37,7 @@ class HomeVC: BaseVC {
             lbTimeCountDown.text = "Call " + "(\(h):\(m):\(s))"
         }
     }
+    var countCall: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,12 +46,25 @@ class HomeVC: BaseVC {
         initData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let count = SaveHelper.get(SaveKey.countCall) as! Int
+        if count >= 3 {
+            if self.interstitial.isReady {
+                self.interstitial.present(fromRootViewController: self)
+                SaveHelper.save(0, key: SaveKey.countCall)
+            }
+        }
+    }
+    
     @IBAction func callPhone(_ sender: Any) {
+        count()
         isCallVideo = false
         delayTime()
     }
     
     @IBAction func callVideo(_ sender: Any) {
+        count()
         isCallVideo = true
         delayTime()
     }
@@ -66,6 +82,12 @@ class HomeVC: BaseVC {
         } else {
             showCallVC()
         }
+    }
+    
+    func count() {
+        let count = SaveHelper.get(SaveKey.countCall) as! Int
+        countCall = count + 1
+        SaveHelper.save(countCall, key: SaveKey.countCall)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -88,6 +110,7 @@ extension HomeVC {
             }
         }
         tableView.register(CellHome.self)
+        interstitial = createAndLoadInterstitial()
     }
     
     func initData() {
@@ -176,6 +199,13 @@ extension HomeVC {
             break
         }
     }
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        interstitial = GADInterstitial(adUnitID: kAdmobInterstitial)
+        interstitial.delegate = self
+        interstitial.load(GADRequest())
+        return interstitial
+    }
 }
 
 extension HomeVC: UITableViewDataSource {
@@ -197,7 +227,7 @@ extension HomeVC: UITableViewDataSource {
 
 extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60*heightRatio
+        return isIPad ? 90*heightRatio : 60*heightRatio
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -210,5 +240,11 @@ extension HomeVC: UITableViewDelegate {
         }
         caller.typeCall = arrItem[indexPath.item].typeCall
         tableView.reloadData()
+    }
+}
+
+extension HomeVC : GADInterstitialDelegate {
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial = createAndLoadInterstitial()
     }
 }

@@ -207,7 +207,7 @@
                                                     <color key="textColor" red="0.45098039215686275" green="0.78823529411764703" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lN9-Be-SzO" customClass="KHTextField" customModule="FakeTime" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lN9-Be-SzO" customClass="KHTextField" customModule="FakeTime" customModuleProvider="target">
                                                     <rect key="frame" x="97.5" y="12.5" width="77" height="25.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -256,7 +256,7 @@
                             <rect key="frame" x="0.0" y="186.5" width="375" height="416.5"/>
                             <subviews>
                                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GFy-Vz-ghj">
-                                    <rect key="frame" x="0.0" y="83.5" width="375" height="250"/>
+                                    <rect key="frame" x="0.0" y="41.5" width="375" height="250"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="250" id="yrG-qn-nyL"/>
@@ -271,7 +271,7 @@
                             <constraints>
                                 <constraint firstItem="GFy-Vz-ghj" firstAttribute="centerX" secondItem="TAn-VF-cXC" secondAttribute="centerX" id="AWg-gE-R8g"/>
                                 <constraint firstItem="GFy-Vz-ghj" firstAttribute="width" secondItem="TAn-VF-cXC" secondAttribute="width" id="GyJ-ih-Flg"/>
-                                <constraint firstItem="GFy-Vz-ghj" firstAttribute="centerY" secondItem="TAn-VF-cXC" secondAttribute="centerY" id="NwR-7B-c0a"/>
+                                <constraint firstItem="GFy-Vz-ghj" firstAttribute="centerY" secondItem="TAn-VF-cXC" secondAttribute="centerY" multiplier="0.8" id="NwR-7B-c0a"/>
                             </constraints>
                         </view>
                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12T-87-4za" userLabel="ViewTrail">

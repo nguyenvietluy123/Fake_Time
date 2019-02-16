@@ -1,24 +1,28 @@
 PODS:
   - Gallery (2.2.0)
+  - Google-Mobile-Ads-SDK (7.37.0)
   - KRActivityIndicatorView (3.0.0)
   - KRProgressHUD (3.4.0):
     - KRActivityIndicatorView (= 3.0.0)
 
 DEPENDENCIES:
   - Gallery
+  - Google-Mobile-Ads-SDK
   - KRProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Gallery
+    - Google-Mobile-Ads-SDK
     - KRActivityIndicatorView
     - KRProgressHUD
 
 SPEC CHECKSUMS:
   Gallery: 3f4c780c4b22906d6b0a5e55d12167cdc4b4fc5b
+  Google-Mobile-Ads-SDK: d028682d7450749a1955679da050eaf70d997b3e
   KRActivityIndicatorView: c414000730a6f4969eeb354bee4f2aebc89c2c2e
   KRProgressHUD: 79c8703f82179fe34b3602f10b30726f887983fa
 
-PODFILE CHECKSUM: 3a20c5be2e7f5a64dec3e85375c24c13fb446170
+PODFILE CHECKSUM: 836afc158942519215a84c2d309ea30be652f9ea
 
 COCOAPODS: 1.5.3

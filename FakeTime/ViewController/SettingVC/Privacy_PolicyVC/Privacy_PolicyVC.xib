@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Privacy_PolicyVC" customModule="FakeTime" customModuleProvider="target">
             <connections>
+                <outlet property="bannerView" destination="Gj6-dZ-l7C" id="dlu-re-dCi"/>
                 <outlet property="navi" destination="01V-2L-jaG" id="62H-Lq-7fg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,10 +34,10 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMj-Vy-Wjd">
-                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <rect key="frame" x="0.0" y="70" width="375" height="549"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-9g-m9k" customClass="KHTextView" customModule="FakeTime" customModuleProvider="target">
-                            <rect key="frame" x="12" y="12" width="351" height="573"/>
+                            <rect key="frame" x="12" y="12" width="351" height="525"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <string key="text">By using SmartApp Team's APP (the “APP”), you are agreeing to our privacy policy, which applies to the use of the Site and SmartApp Team applications. SmartApp Team reserves the right at any time, without further notice, to change and modify this privacy policy. You should check this privacy policy periodically.
 
@@ -74,18 +75,27 @@ If you have any questions or suggestions about my Privacy Policy, do not hesitat
                         <constraint firstAttribute="trailing" secondItem="Cax-9g-m9k" secondAttribute="trailing" constant="12" id="vue-uQ-myu"/>
                     </constraints>
                 </view>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gj6-dZ-l7C" customClass="GADBannerView">
+                    <rect key="frame" x="0.0" y="619" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TMj-Vy-Wjd" secondAttribute="bottom" id="CcW-FZ-l5d"/>
+                <constraint firstItem="Gj6-dZ-l7C" firstAttribute="top" secondItem="TMj-Vy-Wjd" secondAttribute="bottom" id="DjN-7R-NUx"/>
                 <constraint firstItem="01V-2L-jaG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ECA-4f-DGJ"/>
+                <constraint firstItem="Gj6-dZ-l7C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NQr-Dh-VOK"/>
                 <constraint firstItem="TMj-Vy-Wjd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WxA-e5-JnN"/>
                 <constraint firstItem="TMj-Vy-Wjd" firstAttribute="top" secondItem="01V-2L-jaG" secondAttribute="bottom" id="X0x-7A-QqN"/>
+                <constraint firstItem="Gj6-dZ-l7C" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="50:667" id="b7o-dv-9TN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="01V-2L-jaG" secondAttribute="trailing" id="i1O-fK-scP"/>
+                <constraint firstAttribute="bottom" secondItem="Gj6-dZ-l7C" secondAttribute="bottom" constant="-2" id="iTF-S3-mCc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TMj-Vy-Wjd" secondAttribute="trailing" id="p9w-zZ-wzf"/>
                 <constraint firstItem="01V-2L-jaG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wYQ-8B-kRs"/>
+                <constraint firstAttribute="trailing" secondItem="Gj6-dZ-l7C" secondAttribute="trailing" id="yBz-v4-2Ei"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="136.28185907046478"/>
         </view>
     </objects>
 </document>

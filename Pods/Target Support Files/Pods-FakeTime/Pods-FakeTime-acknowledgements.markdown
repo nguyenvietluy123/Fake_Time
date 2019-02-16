@@ -27,6 +27,10 @@ Licensed under the **MIT** license
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+## Google-Mobile-Ads-SDK
+
+Copyright 2018 Google
+
 ## KRActivityIndicatorView
 
 Copyright (c) 2015- Krimpedance

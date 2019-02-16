@@ -80,21 +80,21 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehU-Y2-WC3" customClass="TextFieldView" customModule="FakeTime" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="266.5" height="60.5"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="input name"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Input name"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-LF-OeG" customClass="TextFieldView" customModule="FakeTime" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="60.5" width="266.5" height="60"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="input phone number"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Input phone number"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isNumber" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="ehU-Y2-WC3" firstAttribute="height" secondItem="T5h-iH-dCf" secondAttribute="height" multiplier="1:2" id="3N1-HJ-4hQ"/>
                                         <constraint firstAttribute="bottom" secondItem="hxL-LF-OeG" secondAttribute="bottom" id="8QB-2K-jq9"/>
@@ -107,7 +107,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="umX-VD-NHt" firstAttribute="leading" secondItem="UUe-EB-ieF" secondAttribute="leading" constant="12" id="1pg-c4-Ccl"/>
                                 <constraint firstAttribute="trailing" secondItem="T5h-iH-dCf" secondAttribute="trailing" id="CLq-eA-GV5"/>
@@ -149,7 +149,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="lzg-Lz-9up" firstAttribute="centerY" secondItem="jLP-dD-Xip" secondAttribute="centerY" id="07K-E8-teg"/>
                                                 <constraint firstItem="lzg-Lz-9up" firstAttribute="height" secondItem="jLP-dD-Xip" secondAttribute="height" multiplier="2.4:3" id="6nf-l8-vSL"/>
@@ -179,7 +179,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="zXz-qL-cKj" secondAttribute="trailing" id="0BH-hc-zUi"/>
                                         <constraint firstItem="zXz-qL-cKj" firstAttribute="leading" secondItem="Ha0-Vw-kVv" secondAttribute="leading" id="1Tq-pB-CTL"/>
@@ -257,7 +257,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="btq-M7-xCg" firstAttribute="top" secondItem="c9l-3W-9XF" secondAttribute="top" id="24z-fO-mIo"/>
                                         <constraint firstItem="Egl-rI-DyY" firstAttribute="leading" secondItem="c9l-3W-9XF" secondAttribute="leading" id="30X-RB-rmU"/>
@@ -272,7 +272,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="c9l-3W-9XF" firstAttribute="height" secondItem="Ha0-Vw-kVv" secondAttribute="height" id="3IT-KR-48b"/>
                                 <constraint firstItem="c9l-3W-9XF" firstAttribute="centerX" secondItem="Ha0-Vw-kVv" secondAttribute="centerX" id="Fll-vN-46j"/>
@@ -284,7 +284,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="UUe-EB-ieF" secondAttribute="trailing" id="2MI-sH-fee"/>
                         <constraint firstItem="Mad-JC-xDu" firstAttribute="leading" secondItem="tnU-3f-rKK" secondAttribute="leading" id="5OK-aa-4o8"/>
@@ -297,7 +297,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tnU-3f-rKK" secondAttribute="trailing" id="0me-t2-V5A"/>
                 <constraint firstItem="Mwk-w0-5hg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7bb-Qq-BFi"/>

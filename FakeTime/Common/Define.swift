@@ -25,12 +25,7 @@ enum typeCall {
 }
 
 enum SaveKey: String {
-    case deviceToken = "deviceToken"
-    case tokenType = "tokenType"
-    case accessToken = "accessToken"
-    case email = "email"
-    case pass = "pass"
-    case isLogin = "isLogin"
+    case countCall = "countCall"
 }
 
 class NotificationCenterKey {

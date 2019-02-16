@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ListCallVC: BaseVC {
     @IBOutlet weak var navi: NavigationView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchView: SearchView!
+    @IBOutlet weak var bannerView: GADBannerView!
     
     var strSearch: String = ""
     var arrSearch: [CallerObj] = []
@@ -22,6 +24,7 @@ class ListCallVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+        initAdmob()
         initData()
     }
     
@@ -54,6 +57,14 @@ extension ListCallVC {
         }
         
         tableView.register(CellListCall.self)
+    }
+    
+    func initAdmob() {
+        bannerView.adUnitID = kAdmobBanner
+        bannerView.rootViewController = self
+        bannerView.delegate = self
+        bannerView.load(GADRequest())
+        
     }
     
     func initData() {
@@ -143,5 +154,14 @@ extension ListCallVC: UITableViewDelegate {
                 self.tableView.reloadData()
             }
         }
+    }
+}
+
+extension ListCallVC: GADBannerViewDelegate {
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        bannerView.alpha = 0
+        UIView.animate(withDuration: 1, animations: {
+            bannerView.alpha = 1
+        })
     }
 }

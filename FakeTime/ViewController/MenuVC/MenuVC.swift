@@ -24,6 +24,7 @@ class MenuVC: UIViewController {
     @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var lbName: KHLabel!
     @IBOutlet weak var lbEmail: KHLabel!
+    @IBOutlet weak var lbTitleLogo: KHLabel!
     
     var arrItem: [MenuObj] = {
         let items: [MenuObj] = [MenuObj(#imageLiteral(resourceName: "home"), title: "Home"),
@@ -53,7 +54,9 @@ class MenuVC: UIViewController {
 extension MenuVC {
     func initUI() {
         tbMain.register(MenuCell.self)
-        
+        if isIPad {
+            lbTitleLogo.font = Common.getFontForDeviceWithFontDefault(fontDefault: UIFont.systemFont(ofSize: 32))
+        }
 //        indicator.frame = CGRect(x: 0, y: 0, width: 46, height: 46)
 //        indicator.center = imgAvatar.center
 //        imgAvatar.addSubview(indicator)
@@ -77,7 +80,6 @@ extension MenuVC: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as MenuCell
         cell.config(arrItem[indexPath.item])
         return cell
-        return UITableViewCell()
     }
     
     

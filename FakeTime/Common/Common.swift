@@ -38,7 +38,7 @@ class Common {
         var font:UIFont = fontDefault
         var sizeScale: CGFloat = 1
         if DeviceType.IS_IPAD {
-            sizeScale = 1.3
+            sizeScale = 1.6
         }else if DeviceType.IS_IPHONE_6 || DeviceType.IS_IPHONE_7 {
             sizeScale = 0.95
         }else if DeviceType.IS_IPHONE_5 {
