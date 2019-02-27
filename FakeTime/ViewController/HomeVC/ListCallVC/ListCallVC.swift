@@ -146,7 +146,7 @@ extension ListCallVC: UITableViewDelegate {
             arrSearch[indexPath.row].deleteCaller()
             arrSearch.remove(at: indexPath.row)
             initData()
-            
+             
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()

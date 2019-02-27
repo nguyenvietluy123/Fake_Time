@@ -8,6 +8,7 @@
 
 import UIKit
 import AVKit
+import StoreKit
 
 class Messenger_ScreenWaitVC: UIViewController {
     @IBOutlet weak var lbName: KHLabel!
@@ -43,6 +44,14 @@ class Messenger_ScreenWaitVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         openRingBell()
+    }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if #available( iOS 10.3,*){
+            SKStoreReviewController.requestReview()
+        }
     }
     
     @IBAction func rejectCall(_ sender: Any) {

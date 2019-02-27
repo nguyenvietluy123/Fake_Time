@@ -8,6 +8,7 @@
 
 import UIKit
 import AVKit
+import StoreKit
 
 class MessengerVideo_ScreenWaitVC: UIViewController {
     @IBOutlet weak var lbName: KHLabel!
@@ -26,6 +27,13 @@ class MessengerVideo_ScreenWaitVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         openRingBell()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if #available( iOS 10.3,*){
+            SKStoreReviewController.requestReview()
+        }
     }
     
     @IBAction func actionReject(_ sender: Any) {
