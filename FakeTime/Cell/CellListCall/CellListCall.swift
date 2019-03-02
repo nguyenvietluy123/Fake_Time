@@ -35,6 +35,6 @@ extension CellListCall {
     func config(caller: CallerObj) {
         self.imgAvatar.image = caller.avatar
         self.lbName.text = caller.name
-        viewEdit.isHidden = caller.name == KeyString.marianRivera || caller.name == KeyString.girlFriend
+        viewEdit.isHidden = caller.name == KeyString.gScary || caller.name == KeyString.ghostClown || caller.name == KeyString.ghostKiller || caller.name == KeyString.ghostScary || caller.name == KeyString.ghost_S || caller.name == KeyString.killerClown
     }
 }

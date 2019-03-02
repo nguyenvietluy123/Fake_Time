@@ -17,6 +17,7 @@ class NavigationView: UIView {
     @IBOutlet weak var imgActionRight: UIImageView!
     @IBOutlet weak var viewLeft: UIView!
     @IBOutlet weak var imvBackgoundNavi: UIImageView!
+    @IBOutlet weak var viewNavi: UIView!
     
     @IBInspectable open var title: String = "" {
         didSet {
@@ -50,6 +51,8 @@ class NavigationView: UIView {
             }
         }
     }
+    
+    @IBInspectable open var clearColor: Bool = false
     
     @IBAction func actionRight(_ sender: Any) {
         handleActionRight?()
@@ -90,8 +93,12 @@ class NavigationView: UIView {
             }
         }
         ctrHeightStatusBar.constant = UIApplication.shared.statusBarFrame.height
-        GCDCommon.mainQueue {
-            Common.gradient(UIColor.init("61eda2", alpha: 1.0), UIColor.init("22cfa4", alpha: 1.0), view: self)
+        
+        if clearColor {
+//            GCDCommon.mainQueue {
+//                Common.gradient(UIColor.init("58EE63", alpha: 1.0), UIColor.init("2AEC70", alpha: 1.0), view: self)
+//            }
+            viewNavi.backgroundColor = .clear
         }
     }
   

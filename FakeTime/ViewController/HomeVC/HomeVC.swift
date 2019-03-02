@@ -15,7 +15,7 @@ class HomeVC: BaseVC {
     @IBOutlet weak var imgAvatar: KHImageView!
     @IBOutlet weak var lbName: KHLabel!
     @IBOutlet weak var tfDelayTime: KHTextField!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var ctrHeightTableView: NSLayoutConstraint!
     @IBOutlet weak var viewDelay: UIView!
     @IBOutlet weak var lbTimeCountDown: KHLabel!
@@ -25,10 +25,10 @@ class HomeVC: BaseVC {
     var caller: CallerObj = CallerObj()
     var isCallVideo: Bool = false
     var arrItem: [HomeObj] = {
-        let items: [HomeObj] = [HomeObj(#imageLiteral(resourceName: "home_call"), title: "Call", typeCall: .call, isSelected: true),
-                                HomeObj(#imageLiteral(resourceName: "home_message"), title: "Messenger", typeCall: .messenger),
-                                HomeObj(#imageLiteral(resourceName: "home_line"), title: "Line", typeCall: .line),
-                                HomeObj(#imageLiteral(resourceName: "home_wechat"), title: "Wechat", typeCall: .weChat)]
+        let items: [HomeObj] = [HomeObj(#imageLiteral(resourceName: "home_call2"), title: "Call", typeCall: .call, isSelected: true),
+                                HomeObj(#imageLiteral(resourceName: "home_messager2"), title: "Messenger", typeCall: .messenger),
+                                HomeObj(#imageLiteral(resourceName: "home_line2"), title: "Line", typeCall: .line),
+                                HomeObj(#imageLiteral(resourceName: "home_wechat2"), title: "Wechat", typeCall: .weChat)]
         return items
     }()
     var timeCountDown: Int = 0 {
@@ -41,10 +41,10 @@ class HomeVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        caller = CallerObj(name: KeyString.girlFriend, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "girlfriend"), pathVideo: KeyString.girlFriendVideo)
+        caller = CallerObj(name: KeyString.ghostScary, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost Scary"), pathVideo: KeyString.ghostScaryVideo)
         initUI()
         initData()
-    }
+    } 
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -109,7 +109,8 @@ extension HomeVC {
                 self.initData()
             }
         }
-        tableView.register(CellHome.self)
+        
+        collectionView.register(CellCollectionHome.self)
         interstitial = createAndLoadInterstitial()
     }
     
@@ -208,30 +209,20 @@ extension HomeVC {
     }
 }
 
-extension HomeVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension HomeVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrItem.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as CellHome
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as CellCollectionHome
         cell.config(arrItem[indexPath.item])
-        UIView.animate(withDuration: 0, animations: {
-            self.tableView.layoutIfNeeded()
-        }) { (completed) in
-            self.ctrHeightTableView.constant = self.tableView.contentSize.height
-        }
         return cell
     }
 }
 
-extension HomeVC: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return isIPad ? 90*heightRatio : 60*heightRatio
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
+extension HomeVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         arrItem[indexPath.item].isSelected = true
         for i in arrItem.indices {
             if i != indexPath.item {
@@ -239,7 +230,21 @@ extension HomeVC: UITableViewDelegate {
             }
         }
         caller.typeCall = arrItem[indexPath.item].typeCall
-        tableView.reloadData()
+        collectionView.reloadData()
+    }
+}
+
+extension HomeVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 0.38*ScreenSize.SCREEN_WIDTH, height: 0.7*0.38*ScreenSize.SCREEN_WIDTH)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.08*ScreenSize.SCREEN_WIDTH
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0.08*ScreenSize.SCREEN_WIDTH, bottom: 0, right: 0.08*ScreenSize.SCREEN_WIDTH)
     }
 }
 

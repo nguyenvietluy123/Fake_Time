@@ -22,7 +22,7 @@ class AddCallVC: BaseVC {
     
     var isCreate: Bool = true
     var caller: CallerObj = CallerObj()
-    var gallery = GalleryController()
+    var gallery = GalleryController() 
     let fileManager = FileManager.default
     var filesRemoveToSave: [String] = []
     var filesRemoveToBack: [String] = []
@@ -94,12 +94,7 @@ extension AddCallVC {
         }
         
         tfInputPhoneNumber.handleReturnText = { (text) in
-            if text.isnumberordouble {
-                self.caller.phoneNumber = text
-            } else {
-                Common.showAlert("Phone number is wrong")
-                self.tfInputPhoneNumber.textField.becomeFirstResponder()
-            }
+            self.caller.phoneNumber = text
         }
         
         viewShowVideo.isHidden = caller.pathVideo.count == 0
@@ -161,6 +156,11 @@ extension AddCallVC {
         }
         if caller.phoneNumber.count == 0 {
             Common.showAlert("Please input phone number")
+            return false
+        }
+        
+        if !caller.phoneNumber.isnumberordouble {
+            Common.showAlert("Phone number is wrong")
             return false
         }
         if caller.pathVideo.count == 0 {

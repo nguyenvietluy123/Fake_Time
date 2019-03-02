@@ -27,7 +27,7 @@ class MenuVC: UIViewController {
     @IBOutlet weak var lbTitleLogo: KHLabel!
     
     var arrItem: [MenuObj] = {
-        let items: [MenuObj] = [MenuObj(#imageLiteral(resourceName: "home"), title: "Home"),
+        let items: [MenuObj] = [MenuObj(#imageLiteral(resourceName: "menu_home"), title: "Home"),
                                 MenuObj(#imageLiteral(resourceName: "menu_privacy"), title: "Privacy Policy"),
                                 MenuObj(#imageLiteral(resourceName: "menu_share"), title: "Share"),
                                 MenuObj(#imageLiteral(resourceName: "menu_support"), title: "Support")]

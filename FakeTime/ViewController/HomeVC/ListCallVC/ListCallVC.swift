@@ -69,10 +69,20 @@ extension ListCallVC {
     
     func initData() {
         arrCaller.removeAll()
-        let defaultCaller1 = CallerObj(name: KeyString.girlFriend, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "girlfriend"), pathVideo: KeyString.girlFriendVideo)
+        let defaultCaller1 = CallerObj(name: KeyString.gScary, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "G Scary"), pathVideo: KeyString.gScaryVideo)
         arrCaller.append(defaultCaller1)
-        let defaultCaller2 = CallerObj(name: KeyString.marianRivera, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "marian rivera"), pathVideo: KeyString.marianRiveraVideo)
+        let defaultCaller2 = CallerObj(name: KeyString.ghostClown, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost Clown"), pathVideo: KeyString.ghostClownVideo)
         arrCaller.append(defaultCaller2)
+        
+        let defaultCaller3 = CallerObj(name: KeyString.ghostKiller, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost Killer"), pathVideo: KeyString.ghostKillerVideo)
+        arrCaller.append(defaultCaller3)
+        let defaultCaller4 = CallerObj(name: KeyString.ghostScary, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost Scary"), pathVideo: KeyString.ghostScaryVideo)
+        arrCaller.append(defaultCaller4)
+        
+        let defaultCaller5 = CallerObj(name: KeyString.ghost_S, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost_S"), pathVideo: KeyString.ghost_SVideo)
+        arrCaller.append(defaultCaller5)
+        let defaultCaller6 = CallerObj(name: KeyString.killerClown, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Killer Clown"), pathVideo: KeyString.killerClownVideo)
+        arrCaller.append(defaultCaller6)
         arrCaller.append(contentsOf: CallerManager().getAllCaller())
     }
     
@@ -118,17 +128,20 @@ extension ListCallVC: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: false)
         handleSelect?(arrSearch[indexPath.item])
         self.navigationController?.popViewController(animated: true)
-//        let vc = HomeVC.init(nibName: "HomeVC", bundle: nil)
-//        vc.caller = arrCaller[indexPath.item]
-//        let navi = UINavigationController(rootViewController: vc)
-//        navi.isNavigationBarHidden = true
-//        TAppDelegate.menuContainerViewController?.centerViewController = navi
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        if arrSearch[indexPath.item].name == KeyString.girlFriend  {
+        if arrSearch[indexPath.item].name == KeyString.gScary  {
             return false
-        } else if arrSearch[indexPath.item].name == KeyString.marianRivera{
+        } else if arrSearch[indexPath.item].name == KeyString.ghostClown{
+            return false
+        } else if arrSearch[indexPath.item].name == KeyString.ghostKiller{
+            return false
+        } else if arrSearch[indexPath.item].name == KeyString.ghostScary{
+            return false
+        } else if arrSearch[indexPath.item].name == KeyString.ghost_S{
+            return false
+        } else if arrSearch[indexPath.item].name == KeyString.killerClown{
             return false
         } else {
             return true

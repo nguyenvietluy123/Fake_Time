@@ -103,6 +103,6 @@ extension TextFieldView: UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        lineView.backgroundColor = UIColor.init("48DBA4", alpha: 1)
+        lineView.backgroundColor = UIColor.init("F93E50", alpha: 1)
     }
 }

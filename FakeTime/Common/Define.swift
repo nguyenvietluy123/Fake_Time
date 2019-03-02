@@ -40,13 +40,28 @@ class Key {
 
 class KeyString {
     static let endCall = "End Call"
-    static let girlFriend = "Girl Friend"
-    static let marianRivera = "Marian Rivera"
-    static let girlFriendSound = "vid_5_jess.mp3"
-    static let marianRiveraSound = "girls2.mp3"
-    static let girlFriendVideo = "vid_5_jess.mp4"
-    static let marianRiveraVideo = "girls2.mp4"
     
+    static let gScary = "G Scary"
+    static let ghostClown = "Ghost Clown"
+    static let ghostKiller = "Ghost Killer"
+    static let ghostScary = "Ghost Scary"
+    static let ghost_S = "Ghost_S"
+    static let killerClown = "Killer Clown"
+    
+    
+    static let gScarySound = "G Scary.mp3"
+    static let ghostClownSound = "Ghost Clown.mp3"
+    static let ghostKillerSound = "Ghost Killer.mp3"
+    static let ghostScarySound = "Ghost Scary.mp3"
+    static let ghost_SSound = "Ghost_S.mp3"
+    static let killerClownSound = "Killer Clown.mp3"
+    
+    static let gScaryVideo = "G Scary.mp4"
+    static let ghostClownVideo = "Ghost Clown.mp4"
+    static let ghostKillerVideo = "Ghost Killer.mp4"
+    static let ghostScaryVideo = "Ghost Scary.mp4"
+    static let ghost_SVideo = "Ghost_S.mp4"
+    static let killerClownVideo = "Killer Clown.mp4"
     
     static let soundDefault = "call_iphone.mp3"
     static let soundMessenger = "call_messenger.m4a"

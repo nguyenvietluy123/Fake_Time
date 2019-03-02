@@ -18,7 +18,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuVC" customModule="FakeTime" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuVC" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
             <connections>
                 <outlet property="imgAvatar" destination="iep-RD-MAZ" id="06f-hQ-oek"/>
                 <outlet property="lbEmail" destination="mdz-wA-U2A" id="tTh-kW-oCg"/>
@@ -45,7 +45,7 @@
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOG-iE-lhJ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="186.5"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9JY-iv-Gh4" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9JY-iv-Gh4" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                             <rect key="frame" x="131.5" y="26" width="112" height="112"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="iep-RD-MAZ" customClass="KHImageView">
@@ -76,13 +76,13 @@
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Văn Nguyên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-bY-D3I" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Văn Nguyên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-bY-D3I" customClass="KHLabel" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                             <rect key="frame" x="91" y="138" width="193" height="24.5"/>
                             <fontDescription key="fontDescription" name="Gibson-Bold" family="Gibson" pointSize="21"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nguyenvannguyen2006@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdz-wA-U2A" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nguyenvannguyen2006@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdz-wA-U2A" customClass="KHLabel" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                             <rect key="frame" x="61" y="162.5" width="253.5" height="19"/>
                             <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="16"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,24 +103,24 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSx-Za-AVH">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="186.5"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXX-b0-1c3" customClass="MagicView" customModule="FakeTime" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXX-b0-1c3" customClass="MagicView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fake Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zng-kn-Yc4" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fake Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zng-kn-Yc4" customClass="KHLabel" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                             <rect key="frame" x="142.5" y="146" width="90" height="27.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-ZP-8uc" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-ZP-8uc" customClass="KHImageView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                             <rect key="frame" x="141" y="41" width="93" height="93"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="L2a-ZP-8uc" secondAttribute="height" multiplier="1:1" id="bpf-xG-2O7"/>
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="0.28235294119999998" green="0.85882352939999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.99215686274509807" green="0.74901960784313726" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="L2a-ZP-8uc" firstAttribute="top" secondItem="KXX-b0-1c3" secondAttribute="bottom" id="Btu-uZ-LP7"/>
                         <constraint firstItem="KXX-b0-1c3" firstAttribute="leading" secondItem="zSx-Za-AVH" secondAttribute="leading" id="CNt-Yn-yHA"/>
@@ -134,7 +134,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.16862745098039217" green="0.18823529411764706" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1VT-gw-WzI" secondAttribute="trailing" id="3m3-H5-9oN"/>
                 <constraint firstItem="fOG-iE-lhJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AyZ-Vv-dWO"/>

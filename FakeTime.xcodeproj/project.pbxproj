@@ -29,6 +29,8 @@
 		0C662EB922148F24007A6DD0 /* call_iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C662EB822148F24007A6DD0 /* call_iphone.mp3 */; };
 		0C662EBD22149D2E007A6DD0 /* Privacy_PolicyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C662EBB22149D2E007A6DD0 /* Privacy_PolicyVC.xib */; };
 		0C662EBE22149D2E007A6DD0 /* Privacy_PolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C662EBC22149D2E007A6DD0 /* Privacy_PolicyVC.swift */; };
+		0C693CAE2229E2E500522DB7 /* CellCollectionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C693CAC2229E2E500522DB7 /* CellCollectionHome.swift */; };
+		0C693CAF2229E2E500522DB7 /* CellCollectionHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C693CAD2229E2E500522DB7 /* CellCollectionHome.xib */; };
 		0C9D7F762201599F009EA3BF /* VideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D7F752201599F009EA3BF /* VideoCallView.swift */; };
 		0C9D7F78220159A9009EA3BF /* VideoCallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D7F77220159A9009EA3BF /* VideoCallView.xib */; };
 		0CA9394F22021C9E00D6EE95 /* Call_ScreenWaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9394D22021C9E00D6EE95 /* Call_ScreenWaitVC.swift */; };
@@ -49,10 +51,6 @@
 		0CC745FC2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC745FA2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib */; };
 		0CC745FF2212FDC0005C4EFA /* WechatVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC745FE2212FDC0005C4EFA /* WechatVideoCallView.swift */; };
 		0CC746012212FDC4005C4EFA /* WechatVideoCallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC746002212FDC4005C4EFA /* WechatVideoCallView.xib */; };
-		0CC746062213078F005C4EFA /* girls2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CC746042213078F005C4EFA /* girls2.mp3 */; };
-		0CC746072213078F005C4EFA /* vid_5_jess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CC746052213078F005C4EFA /* vid_5_jess.mp3 */; };
-		0CC74608221346BA005C4EFA /* girls2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7460322130781005C4EFA /* girls2.mp4 */; };
-		0CC74609221346BC005C4EFA /* vid_5_jess.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7460222130781005C4EFA /* vid_5_jess.mp4 */; };
 		0CC80A4021FCCA960079A511 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80A3E21FCCA960079A511 /* MenuCell.swift */; };
 		0CC80A4121FCCA960079A511 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC80A3F21FCCA960079A511 /* MenuCell.xib */; };
 		0CC80A4B21FCCCA90079A511 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80A4921FCCCA90079A511 /* SettingVC.swift */; };
@@ -110,6 +108,18 @@
 		0CD6EFFC2211EC550080C843 /* LineVideo_ScreenWaitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6EFFA2211EC550080C843 /* LineVideo_ScreenWaitVC.xib */; };
 		0CD6EFFF2211ED480080C843 /* LineVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6EFFE2211ED480080C843 /* LineVideoCallView.swift */; };
 		0CD6F0012211ED590080C843 /* LineVideoCallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6F0002211ED590080C843 /* LineVideoCallView.xib */; };
+		0CDAC996222AF0F1001B8E53 /* Ghost Killer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC98A222AF0F0001B8E53 /* Ghost Killer.mp4 */; };
+		0CDAC997222AF0F1001B8E53 /* G Scary.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC98B222AF0F0001B8E53 /* G Scary.mp4 */; };
+		0CDAC998222AF0F1001B8E53 /* Ghost Killer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC98C222AF0F0001B8E53 /* Ghost Killer.mp3 */; };
+		0CDAC999222AF0F1001B8E53 /* Killer Clown.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC98D222AF0F0001B8E53 /* Killer Clown.mp4 */; };
+		0CDAC99A222AF0F1001B8E53 /* G Scary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC98E222AF0F0001B8E53 /* G Scary.mp3 */; };
+		0CDAC99B222AF0F1001B8E53 /* Ghost_S.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC98F222AF0F0001B8E53 /* Ghost_S.mp4 */; };
+		0CDAC99C222AF0F1001B8E53 /* Ghost Scary.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC990222AF0F0001B8E53 /* Ghost Scary.mp4 */; };
+		0CDAC99D222AF0F1001B8E53 /* Ghost Scary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC991222AF0F0001B8E53 /* Ghost Scary.mp3 */; };
+		0CDAC99E222AF0F1001B8E53 /* Ghost Clown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC992222AF0F1001B8E53 /* Ghost Clown.mp3 */; };
+		0CDAC99F222AF0F1001B8E53 /* Ghost Clown.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC993222AF0F1001B8E53 /* Ghost Clown.mp4 */; };
+		0CDAC9A0222AF0F1001B8E53 /* Killer Clown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC994222AF0F1001B8E53 /* Killer Clown.mp3 */; };
+		0CDAC9A1222AF0F1001B8E53 /* Ghost_S.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CDAC995222AF0F1001B8E53 /* Ghost_S.mp3 */; };
 		53AE0E30909111C7516FF868 /* libPods-FakeTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCE8488BCF6ECC868EF5AB2 /* libPods-FakeTime.a */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +169,8 @@
 		0C662EB822148F24007A6DD0 /* call_iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = call_iphone.mp3; sourceTree = "<group>"; };
 		0C662EBB22149D2E007A6DD0 /* Privacy_PolicyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Privacy_PolicyVC.xib; sourceTree = "<group>"; };
 		0C662EBC22149D2E007A6DD0 /* Privacy_PolicyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Privacy_PolicyVC.swift; sourceTree = "<group>"; };
+		0C693CAC2229E2E500522DB7 /* CellCollectionHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionHome.swift; sourceTree = "<group>"; };
+		0C693CAD2229E2E500522DB7 /* CellCollectionHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCollectionHome.xib; sourceTree = "<group>"; };
 		0C9D7F752201599F009EA3BF /* VideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallView.swift; sourceTree = "<group>"; };
 		0C9D7F77220159A9009EA3BF /* VideoCallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCallView.xib; sourceTree = "<group>"; };
 		0CA9394D22021C9E00D6EE95 /* Call_ScreenWaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call_ScreenWaitVC.swift; sourceTree = "<group>"; };
@@ -179,10 +191,6 @@
 		0CC745FA2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WechatVideo_ScreenWaitVC.xib; sourceTree = "<group>"; };
 		0CC745FE2212FDC0005C4EFA /* WechatVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatVideoCallView.swift; sourceTree = "<group>"; };
 		0CC746002212FDC4005C4EFA /* WechatVideoCallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WechatVideoCallView.xib; sourceTree = "<group>"; };
-		0CC7460222130781005C4EFA /* vid_5_jess.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid_5_jess.mp4; sourceTree = "<group>"; };
-		0CC7460322130781005C4EFA /* girls2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = girls2.mp4; sourceTree = "<group>"; };
-		0CC746042213078F005C4EFA /* girls2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = girls2.mp3; sourceTree = "<group>"; };
-		0CC746052213078F005C4EFA /* vid_5_jess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vid_5_jess.mp3; sourceTree = "<group>"; };
 		0CC80A3E21FCCA960079A511 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		0CC80A3F21FCCA960079A511 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		0CC80A4921FCCCA90079A511 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
@@ -245,6 +253,18 @@
 		0CD6EFFA2211EC550080C843 /* LineVideo_ScreenWaitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineVideo_ScreenWaitVC.xib; sourceTree = "<group>"; };
 		0CD6EFFE2211ED480080C843 /* LineVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineVideoCallView.swift; sourceTree = "<group>"; };
 		0CD6F0002211ED590080C843 /* LineVideoCallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineVideoCallView.xib; sourceTree = "<group>"; };
+		0CDAC98A222AF0F0001B8E53 /* Ghost Killer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ghost Killer.mp4"; sourceTree = "<group>"; };
+		0CDAC98B222AF0F0001B8E53 /* G Scary.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "G Scary.mp4"; sourceTree = "<group>"; };
+		0CDAC98C222AF0F0001B8E53 /* Ghost Killer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ghost Killer.mp3"; sourceTree = "<group>"; };
+		0CDAC98D222AF0F0001B8E53 /* Killer Clown.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Killer Clown.mp4"; sourceTree = "<group>"; };
+		0CDAC98E222AF0F0001B8E53 /* G Scary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "G Scary.mp3"; sourceTree = "<group>"; };
+		0CDAC98F222AF0F0001B8E53 /* Ghost_S.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ghost_S.mp4; sourceTree = "<group>"; };
+		0CDAC990222AF0F0001B8E53 /* Ghost Scary.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ghost Scary.mp4"; sourceTree = "<group>"; };
+		0CDAC991222AF0F0001B8E53 /* Ghost Scary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ghost Scary.mp3"; sourceTree = "<group>"; };
+		0CDAC992222AF0F1001B8E53 /* Ghost Clown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ghost Clown.mp3"; sourceTree = "<group>"; };
+		0CDAC993222AF0F1001B8E53 /* Ghost Clown.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ghost Clown.mp4"; sourceTree = "<group>"; };
+		0CDAC994222AF0F1001B8E53 /* Killer Clown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Killer Clown.mp3"; sourceTree = "<group>"; };
+		0CDAC995222AF0F1001B8E53 /* Ghost_S.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ghost_S.mp3; sourceTree = "<group>"; };
 		1C37A975DE6C75280EBE448C /* Pods-FakeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-FakeTime/Pods-FakeTime.release.xcconfig"; sourceTree = "<group>"; };
 		3DCE8488BCF6ECC868EF5AB2 /* libPods-FakeTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FakeTime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE83040CA8802E7D544715E /* Pods-FakeTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FakeTime/Pods-FakeTime.debug.xcconfig"; sourceTree = "<group>"; };
@@ -360,14 +380,19 @@
 		0C4420B721FF61C2004D3965 /* Sounds&Video */ = {
 			isa = PBXGroup;
 			children = (
-				0CC746042213078F005C4EFA /* girls2.mp3 */,
-				0CC746052213078F005C4EFA /* vid_5_jess.mp3 */,
-				0CC7460322130781005C4EFA /* girls2.mp4 */,
-				0CC7460222130781005C4EFA /* vid_5_jess.mp4 */,
-				0C662EB822148F24007A6DD0 /* call_iphone.mp3 */,
-				0C4420B821FF61D6004D3965 /* call_line.wav */,
-				0C4420B921FF61D6004D3965 /* call_messenger.m4a */,
-				0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */,
+				0CDAC98E222AF0F0001B8E53 /* G Scary.mp3 */,
+				0CDAC98B222AF0F0001B8E53 /* G Scary.mp4 */,
+				0CDAC992222AF0F1001B8E53 /* Ghost Clown.mp3 */,
+				0CDAC993222AF0F1001B8E53 /* Ghost Clown.mp4 */,
+				0CDAC98C222AF0F0001B8E53 /* Ghost Killer.mp3 */,
+				0CDAC98A222AF0F0001B8E53 /* Ghost Killer.mp4 */,
+				0CDAC991222AF0F0001B8E53 /* Ghost Scary.mp3 */,
+				0CDAC990222AF0F0001B8E53 /* Ghost Scary.mp4 */,
+				0CDAC995222AF0F1001B8E53 /* Ghost_S.mp3 */,
+				0CDAC98F222AF0F0001B8E53 /* Ghost_S.mp4 */,
+				0CDAC994222AF0F1001B8E53 /* Killer Clown.mp3 */,
+				0CDAC98D222AF0F0001B8E53 /* Killer Clown.mp4 */,
+				0CDAC96B222AE366001B8E53 /* ringBell */,
 			);
 			path = "Sounds&Video";
 			sourceTree = "<group>";
@@ -379,6 +404,15 @@
 				0C662EBB22149D2E007A6DD0 /* Privacy_PolicyVC.xib */,
 			);
 			path = Privacy_PolicyVC;
+			sourceTree = "<group>";
+		};
+		0C693CAB2229E2CD00522DB7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0C693CAC2229E2E500522DB7 /* CellCollectionHome.swift */,
+				0C693CAD2229E2E500522DB7 /* CellCollectionHome.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		0C9D7F7422015954009EA3BF /* VideoCallView */ = {
@@ -744,6 +778,7 @@
 			children = (
 				0CC80A3D21FCCA960079A511 /* MenuCell */,
 				0CCDD96421F901E200688493 /* CellListCall */,
+				0C693CAB2229E2CD00522DB7 /* Cell */,
 				0CCDD95321F8EEAB00688493 /* CellHome */,
 			);
 			path = Cell;
@@ -796,6 +831,17 @@
 				0CD6F0002211ED590080C843 /* LineVideoCallView.xib */,
 			);
 			path = LineVideoCallView;
+			sourceTree = "<group>";
+		};
+		0CDAC96B222AE366001B8E53 /* ringBell */ = {
+			isa = PBXGroup;
+			children = (
+				0C662EB822148F24007A6DD0 /* call_iphone.mp3 */,
+				0C4420B821FF61D6004D3965 /* call_line.wav */,
+				0C4420B921FF61D6004D3965 /* call_messenger.m4a */,
+				0C4420BA21FF61D6004D3965 /* call_wechat.mp3 */,
+			);
+			path = ringBell;
 			sourceTree = "<group>";
 		};
 		92CDC5697E0C767953365A00 /* Pods */ = {
@@ -922,45 +968,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CCDD91121F8D1A300688493 /* TextFieldView.xib in Resources */,
-				0CC746072213078F005C4EFA /* vid_5_jess.mp3 in Resources */,
 				0C662EBD22149D2E007A6DD0 /* Privacy_PolicyVC.xib in Resources */,
-				0CC74609221346BC005C4EFA /* vid_5_jess.mp4 in Resources */,
 				0C05242E2211BC5200DB7852 /* Messenger_ScreenWaitVC.xib in Resources */,
-				0CC746062213078F005C4EFA /* girls2.mp3 in Resources */,
 				0C2E39DF21F8D0F600B11685 /* LaunchScreen.storyboard in Resources */,
+				0CDAC9A1222AF0F1001B8E53 /* Ghost_S.mp3 in Resources */,
 				0CC745F82212D17E005C4EFA /* Wechat_ScreenWaitVC.xib in Resources */,
+				0CDAC99E222AF0F1001B8E53 /* Ghost Clown.mp3 in Resources */,
+				0CDAC99F222AF0F1001B8E53 /* Ghost Clown.mp4 in Resources */,
 				0CC80A4C21FCCCA90079A511 /* SettingVC.xib in Resources */,
 				0CCDD95721F8EECC00688493 /* CellHome.xib in Resources */,
 				0CC746012212FDC4005C4EFA /* WechatVideoCallView.xib in Resources */,
+				0CDAC99D222AF0F1001B8E53 /* Ghost Scary.mp3 in Resources */,
 				0CA9395022021C9E00D6EE95 /* Call_ScreenWaitVC.xib in Resources */,
 				0C4420BD21FF61D7004D3965 /* call_wechat.mp3 in Resources */,
 				0C2E39DC21F8D0F600B11685 /* Assets.xcassets in Resources */,
 				0CCDD91521F8D1A300688493 /* SearchView.xib in Resources */,
+				0CDAC998222AF0F1001B8E53 /* Ghost Killer.mp3 in Resources */,
 				0CCDD93F21F8E24500688493 /* MenuVC.xib in Resources */,
+				0CDAC99C222AF0F1001B8E53 /* Ghost Scary.mp4 in Resources */,
 				0C05243A2211D25100DB7852 /* MsgVideoCallView.xib in Resources */,
 				0CCDD92A21F8D1CB00688493 /* HomeVC.xib in Resources */,
 				0C0524332211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.xib in Resources */,
 				0CCDD94C21F8E46E00688493 /* NavigationView.xib in Resources */,
 				0C662EB922148F24007A6DD0 /* call_iphone.mp3 in Resources */,
 				0CAFE31821FA13F10004C376 /* AddCallVC.xib in Resources */,
+				0CDAC997222AF0F1001B8E53 /* G Scary.mp4 in Resources */,
 				0C9D7F78220159A9009EA3BF /* VideoCallView.xib in Resources */,
+				0CDAC996222AF0F1001B8E53 /* Ghost Killer.mp4 in Resources */,
+				0CDAC99A222AF0F1001B8E53 /* G Scary.mp3 in Resources */,
 				0CCDD96C21F9021C00688493 /* CellListCall.xib in Resources */,
+				0CDAC99B222AF0F1001B8E53 /* Ghost_S.mp4 in Resources */,
 				0CC80A5221FCD6100079A511 /* CallVideo_ScreenWaitVC.xib in Resources */,
 				0CCDD90721F8D1A300688493 /* MagicView.xib in Resources */,
 				0C4420B621FF44D0004D3965 /* FrontCameraView.xib in Resources */,
 				0CC745FC2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib in Resources */,
 				0CC80A4121FCCA960079A511 /* MenuCell.xib in Resources */,
+				0CDAC999222AF0F1001B8E53 /* Killer Clown.mp4 in Resources */,
 				0C05243E2211EA8400DB7852 /* Line_ScreenWaitVC.xib in Resources */,
-				0CC74608221346BA005C4EFA /* girls2.mp4 in Resources */,
 				0CD6EFFC2211EC550080C843 /* LineVideo_ScreenWaitVC.xib in Resources */,
 				0C4420BB21FF61D7004D3965 /* call_line.wav in Resources */,
 				0CCDD90821F8D1A300688493 /* ButtonView.xib in Resources */,
+				0CDAC9A0222AF0F1001B8E53 /* Killer Clown.mp3 in Resources */,
 				0C4420BC21FF61D7004D3965 /* call_messenger.m4a in Resources */,
 				0CBF3FC52214706100366312 /* Main.storyboard in Resources */,
 				0CCDD91321F8D1A300688493 /* ToolBarView.xib in Resources */,
 				0CCDD90F21F8D1A300688493 /* TabbarView.xib in Resources */,
 				0CD6F0012211ED590080C843 /* LineVideoCallView.xib in Resources */,
 				0CCDD90C21F8D1A300688493 /* InputView.xib in Resources */,
+				0C693CAF2229E2E500522DB7 /* CellCollectionHome.xib in Resources */,
 				0CCDD96321F9017600688493 /* ListCallVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1029,6 +1084,7 @@
 				0CC745F72212D17E005C4EFA /* Wechat_ScreenWaitVC.swift in Sources */,
 				0CCDD96B21F9021C00688493 /* CellListCall.swift in Sources */,
 				0CCDD91621F8D1A300688493 /* KHTextField.swift in Sources */,
+				0C693CAE2229E2E500522DB7 /* CellCollectionHome.swift in Sources */,
 				0CC80A5121FCD6100079A511 /* CallVideo_ScreenWaitVC.swift in Sources */,
 				0C2E39DA21F8D0F500B11685 /* FakeTime.xcdatamodeld in Sources */,
 				0CCDD94021F8E24500688493 /* MenuVC.swift in Sources */,
@@ -1254,9 +1310,9 @@
 			baseConfigurationReference = 4EE83040CA8802E7D544715E /* Pods-FakeTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = U7H59F87Z4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FB6S889YR;
 				INFOPLIST_FILE = FakeTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1265,7 +1321,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenhien.Friend;
 				PRODUCT_NAME = "Fake Call with Girl Friend";
-				PROVISIONING_PROFILE_SPECIFIER = NhFriend;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1276,9 +1332,9 @@
 			baseConfigurationReference = 1C37A975DE6C75280EBE448C /* Pods-FakeTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = U7H59F87Z4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FB6S889YR;
 				INFOPLIST_FILE = FakeTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1287,7 +1343,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenhien.Friend;
 				PRODUCT_NAME = "Fake Call with Girl Friend";
-				PROVISIONING_PROFILE_SPECIFIER = NhFriend;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

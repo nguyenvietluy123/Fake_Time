@@ -75,11 +75,23 @@ class Line_ScreenWaitVC: UIViewController {
         
         var str: String = ""
         switch caller.name {
-        case KeyString.girlFriend:
-            str = KeyString.girlFriendSound
+        case KeyString.gScary:
+            str = KeyString.gScarySound
             break
-        case KeyString.marianRivera:
-            str = KeyString.marianRiveraSound
+        case KeyString.ghostClown:
+            str = KeyString.ghostClownSound
+            break
+        case KeyString.ghostKiller:
+            str = KeyString.ghostKillerSound
+            break
+        case KeyString.ghostScary:
+            str = KeyString.ghostScarySound
+            break
+        case KeyString.ghost_S:
+            str = KeyString.ghost_SSound
+            break
+        case KeyString.killerClown:
+            str = KeyString.killerClownSound
             break
         default:
             str = caller.pathVideo
@@ -87,7 +99,7 @@ class Line_ScreenWaitVC: UIViewController {
         }
         guard str != "" else { return }
         switch caller.name {
-        case KeyString.girlFriend, KeyString.marianRivera:
+        case KeyString.gScary, KeyString.ghostClown, KeyString.ghostKiller, KeyString.ghostScary, KeyString.ghost_S, KeyString.killerClown:
             //run file from bundle
             if let path = Bundle.main.path(forResource: str, ofType: nil) {
                 let url = URL(fileURLWithPath: path)

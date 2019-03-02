@@ -24,7 +24,7 @@ class KHView: UIView {
     
     @IBInspectable var borderWidth: CGFloat = 0.0 {
         didSet {
-            layer.borderWidth = borderWidth
+            layer.borderWidth = isIPad ? 1.4*borderWidth : borderWidth
         }
     }
     

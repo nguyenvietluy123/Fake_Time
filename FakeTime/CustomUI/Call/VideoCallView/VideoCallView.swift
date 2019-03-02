@@ -34,7 +34,7 @@ class VideoCallView: UIView {
     
     func showVideo(caller: CallerObj) {
         var str = ""
-        if caller.name == KeyString.girlFriend || caller.name == KeyString.marianRivera {
+        if caller.name == KeyString.gScary || caller.name == KeyString.ghostClown || caller.name == KeyString.ghostKiller || caller.name == KeyString.ghostScary || caller.name == KeyString.ghost_S || caller.name == KeyString.killerClown {
             str = Bundle.main.path(forResource: caller.pathVideo, ofType: nil) ?? ""
         } else {
             str = caller.pathVideo

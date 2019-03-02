@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellCollectionHome" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="247"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2h-Hs-wH2" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="330" height="247"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_call2" translatesAutoresizingMaskIntoConstraints="NO" id="bvg-pP-Ex7" customClass="KHImageView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="247"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLQ-eU-XjG" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
+                                <rect key="frame" x="15" y="181.5" width="50.5" height="50.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zLQ-eU-XjG" secondAttribute="height" multiplier="1:1" id="Icn-wq-2Tm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXD-zM-icC" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
+                                <rect key="frame" x="15" y="181.5" width="50.5" height="50.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqI-bM-fFn" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
+                                        <rect key="frame" x="12.5" y="12.5" width="25.5" height="25.5"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="AqI-bM-fFn" secondAttribute="height" multiplier="1:1" id="iJN-dF-mpu"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AqI-bM-fFn" firstAttribute="centerY" secondItem="LXD-zM-icC" secondAttribute="centerY" id="7lq-mu-f6t"/>
+                                    <constraint firstAttribute="width" secondItem="LXD-zM-icC" secondAttribute="height" multiplier="1:1" id="adM-tT-WLe"/>
+                                    <constraint firstItem="AqI-bM-fFn" firstAttribute="height" secondItem="LXD-zM-icC" secondAttribute="height" multiplier="0.5" id="egj-PR-Cyt"/>
+                                    <constraint firstItem="AqI-bM-fFn" firstAttribute="centerX" secondItem="LXD-zM-icC" secondAttribute="centerX" id="ij1-aE-aFM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLb-It-ZEm" customClass="MagicView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="147" width="15" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="lzX-Hk-GJE"/>
+                                    <constraint firstAttribute="width" constant="15" id="q4Q-ea-UnT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21Z-Gd-2bQ" customClass="MagicView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
+                                <rect key="frame" x="15" y="232" width="100" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="1OV-y3-4SI"/>
+                                    <constraint firstAttribute="width" constant="100" id="UVi-B3-PRE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-dJ-Xf3" customClass="MagicView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
+                                <rect key="frame" x="310" y="147" width="20" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="DKr-OJ-Mvt"/>
+                                    <constraint firstAttribute="height" constant="100" id="nEF-pb-guG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MLb-It-ZEm" firstAttribute="leading" secondItem="N2h-Hs-wH2" secondAttribute="leading" id="00L-CG-xo6"/>
+                            <constraint firstAttribute="bottom" secondItem="bvg-pP-Ex7" secondAttribute="bottom" id="8Eh-MS-n6C"/>
+                            <constraint firstAttribute="trailing" secondItem="bvg-pP-Ex7" secondAttribute="trailing" id="8vQ-6y-NtG"/>
+                            <constraint firstItem="zLQ-eU-XjG" firstAttribute="trailing" secondItem="LXD-zM-icC" secondAttribute="trailing" id="CDh-c4-WfZ"/>
+                            <constraint firstItem="zLQ-eU-XjG" firstAttribute="top" secondItem="LXD-zM-icC" secondAttribute="top" id="H9Q-Kx-bNA"/>
+                            <constraint firstItem="bvg-pP-Ex7" firstAttribute="top" secondItem="N2h-Hs-wH2" secondAttribute="top" id="S8Z-vF-ECc"/>
+                            <constraint firstAttribute="bottom" secondItem="21Z-Gd-2bQ" secondAttribute="bottom" id="TLo-gF-zA0"/>
+                            <constraint firstItem="21Z-Gd-2bQ" firstAttribute="leading" secondItem="MLb-It-ZEm" secondAttribute="trailing" id="Ugs-j2-dQE"/>
+                            <constraint firstItem="zLQ-eU-XjG" firstAttribute="leading" secondItem="MLb-It-ZEm" secondAttribute="trailing" id="V8h-UB-H3q"/>
+                            <constraint firstItem="zLQ-eU-XjG" firstAttribute="height" secondItem="N2h-Hs-wH2" secondAttribute="height" multiplier="76:372" id="XIZ-kF-Yym"/>
+                            <constraint firstAttribute="bottom" secondItem="MLb-It-ZEm" secondAttribute="bottom" id="XWO-E0-gMg"/>
+                            <constraint firstAttribute="bottom" secondItem="Cqd-dJ-Xf3" secondAttribute="bottom" id="ajB-Rk-GOg"/>
+                            <constraint firstItem="zLQ-eU-XjG" firstAttribute="leading" secondItem="LXD-zM-icC" secondAttribute="leading" id="ayx-iV-Xp9"/>
+                            <constraint firstItem="zLQ-eU-XjG" firstAttribute="bottom" secondItem="LXD-zM-icC" secondAttribute="bottom" id="he6-nb-Q3j"/>
+                            <constraint firstItem="bvg-pP-Ex7" firstAttribute="leading" secondItem="N2h-Hs-wH2" secondAttribute="leading" id="iaj-cQ-r0x"/>
+                            <constraint firstAttribute="trailing" secondItem="Cqd-dJ-Xf3" secondAttribute="trailing" id="naP-xQ-O2a"/>
+                            <constraint firstItem="21Z-Gd-2bQ" firstAttribute="top" secondItem="zLQ-eU-XjG" secondAttribute="bottom" id="wd5-kq-sd0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="19"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="N2h-Hs-wH2" secondAttribute="trailing" id="O9y-2Y-CQs"/>
+                <constraint firstItem="N2h-Hs-wH2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WJK-r0-pYZ"/>
+                <constraint firstItem="N2h-Hs-wH2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aqG-oa-PC2"/>
+                <constraint firstAttribute="bottom" secondItem="N2h-Hs-wH2" secondAttribute="bottom" id="hu6-IO-OaW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="330" height="247"/>
+            <connections>
+                <outlet property="img" destination="bvg-pP-Ex7" id="S9y-34-l95"/>
+                <outlet property="viewIsSelected" destination="LXD-zM-icC" id="23V-Y3-MpV"/>
+                <outlet property="viewNotSelected" destination="zLQ-eU-XjG" id="OUW-jh-FdF"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="180.35982008995504"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_call2" width="226" height="174"/>
+    </resources>
+</document>
