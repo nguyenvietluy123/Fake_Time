@@ -139,7 +139,7 @@
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="0.97647058823529409" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="4Z1-22-8dB" secondAttribute="trailing" id="5LF-WC-cq2"/>
                                                         <constraint firstItem="4Z1-22-8dB" firstAttribute="top" secondItem="lzg-Lz-9up" secondAttribute="top" id="7AK-wT-lQf"/>
@@ -148,7 +148,6 @@
                                                         <constraint firstItem="4Z1-22-8dB" firstAttribute="leading" secondItem="lzg-Lz-9up" secondAttribute="leading" id="swF-YN-BKy"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
@@ -163,7 +162,7 @@
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                    <color key="value" red="0.28235294119999998" green="0.85882352939999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.97647058823529409" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                     <real key="value" value="2"/>
@@ -215,7 +214,7 @@
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="0.97647058823529409" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="vAL-2q-jM2" firstAttribute="width" secondItem="uCm-hS-sG8" secondAttribute="width" multiplier="1:1.2" id="00h-Kg-RaM"/>
                                                         <constraint firstItem="vAL-2q-jM2" firstAttribute="centerY" secondItem="uCm-hS-sG8" secondAttribute="centerY" id="eUK-dz-Obq"/>
@@ -223,7 +222,7 @@
                                                         <constraint firstAttribute="width" secondItem="uCm-hS-sG8" secondAttribute="height" multiplier="1:1" id="mxT-t5-Uni"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="NO"/>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
@@ -238,7 +237,7 @@
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                    <color key="value" red="0.28235294119999998" green="0.85882352939999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.97647058823529409" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                     <real key="value" value="2"/>

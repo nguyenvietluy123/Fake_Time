@@ -34,7 +34,7 @@ class MsgVideoCallView: UIView {
     
     func showVideo(caller: CallerObj) {
         var str = ""
-        if caller.name == KeyString.gScary || caller.name == KeyString.ghostClown || caller.name == KeyString.ghostKiller || caller.name == KeyString.ghostScary || caller.name == KeyString.ghost_S || caller.name == KeyString.killerClown {
+        if caller.name == KeyString.santaClaus || caller.name == KeyString.noel || caller.name == KeyString.santa {
             str = Bundle.main.path(forResource: caller.pathVideo, ofType: nil) ?? ""
         } else {
             str = caller.pathVideo

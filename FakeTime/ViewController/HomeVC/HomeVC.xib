@@ -381,7 +381,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="0.97647058823529409" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="ZJr-H3-MZq" firstAttribute="top" secondItem="B09-cV-sDd" secondAttribute="top" id="I5d-kl-8lV"/>
                                                 <constraint firstItem="Vtr-B4-rOy" firstAttribute="width" secondItem="B09-cV-sDd" secondAttribute="width" multiplier="1:2" id="NgF-g7-8ir"/>
@@ -402,7 +402,6 @@
                                                 <userDefinedRuntimeAttribute type="number" keyPath="roundCornersBottomRight">
                                                     <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>

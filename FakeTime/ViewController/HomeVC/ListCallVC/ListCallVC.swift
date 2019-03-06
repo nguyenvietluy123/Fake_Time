@@ -69,20 +69,13 @@ extension ListCallVC {
     
     func initData() {
         arrCaller.removeAll()
-        let defaultCaller1 = CallerObj(name: KeyString.gScary, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "G Scary"), pathVideo: KeyString.gScaryVideo)
+        let defaultCaller1 = CallerObj(name: KeyString.santaClaus, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "santaClaus"), pathVideo: KeyString.santaClausVideo)
         arrCaller.append(defaultCaller1)
-        let defaultCaller2 = CallerObj(name: KeyString.ghostClown, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost Clown"), pathVideo: KeyString.ghostClownVideo)
+        let defaultCaller2 = CallerObj(name: KeyString.noel, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "noel"), pathVideo: KeyString.noelVideo)
         arrCaller.append(defaultCaller2)
         
-        let defaultCaller3 = CallerObj(name: KeyString.ghostKiller, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost Killer"), pathVideo: KeyString.ghostKillerVideo)
+        let defaultCaller3 = CallerObj(name: KeyString.santa, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "santa"), pathVideo: KeyString.santaVideo)
         arrCaller.append(defaultCaller3)
-        let defaultCaller4 = CallerObj(name: KeyString.ghostScary, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost Scary"), pathVideo: KeyString.ghostScaryVideo)
-        arrCaller.append(defaultCaller4)
-        
-        let defaultCaller5 = CallerObj(name: KeyString.ghost_S, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost_S"), pathVideo: KeyString.ghost_SVideo)
-        arrCaller.append(defaultCaller5)
-        let defaultCaller6 = CallerObj(name: KeyString.killerClown, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Killer Clown"), pathVideo: KeyString.killerClownVideo)
-        arrCaller.append(defaultCaller6)
         arrCaller.append(contentsOf: CallerManager().getAllCaller())
     }
     
@@ -131,17 +124,11 @@ extension ListCallVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        if arrSearch[indexPath.item].name == KeyString.gScary  {
+        if arrSearch[indexPath.item].name == KeyString.santaClaus  {
             return false
-        } else if arrSearch[indexPath.item].name == KeyString.ghostClown{
+        } else if arrSearch[indexPath.item].name == KeyString.noel{
             return false
-        } else if arrSearch[indexPath.item].name == KeyString.ghostKiller{
-            return false
-        } else if arrSearch[indexPath.item].name == KeyString.ghostScary{
-            return false
-        } else if arrSearch[indexPath.item].name == KeyString.ghost_S{
-            return false
-        } else if arrSearch[indexPath.item].name == KeyString.killerClown{
+        } else if arrSearch[indexPath.item].name == KeyString.santa{
             return false
         } else {
             return true

@@ -81,7 +81,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="MJs-lt-rFP" secondAttribute="height" multiplier="1:1" id="0Ir-Ir-Ep2"/>
                         <constraint firstAttribute="bottom" secondItem="Biv-Rd-MwR" secondAttribute="bottom" id="BHL-83-uf5"/>
@@ -94,7 +94,7 @@
                         <constraint firstAttribute="trailing" secondItem="C83-8t-GSS" secondAttribute="trailing" id="iyt-d0-nm6"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="NO"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>

@@ -41,7 +41,7 @@ class HomeVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        caller = CallerObj(name: KeyString.ghostScary, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "Ghost Scary"), pathVideo: KeyString.ghostScaryVideo)
+        caller = CallerObj(name: KeyString.santaClaus, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "santaClaus"), pathVideo: KeyString.santaClausVideo)
         initUI()
         initData()
     } 
