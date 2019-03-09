@@ -28,6 +28,11 @@
 		0C2E39DF21F8D0F600B11685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E39DD21F8D0F600B11685 /* LaunchScreen.storyboard */; };
 		0C2E39EA21F8D0F600B11685 /* FakeTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E39E921F8D0F600B11685 /* FakeTimeTests.swift */; };
 		0C2E39F521F8D0F600B11685 /* FakeTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E39F421F8D0F600B11685 /* FakeTimeUITests.swift */; };
+		0C407A222233FE8300E3FFC5 /* Lisa Black.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C407A1E2233FE8200E3FFC5 /* Lisa Black.mp3 */; };
+		0C407A232233FE8300E3FFC5 /* Lisa Black.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0C407A1F2233FE8300E3FFC5 /* Lisa Black.mp4 */; };
+		0C407A242233FE8300E3FFC5 /* Mina Girl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0C407A202233FE8300E3FFC5 /* Mina Girl.mp4 */; };
+		0C407A252233FE8300E3FFC5 /* Mina Girl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C407A212233FE8300E3FFC5 /* Mina Girl.mp3 */; };
+		0C407A272234048700E3FFC5 /* CallerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C407A262234048700E3FFC5 /* CallerHelper.swift */; };
 		0C4420B621FF44D0004D3965 /* FrontCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B521FF430D004D3965 /* FrontCameraView.xib */; };
 		0C4420BB21FF61D7004D3965 /* call_line.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B821FF61D6004D3965 /* call_line.wav */; };
 		0C4420BC21FF61D7004D3965 /* call_messenger.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0C4420B921FF61D6004D3965 /* call_messenger.m4a */; };
@@ -162,6 +167,11 @@
 		0C2E39F021F8D0F600B11685 /* FakeTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2E39F421F8D0F600B11685 /* FakeTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTimeUITests.swift; sourceTree = "<group>"; };
 		0C2E39F621F8D0F600B11685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C407A1E2233FE8200E3FFC5 /* Lisa Black.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lisa Black.mp3"; sourceTree = "<group>"; };
+		0C407A1F2233FE8300E3FFC5 /* Lisa Black.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lisa Black.mp4"; sourceTree = "<group>"; };
+		0C407A202233FE8300E3FFC5 /* Mina Girl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mina Girl.mp4"; sourceTree = "<group>"; };
+		0C407A212233FE8300E3FFC5 /* Mina Girl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mina Girl.mp3"; sourceTree = "<group>"; };
+		0C407A262234048700E3FFC5 /* CallerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerHelper.swift; sourceTree = "<group>"; };
 		0C4420B521FF430D004D3965 /* FrontCameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrontCameraView.xib; sourceTree = "<group>"; };
 		0C4420B821FF61D6004D3965 /* call_line.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = call_line.wav; sourceTree = "<group>"; };
 		0C4420B921FF61D6004D3965 /* call_messenger.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = call_messenger.m4a; sourceTree = "<group>"; };
@@ -368,6 +378,10 @@
 		0C4420B721FF61C2004D3965 /* Sounds&Video */ = {
 			isa = PBXGroup;
 			children = (
+				0C407A1E2233FE8200E3FFC5 /* Lisa Black.mp3 */,
+				0C407A1F2233FE8300E3FFC5 /* Lisa Black.mp4 */,
+				0C407A212233FE8300E3FFC5 /* Mina Girl.mp3 */,
+				0C407A202233FE8300E3FFC5 /* Mina Girl.mp4 */,
 				0C173DE1222E4737003CC41C /* noel.mp3 */,
 				0C173DE2222E4737003CC41C /* noel.mp4 */,
 				0C173DDE222E4737003CC41C /* santa.mp3 */,
@@ -429,6 +443,7 @@
 		0CA9395122021E2C00D6EE95 /* Call */ = {
 			isa = PBXGroup;
 			children = (
+				0C407A262234048700E3FFC5 /* CallerHelper.swift */,
 				0CA9394C22021B0000D6EE95 /* Call_ScreenWaitVC */,
 				0CC80A4E21FCD6000079A511 /* CallVideo_ScreenWaitVC */,
 			);
@@ -966,6 +981,7 @@
 				0C05243A2211D25100DB7852 /* MsgVideoCallView.xib in Resources */,
 				0CCDD92A21F8D1CB00688493 /* HomeVC.xib in Resources */,
 				0C0524332211CBF100DB7852 /* MessengerVideo_ScreenWaitVC.xib in Resources */,
+				0C407A232233FE8300E3FFC5 /* Lisa Black.mp4 in Resources */,
 				0CCDD94C21F8E46E00688493 /* NavigationView.xib in Resources */,
 				0C662EB922148F24007A6DD0 /* call_iphone.mp3 in Resources */,
 				0CAFE31821FA13F10004C376 /* AddCallVC.xib in Resources */,
@@ -978,11 +994,14 @@
 				0CC745FC2212D7C7005C4EFA /* WechatVideo_ScreenWaitVC.xib in Resources */,
 				0CC80A4121FCCA960079A511 /* MenuCell.xib in Resources */,
 				0C05243E2211EA8400DB7852 /* Line_ScreenWaitVC.xib in Resources */,
+				0C407A252233FE8300E3FFC5 /* Mina Girl.mp3 in Resources */,
 				0C173DE6222E4737003CC41C /* santaClaus.mp3 in Resources */,
 				0CD6EFFC2211EC550080C843 /* LineVideo_ScreenWaitVC.xib in Resources */,
 				0C4420BB21FF61D7004D3965 /* call_line.wav in Resources */,
 				0CCDD90821F8D1A300688493 /* ButtonView.xib in Resources */,
 				0C4420BC21FF61D7004D3965 /* call_messenger.m4a in Resources */,
+				0C407A222233FE8300E3FFC5 /* Lisa Black.mp3 in Resources */,
+				0C407A242233FE8300E3FFC5 /* Mina Girl.mp4 in Resources */,
 				0CBF3FC52214706100366312 /* Main.storyboard in Resources */,
 				0CCDD91321F8D1A300688493 /* ToolBarView.xib in Resources */,
 				0CCDD90F21F8D1A300688493 /* TabbarView.xib in Resources */,
@@ -1116,6 +1135,7 @@
 				0CAFE31B21FA321A0004C376 /* CallerObj.swift in Sources */,
 				0C05242D2211BC5200DB7852 /* Messenger_ScreenWaitVC.swift in Sources */,
 				0CA9394F22021C9E00D6EE95 /* Call_ScreenWaitVC.swift in Sources */,
+				0C407A272234048700E3FFC5 /* CallerHelper.swift in Sources */,
 				0CCDD94F21F8E5F400688493 /* DeNho.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

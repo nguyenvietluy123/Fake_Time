@@ -16,6 +16,7 @@ class CallerObj: NSObject {
     var avatar: UIImage = #imageLiteral(resourceName: "Avatar_default")
     var pathVideo: String = ""
     var delayTime: Int = 0
+    var fromUser: Bool = false
     var typeCall: typeCall = .call
     
     override init() {
@@ -23,11 +24,12 @@ class CallerObj: NSObject {
         id = UUID().uuidString
     }
     
-    init(name: String, phoneNumber: String, avatar: UIImage, pathVideo: String) {
+    init(name: String, phoneNumber: String, avatar: UIImage, pathVideo: String, fromUser: Bool) {
         self.name = name
         self.phoneNumber = phoneNumber
         self.avatar = avatar
         self.pathVideo = pathVideo
+        self.fromUser = fromUser
     }
     
     init(_ obj: Caller) {
@@ -40,6 +42,7 @@ class CallerObj: NSObject {
             }
         }
         self.pathVideo = obj.videoUrl ?? ""
+        self.fromUser = obj.fromUser
     }
 }
 
@@ -57,6 +60,7 @@ extension CallerObj {
         caller.phoneNumber = self.phoneNumber
         caller.videoUrl = self.pathVideo
         caller.avatar = self.avatar.pngData()
+        caller.fromUser = self.fromUser
         
         persistenceManager.saveWorkerContext(minionManagedObjectContextWorker)
         if isMerge {
@@ -70,6 +74,7 @@ extension CallerObj {
             caller.videoUrl = self.pathVideo
             caller.name = self.name
             caller.phoneNumber = self.phoneNumber
+            caller.fromUser = self.fromUser
             persistenceManager.mergeWithMainContext()
         }
     }

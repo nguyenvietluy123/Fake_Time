@@ -78,6 +78,7 @@ extension AddCallVC {
             self.view.endEditing(true)
             if self.isValid() {
                 if self.isCreate {
+                    self.caller.fromUser = true
                     self.caller.saveCallerList(true)
                 } else {
                     self.caller.updateCaller()

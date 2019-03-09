@@ -69,13 +69,16 @@ extension ListCallVC {
     
     func initData() {
         arrCaller.removeAll()
-        let defaultCaller1 = CallerObj(name: KeyString.santaClaus, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "santaClaus"), pathVideo: KeyString.santaClausVideo)
+        let defaultCaller1 = CallerObj(name: KeyString.santaClaus, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "santaClaus"), pathVideo: KeyString.santaClausVideo, fromUser: false)
         arrCaller.append(defaultCaller1)
-        let defaultCaller2 = CallerObj(name: KeyString.noel, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "noel"), pathVideo: KeyString.noelVideo)
+        let defaultCaller2 = CallerObj(name: KeyString.noel, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "noel"), pathVideo: KeyString.noelVideo, fromUser: false)
         arrCaller.append(defaultCaller2)
-        
-        let defaultCaller3 = CallerObj(name: KeyString.santa, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "santa"), pathVideo: KeyString.santaVideo)
+        let defaultCaller3 = CallerObj(name: KeyString.santa, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "santa"), pathVideo: KeyString.santaVideo, fromUser: false)
         arrCaller.append(defaultCaller3)
+        let defaultCaller4 = CallerObj(name: KeyString.lisaBlack, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "lisaBlack"), pathVideo: KeyString.lisaBlackVideo, fromUser: false)
+        arrCaller.append(defaultCaller4)
+        let defaultCaller5 = CallerObj(name: KeyString.minaGirl, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "minaGirl"), pathVideo: KeyString.minaGirlVideo, fromUser: false)
+        arrCaller.append(defaultCaller5)
         arrCaller.append(contentsOf: CallerManager().getAllCaller())
     }
     
@@ -124,15 +127,7 @@ extension ListCallVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        if arrSearch[indexPath.item].name == KeyString.santaClaus  {
-            return false
-        } else if arrSearch[indexPath.item].name == KeyString.noel{
-            return false
-        } else if arrSearch[indexPath.item].name == KeyString.santa{
-            return false
-        } else {
-            return true
-        }
+        return arrSearch[indexPath.item].fromUser
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

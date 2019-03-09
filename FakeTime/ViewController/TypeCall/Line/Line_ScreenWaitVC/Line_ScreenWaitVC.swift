@@ -37,6 +37,13 @@ class Line_ScreenWaitVC: UIViewController {
         self.view1Button.alpha = 0
         lbTime.isHidden = true
         lineAnimating.isHidden = false
+        
+        callerShared.handleCountTime = { str in
+            self.lbTime.text = str
+        }
+        callerShared.handleDismiss = {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,14 +52,7 @@ class Line_ScreenWaitVC: UIViewController {
     }
     
     @IBAction func rejectCall(_ sender: Any) {
-        lbTime.text = KeyString.endCall
-        player.pause()
-        timer.invalidate()
-        playback.invalidate()
-        ringBell?.stop()
-        GCDCommon.mainQueueWithDelay(1) {
-            self.dismiss(animated: true, completion: nil)
-        }
+        callerShared.rejectCall()
     }
     
     @IBAction func acceptCall(_ sender: Any) {
@@ -65,70 +65,7 @@ class Line_ScreenWaitVC: UIViewController {
             self.lbTime.isHidden = false
             self.lineAnimating.isHidden = true
         }
-        turnOnAcceptCall()
-    }
-    
-    func turnOnAcceptCall() {
-        timer = Timer.every(1) {
-            self.time += 1
-        }
-        
-        var str: String = ""
-        switch caller.name {
-        case KeyString.santaClaus:
-            str = KeyString.santaClausSound
-            break
-        case KeyString.noel:
-            str = KeyString.noelSound
-            break
-        case KeyString.santa:
-            str = KeyString.santaSound
-            break
-        default:
-            str = caller.pathVideo
-            break
-        }
-        guard str != "" else { return }
-        switch caller.name {
-        case KeyString.santaClaus, KeyString.noel, KeyString.santa:
-            //run file from bundle
-            if let path = Bundle.main.path(forResource: str, ofType: nil) {
-                let url = URL(fileURLWithPath: path)
-                do {
-                    ringBell = try AVAudioPlayer(contentsOf: url)
-                    ringBell?.play()
-                    playback = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(checkCurrentTime), userInfo: nil, repeats: true)
-                    
-                } catch {
-                }
-            }
-            break
-        default:
-            //run sound without display video
-            player = AVPlayer(url: URL(fileURLWithPath: str))
-            player.play()
-            
-            let intervalTime = CMTime(value: 1, timescale: 2)
-            player.addPeriodicTimeObserver(forInterval: intervalTime, queue: DispatchQueue.main) { (progressTime) in
-                let second = CMTimeGetSeconds(progressTime)
-                if let duration = self.player.currentItem?.duration {
-                    let durationSeconds = CMTimeGetSeconds(duration)
-                    
-                    if second == durationSeconds {
-                        GCDCommon.mainQueueWithDelay(1, {
-                            self.rejectCall(self)
-                        })
-                    }
-                }
-            }
-            break
-        }
-    }
-    
-    @objc func checkCurrentTime() {
-        if ringBell?.currentTime == 0 {
-            rejectCall(self)
-        }
+        callerShared.turnOnAcceptCall(caller: caller)
     }
     
     func openRingBell() {

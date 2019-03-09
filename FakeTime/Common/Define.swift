@@ -44,14 +44,20 @@ class KeyString {
     static let santaClaus = "Santa Claus"
     static let noel = "Noel"
     static let santa = "Santa"
+    static let lisaBlack = "Lisa Black"
+    static let minaGirl = "Mina Girl"
     
     static let santaClausSound = "santaClaus.mp3"
     static let noelSound = "noel.mp3"
     static let santaSound = "santa.mp3"
+    static let lisaBlackSound = "Lisa Black.mp3"
+    static let minaGirlSound = "Mina Girl.mp3"
     
     static let santaClausVideo = "santaClaus.mp4"
     static let noelVideo = "noel.mp4"
     static let santaVideo = "santa.mp4"
+    static let lisaBlackVideo = "Lisa Black.mp4"
+    static let minaGirlVideo = "Mina Girl.mp4"
     
     static let soundDefault = "call_iphone.mp3"
     static let soundMessenger = "call_messenger.m4a"

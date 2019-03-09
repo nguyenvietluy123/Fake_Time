@@ -46,7 +46,7 @@ class WechatVideoCallView: UIView {
         }
         
         var str = ""
-        if caller.name == KeyString.santaClaus || caller.name == KeyString.noel || caller.name == KeyString.santa {
+        if caller.fromUser == false { //caller.name == KeyString.santaClaus || caller.name == KeyString.noel || caller.name == KeyString.santa || caller.name == KeyString.lisaBlack || caller.name == KeyString.minaGirl {
             str = Bundle.main.path(forResource: caller.pathVideo, ofType: nil) ?? ""
         } else {
             str = caller.pathVideo
