@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Call_ScreenWaitVC" customModule="FakeTime" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Call_ScreenWaitVC" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
             <connections>
                 <outlet property="lbName" destination="RfA-Qa-LHe" id="tca-zA-Q2e"/>
                 <outlet property="lbTime" destination="nbQ-PK-90M" id="Hzd-AQ-W9x"/>
@@ -24,19 +24,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXc-Ax-WWg" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXc-Ax-WWg" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRz-iS-CTQ">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="271"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfA-Qa-LHe" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfA-Qa-LHe" customClass="KHLabel" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="37.5" y="114.5" width="300" height="42"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="35"/>
                                     <color key="textColor" red="0.45098039220000002" green="0.78823529410000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calling..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-PK-90M" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calling..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-PK-90M" customClass="KHLabel" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="137.5" y="176.5" width="100.5" height="30"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
                                     <color key="textColor" red="0.45098039220000002" green="0.78823529410000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,34 +52,34 @@
                                 <constraint firstItem="nbQ-PK-90M" firstAttribute="top" secondItem="RfA-Qa-LHe" secondAttribute="bottom" constant="20" id="txo-7F-tSX"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIG-4o-0SH" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIG-4o-0SH" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                             <rect key="frame" x="36.5" y="271" width="302" height="94"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_keypad" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-nz-OIU" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_keypad" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-nz-OIU" customClass="KHImageView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="117" y="0.0" width="68" height="67.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="cVZ-nz-OIU" secondAttribute="height" multiplier="1:1" id="a00-3N-kKW"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keypad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlK-Ve-32j" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keypad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlK-Ve-32j" customClass="KHLabel" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="127.5" y="76" width="47.5" height="18"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                     <color key="textColor" red="0.45098039220000002" green="0.78823529410000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_speaker" translatesAutoresizingMaskIntoConstraints="NO" id="nhD-y8-MdG" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_speaker" translatesAutoresizingMaskIntoConstraints="NO" id="nhD-y8-MdG" customClass="KHImageView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="234.5" y="0.0" width="67.5" height="67.5"/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speaker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLK-9l-I1j" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speaker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLK-9l-I1j" customClass="KHLabel" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="242.5" y="76" width="51.5" height="18"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                     <color key="textColor" red="0.45098039220000002" green="0.78823529410000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_mute2" translatesAutoresizingMaskIntoConstraints="NO" id="gZW-uL-1VP" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_mute2" translatesAutoresizingMaskIntoConstraints="NO" id="gZW-uL-1VP" customClass="KHImageView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="67.5" height="67.5"/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAm-Et-1FU" customClass="KHLabel" customModule="FakeTime" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAm-Et-1FU" customClass="KHLabel" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="17.5" y="76" width="33" height="18"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                     <color key="textColor" red="0.45098039220000002" green="0.78823529410000004" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,17 +107,17 @@
                                 <constraint firstItem="RAm-Et-1FU" firstAttribute="centerX" secondItem="gZW-uL-1VP" secondAttribute="centerX" id="wSV-St-q4w"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-fo-4Mk" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-fo-4Mk" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                             <rect key="frame" x="58.5" y="541.5" width="258" height="55.5"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuq-S7-svw" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuq-S7-svw" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="101" y="0.0" width="56" height="55.5"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="ork-x4-Egf" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="ork-x4-Egf" customClass="KHImageView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="56" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfv-dp-ak0" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfv-dp-ak0" customClass="KHButton" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="56" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
@@ -146,17 +146,17 @@
                                 <constraint firstItem="zuq-S7-svw" firstAttribute="centerY" secondItem="TTF-fo-4Mk" secondAttribute="centerY" id="riZ-pW-wgJ"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-0V-HWy" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-0V-HWy" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                             <rect key="frame" x="58.5" y="541.5" width="258" height="55.5"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G35-Mx-cYb" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G35-Mx-cYb" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="N1w-hs-PAM" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_end_call" translatesAutoresizingMaskIntoConstraints="NO" id="N1w-hs-PAM" customClass="KHImageView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-zQ-yo9" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-zQ-yo9" customClass="KHButton" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
@@ -176,14 +176,14 @@
                                         <constraint firstAttribute="trailing" secondItem="N1w-hs-PAM" secondAttribute="trailing" id="y7S-45-KIa"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3z-gK-YV4" customClass="KHView" customModule="FakeTime" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3z-gK-YV4" customClass="KHView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                     <rect key="frame" x="202.5" y="0.0" width="55.5" height="55.5"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_accept_call" translatesAutoresizingMaskIntoConstraints="NO" id="gIY-4B-R09" customClass="KHImageView" customModule="FakeTime" customModuleProvider="target">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_accept_call" translatesAutoresizingMaskIntoConstraints="NO" id="gIY-4B-R09" customClass="KHImageView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9a-Xj-Lt2" customClass="KHButton" customModule="FakeTime" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9a-Xj-Lt2" customClass="KHButton" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" image="call_accept"/>
@@ -240,7 +240,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.90196078431372551" green="0.41960784313725491" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="lXc-Ax-WWg" secondAttribute="bottom" id="CX4-iQ-7sY"/>
                 <constraint firstAttribute="trailing" secondItem="lXc-Ax-WWg" secondAttribute="trailing" id="U2X-06-RIy"/>

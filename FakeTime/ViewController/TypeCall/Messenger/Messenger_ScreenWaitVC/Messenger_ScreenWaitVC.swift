@@ -62,6 +62,8 @@ class Messenger_ScreenWaitVC: UIViewController {
     }
     
     @IBAction func rejectCall(_ sender: Any) {
+        timer.invalidate()
+        ringBell?.stop()
         callerShared.rejectCall()
     }
     

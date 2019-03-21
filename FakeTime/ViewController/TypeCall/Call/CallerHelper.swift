@@ -42,12 +42,6 @@ class CallerHelper: NSObject {
         case KeyString.santa:
             str = KeyString.santaSound
             break
-        case KeyString.lisaBlack:
-            str = KeyString.lisaBlackSound
-            break
-        case KeyString.minaGirl:
-            str = KeyString.minaGirlSound
-            break
         default:
             str = caller.pathVideo
             break
@@ -55,7 +49,7 @@ class CallerHelper: NSObject {
         guard str != "" else { return }
         
         switch caller.name {
-        case KeyString.santaClaus, KeyString.noel, KeyString.santa, KeyString.lisaBlack, KeyString.minaGirl:
+        case KeyString.santaClaus, KeyString.noel, KeyString.santa:
             //run file from bundle
             if let path = Bundle.main.path(forResource: str, ofType: nil) {
                 let url = URL(fileURLWithPath: path)

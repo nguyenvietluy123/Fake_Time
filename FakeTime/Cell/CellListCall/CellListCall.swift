@@ -36,6 +36,5 @@ extension CellListCall {
         self.imgAvatar.image = caller.avatar
         self.lbName.text = caller.name
         viewEdit.isHidden = !caller.fromUser
-//        caller.name == KeyString.santaClaus || caller.name == KeyString.noel || caller.name == KeyString.santa || caller.name == KeyString.lisaBlack || caller.name == KeyString.minaGirl
     }
 }

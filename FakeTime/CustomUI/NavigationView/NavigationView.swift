@@ -52,8 +52,6 @@ class NavigationView: UIView {
         }
     }
     
-    @IBInspectable open var clearColor: Bool = false
-    
     @IBAction func actionRight(_ sender: Any) {
         handleActionRight?()
     }
@@ -94,14 +92,10 @@ class NavigationView: UIView {
         }
         ctrHeightStatusBar.constant = UIApplication.shared.statusBarFrame.height
         
-        if clearColor {
-//            GCDCommon.mainQueue {
-//                Common.gradient(UIColor.init("58EE63", alpha: 1.0), UIColor.init("2AEC70", alpha: 1.0), view: self)
-//            }
-            viewNavi.backgroundColor = .clear
+        GCDCommon.mainQueue {
+            Common.gradient(UIColor.init("E66B20", alpha: 1.0), UIColor.init("F4AB29", alpha: 1.0), view: self)
         }
     }
-  
     @IBAction func actionHome(_ sender: Any) {
         if hasBack {
             handleBack?()

@@ -56,6 +56,9 @@ class Wechat_ScreenWaitVC: UIViewController {
     }
     
     @IBAction func rejectCall(_ sender: Any) {
+        lbTime.text = KeyString.endCall
+        timer.invalidate()
+        ringBell?.stop()
         callerShared.rejectCall()
     }
     

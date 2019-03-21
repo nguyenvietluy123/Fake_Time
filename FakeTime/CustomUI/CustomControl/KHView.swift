@@ -16,11 +16,7 @@ class KHView: UIView {
         }
     }
     
-    @IBInspectable var isGradientColor: Bool = false {
-        didSet {
-            
-        }
-    }
+    @IBInspectable var isGradientColor: Bool = false
     
     @IBInspectable var borderWidth: CGFloat = 0.0 {
         didSet {

@@ -32,6 +32,7 @@ class Call_ScreenWaitVC: UIViewController {
         }
         callerShared.handleDismiss = {
             self.dismiss(animated: true, completion: nil)
+            self.view.removeFromSuperview()
         }
     }
     
@@ -41,6 +42,8 @@ class Call_ScreenWaitVC: UIViewController {
     }
 
     @IBAction func rejectCall(_ sender: Any) {
+        timer.invalidate()
+        ringBell?.stop()
         callerShared.rejectCall()
     }
     

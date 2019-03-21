@@ -24,9 +24,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="r6a-Ke-Iee">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leO-zl-moi" customClass="NavigationView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,13 +113,10 @@
                 <constraint firstItem="MJs-lt-rFP" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="150:2220" id="33X-RN-VJG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MdD-jO-Xlb" secondAttribute="trailing" id="5hi-UX-SP2"/>
                 <constraint firstItem="wly-Qf-ut8" firstAttribute="leading" secondItem="MJs-lt-rFP" secondAttribute="trailing" id="Brz-VR-t6N"/>
-                <constraint firstItem="r6a-Ke-Iee" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EBC-BS-eMK"/>
                 <constraint firstAttribute="bottom" secondItem="MdD-jO-Xlb" secondAttribute="bottom" id="It7-fc-4oS"/>
-                <constraint firstAttribute="trailing" secondItem="r6a-Ke-Iee" secondAttribute="trailing" id="L7p-PG-HMV"/>
                 <constraint firstItem="wly-Qf-ut8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="MvK-9F-pWT"/>
                 <constraint firstAttribute="bottom" secondItem="DrO-iS-YLz" secondAttribute="bottom" constant="-2" id="P5d-Xc-tTm"/>
                 <constraint firstItem="MdD-jO-Xlb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PyP-vK-BPg"/>
-                <constraint firstItem="r6a-Ke-Iee" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SjF-sq-h2b"/>
                 <constraint firstItem="wly-Qf-ut8" firstAttribute="leading" secondItem="MJs-lt-rFP" secondAttribute="trailing" id="T78-dq-XH4"/>
                 <constraint firstItem="DrO-iS-YLz" firstAttribute="top" secondItem="wly-Qf-ut8" secondAttribute="bottom" id="Upf-lo-yHT"/>
                 <constraint firstItem="DrO-iS-YLz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UyO-9L-s0z"/>
@@ -132,7 +126,6 @@
                 <constraint firstItem="DrO-iS-YLz" firstAttribute="top" secondItem="pYE-Zr-qSO" secondAttribute="bottom" id="jab-KT-pNt"/>
                 <constraint firstItem="MdD-jO-Xlb" firstAttribute="top" secondItem="leO-zl-moi" secondAttribute="bottom" constant="-1" id="kER-fh-s5j"/>
                 <constraint firstItem="leO-zl-moi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r1q-bg-U8p"/>
-                <constraint firstAttribute="bottom" secondItem="r6a-Ke-Iee" secondAttribute="bottom" id="rwb-5E-USb"/>
                 <constraint firstItem="DrO-iS-YLz" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="50:667" id="wIX-aL-IpX"/>
                 <constraint firstItem="DrO-iS-YLz" firstAttribute="top" secondItem="MJs-lt-rFP" secondAttribute="bottom" constant="7" id="xu1-tg-X9A"/>
             </constraints>
@@ -142,6 +135,5 @@
     </objects>
     <resources>
         <image name="ListCall_add" width="24" height="24"/>
-        <image name="background" width="540" height="960"/>
     </resources>
 </document>

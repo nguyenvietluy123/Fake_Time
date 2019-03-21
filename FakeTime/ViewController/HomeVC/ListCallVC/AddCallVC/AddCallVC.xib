@@ -26,9 +26,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CTR-Jg-EoM">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mwk-w0-5hg" customClass="NavigationView" customModule="Fake_Call_with_Girl_Friend" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -300,18 +297,14 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tnU-3f-rKK" secondAttribute="trailing" id="0me-t2-V5A"/>
-                <constraint firstAttribute="trailing" secondItem="CTR-Jg-EoM" secondAttribute="trailing" id="4hu-ZM-AuP"/>
                 <constraint firstItem="Mwk-w0-5hg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7bb-Qq-BFi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tnU-3f-rKK" secondAttribute="bottom" id="LAz-HY-nog"/>
-                <constraint firstItem="CTR-Jg-EoM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LIQ-CE-gdL"/>
                 <constraint firstItem="Mwk-w0-5hg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WAq-9G-xG4"/>
                 <constraint firstItem="tnU-3f-rKK" firstAttribute="top" secondItem="Mwk-w0-5hg" secondAttribute="bottom" id="Wg3-Tc-r2u"/>
-                <constraint firstItem="CTR-Jg-EoM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wh8-CO-Uve"/>
                 <constraint firstItem="tnU-3f-rKK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hEU-vY-k8k"/>
-                <constraint firstAttribute="bottom" secondItem="CTR-Jg-EoM" secondAttribute="bottom" id="rDi-oI-5Yr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mwk-w0-5hg" secondAttribute="trailing" id="wuU-qM-viU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -321,7 +314,6 @@
     <resources>
         <image name="ListCall_add" width="24" height="24"/>
         <image name="avatar_taylor" width="165" height="206"/>
-        <image name="background" width="540" height="960"/>
         <image name="ic_camera_call" width="50" height="50"/>
     </resources>
 </document>

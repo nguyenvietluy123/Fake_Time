@@ -75,10 +75,6 @@ extension ListCallVC {
         arrCaller.append(defaultCaller2)
         let defaultCaller3 = CallerObj(name: KeyString.santa, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "santa"), pathVideo: KeyString.santaVideo, fromUser: false)
         arrCaller.append(defaultCaller3)
-        let defaultCaller4 = CallerObj(name: KeyString.lisaBlack, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "lisaBlack"), pathVideo: KeyString.lisaBlackVideo, fromUser: false)
-        arrCaller.append(defaultCaller4)
-        let defaultCaller5 = CallerObj(name: KeyString.minaGirl, phoneNumber: "123456789", avatar: #imageLiteral(resourceName: "minaGirl"), pathVideo: KeyString.minaGirlVideo, fromUser: false)
-        arrCaller.append(defaultCaller5)
         arrCaller.append(contentsOf: CallerManager().getAllCaller())
     }
     
