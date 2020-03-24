@@ -6,5 +6,5 @@ pod "KRProgressHUD"
 pod 'Gallery'
 pod 'Google-Mobile-Ads-SDK'
 
-#kakak
+#lalala
 end
