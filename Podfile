@@ -6,3 +6,7 @@ pod "KRProgressHUD"
 pod 'Gallery'
 pod 'Google-Mobile-Ads-SDK'
 end
+<<<<<<< HEAD
+=======
+123345
+>>>>>>> 2f3fa98... add pod
