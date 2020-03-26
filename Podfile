@@ -5,4 +5,6 @@ target 'FakeTime' do
 pod "KRProgressHUD"
 pod 'Gallery'
 pod 'Google-Mobile-Ads-SDK'
+
+//Them Pod, edit nhẹ
 end
