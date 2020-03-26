@@ -14,7 +14,7 @@ let kAdmobAppID         = "ca-app-pub-1947012962477196~8459063867"
 let kAdmobBanner        = "ca-app-pub-1947012962477196/2412530261"
 let kAdmobInterstitial  = "ca-app-pub-1947012962477196/2272929463"
 
-
+12
 //let kAdmobAppID         = ""
 //let kAdmobBanner        = ""
 //let kAdmobInterstitial  = ""
