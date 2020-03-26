@@ -6,4 +6,4 @@ pod "KRProgressHUD"
 pod 'Gallery'
 pod 'Google-Mobile-Ads-SDK'
 end
-12345qe
+12345
